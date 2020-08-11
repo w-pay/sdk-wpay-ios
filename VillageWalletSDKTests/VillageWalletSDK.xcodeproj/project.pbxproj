@@ -12,7 +12,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BB2B7AEBDAFAC17D93A985B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1A11FDCE7647006EFA3BF2AF /* VillageWalletSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VillageWalletSDK.podspec; path = ../VillageWalletSDK.podspec; sourceTree = "<group>"; };
 		23E0DF0FC6DFCD25A80B11E0 /* Pods_VillageWalletSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VillageWalletSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49781F04B4A4CF6F2298111D /* Pods-VillageWalletSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageWalletSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VillageWalletSDK_Tests/Pods-VillageWalletSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 			children = (
 				1A11FDCE7647006EFA3BF2AF /* VillageWalletSDK.podspec */,
 				8D9ECB1A5879B0CA1F35E9FF /* README.md */,
-				0BB2B7AEBDAFAC17D93A985B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
