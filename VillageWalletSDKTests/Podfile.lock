@@ -1,0 +1,16 @@
+PODS:
+  - VillageWalletSDK (0.1.0)
+
+DEPENDENCIES:
+  - VillageWalletSDK (from `../`)
+
+EXTERNAL SOURCES:
+  VillageWalletSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VillageWalletSDK: 0de6b91ddb448d15060761767cac1ce78ed40467
+
+PODFILE CHECKSUM: aab296649c449d69218fb49c075b370a3a8b5e14
+
+COCOAPODS: 1.9.3
