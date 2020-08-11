@@ -28,7 +28,7 @@ protocol VillageMerchantApiRepository: VillageAdministrationApiRepository {
 
 	func cancelPaymentQRCode(
 		qrCodeId: String,
-		callback: @escaping ApiResult<Unit>
+		callback: @escaping ApiResult<Void>
 	)
 
 	func retrievePaymentList(
