@@ -1,5 +1,5 @@
 import UIKit
 
-protocol TransactionRefundDetails {
+public protocol TransactionRefundDetails {
 	func reason() -> String
 }

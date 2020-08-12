@@ -1,6 +1,6 @@
 import UIKit
 
-protocol PosPayload {
+public protocol PosPayload {
 	func schemaId() -> String?
 
 	func payload() -> [String: AnyObject]

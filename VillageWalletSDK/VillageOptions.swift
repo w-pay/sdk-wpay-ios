@@ -1,9 +1,9 @@
 import Foundation
 
-class VillageOptions {
+public class VillageOptions {
 	let apiKey: String
 
-	init(apiKey: String) {
+	public init(apiKey: String) {
 		self.apiKey = apiKey
 	}
 }

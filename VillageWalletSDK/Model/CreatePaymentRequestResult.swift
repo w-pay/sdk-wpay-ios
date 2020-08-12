@@ -1,6 +1,6 @@
 import UIKit
 
-protocol CreatePaymentRequestResult {
+public protocol CreatePaymentRequestResult {
 	func paymentRequestId() -> String
 
 	func qr() -> QRCode?

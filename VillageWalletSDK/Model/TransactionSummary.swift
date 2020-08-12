@@ -1,6 +1,6 @@
 import UIKit
 
-protocol TransactionSummary: Payment {
+public protocol TransactionSummary: Payment {
 	func transactionId() -> String
 
 	func type() -> TransactionSummaryPaymentType?
@@ -17,11 +17,11 @@ protocol TransactionSummary: Payment {
 	func refundReason() -> String?
 }
 
-enum TransactionSummaryPaymentType {
+public enum TransactionSummaryPaymentType {
 	case PAYMENT
 	case REFUND
 
-	static func valueOf(value: String) -> TransactionSummaryPaymentType? {
+	public static func valueOf(value: String) -> TransactionSummaryPaymentType? {
 		switch (value.uppercased()) {
 			case "PAYMENT":
 				return TransactionSummaryPaymentType.PAYMENT
@@ -35,12 +35,12 @@ enum TransactionSummaryPaymentType {
 	}
 }
 
-enum TransactionSummaryPaymentStatus {
+public enum TransactionSummaryPaymentStatus {
 	case PROCESSING
 	case APPROVED
 	case REJECTED
 
-	static func valueOf(value: String) -> TransactionSummaryPaymentStatus? {
+	public static func valueOf(value: String) -> TransactionSummaryPaymentStatus? {
 		switch (value.uppercased()) {
 			case "PROCESSING":
 				return TransactionSummaryPaymentStatus.PROCESSING

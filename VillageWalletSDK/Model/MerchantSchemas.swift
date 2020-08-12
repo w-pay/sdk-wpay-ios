@@ -1,13 +1,14 @@
 import UIKit
 
-protocol MerchantSchemas {
+public protocol MerchantSchemas {
+
 }
 
-protocol MerchantSchemaSummaries: MerchantSchemas {
+public protocol MerchantSchemaSummaries: MerchantSchemas {
 	func schemas() -> [MerchantSchemaSummary]
 }
 
-protocol MerchantSchemaSummary {
+public protocol MerchantSchemaSummary {
 	func schemaId() -> String
 
 	func type() -> String
@@ -15,7 +16,7 @@ protocol MerchantSchemaSummary {
 	func description() -> String?
 }
 
-protocol MerchantSchema {
+public protocol MerchantSchema {
 	func schema() -> [String: AnyObject]
 
 	func type() -> String?

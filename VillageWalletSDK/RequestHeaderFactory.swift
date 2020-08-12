@@ -1,5 +1,5 @@
 import UIKit
 
-protocol RequestHeaderFactory {
+public protocol RequestHeaderFactory {
 	func addHeaders(headers: inout [String: String]) -> Void
 }

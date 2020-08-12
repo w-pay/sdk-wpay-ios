@@ -1,18 +1,18 @@
 import UIKit
 
-protocol MerchantTransactions {
+public protocol MerchantTransactions {
 
 }
 
-protocol MerchantTransactionSummaries: MerchantTransactions {
+public protocol MerchantTransactionSummaries: MerchantTransactions {
 	func transactions() -> [MerchantTransactionSummary]
 }
 
-protocol MerchantTransactionSummary: TransactionSummary {
+public protocol MerchantTransactionSummary: TransactionSummary {
 	func walletId() -> String
 }
 
-protocol MerchantTransactionDetails: MerchantTransactionSummary {
+public protocol MerchantTransactionDetails: MerchantTransactionSummary {
 	func basket() -> Basket?
 	func posPayload() -> PosPayload?
 	func merchantPayload() -> MerchantPayload?

@@ -1,8 +1,8 @@
 import UIKit
 
-typealias MerchantPreferences = [String: [String: String]]
+public typealias MerchantPreferences = [String: [String: String]]
 
-protocol VillageMerchantApiRepository: VillageAdministrationApiRepository {
+public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository {
 	func retrieveTransactions(
 		page: Int?,
 		pageSize: Int?,

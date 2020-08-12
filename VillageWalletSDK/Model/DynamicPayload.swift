@@ -1,6 +1,6 @@
 import UIKit
 
-protocol DynamicPayload {
+public protocol DynamicPayload {
 	func schemaId() -> String?
 
 	func payload() -> [String: AnyObject]

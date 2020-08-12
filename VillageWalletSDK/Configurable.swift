@@ -1,5 +1,5 @@
 import UIKit
 
-protocol Configurable {
+public protocol Configurable {
 	func setHost(host: String)
 }

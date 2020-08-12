@@ -1,5 +1,5 @@
 import UIKit
 
-protocol UpdatePaymentSessionRequest {
+public protocol UpdatePaymentSessionRequest {
 	func additionalInfo() -> DynamicPayload
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-protocol QRCode {
+public protocol QRCode {
 	func qrId() -> String
 
 	func referenceId() -> String

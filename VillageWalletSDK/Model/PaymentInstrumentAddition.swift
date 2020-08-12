@@ -1,6 +1,6 @@
 import UIKit
 
-protocol PaymentInstrumentAddition {
+public protocol PaymentInstrumentAddition {
 	func clientReference() -> String
 
 	func wallet() -> Wallet

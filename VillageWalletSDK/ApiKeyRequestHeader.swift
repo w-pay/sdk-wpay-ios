@@ -1,13 +1,13 @@
 import UIKit
 
-class ApiKeyRequestHeader: RequestHeaderFactory {
+public class ApiKeyRequestHeader: RequestHeaderFactory {
 	private let options: VillageOptions
 
-	init(options: VillageOptions) {
+	public init(options: VillageOptions) {
 		self.options = options
 	}
 
-	func addHeaders(headers: inout [String: String]) {
+	public func addHeaders(headers: inout [String: String]) {
 		headers[X_API_KEY] = options.apiKey
 	}
 }

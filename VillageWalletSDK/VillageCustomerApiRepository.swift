@@ -1,11 +1,11 @@
 import UIKit
 
-typealias CustomerPreferences = [String: [String: String]]
+public typealias CustomerPreferences = [String: [String: String]]
 
 /**
  * Defines the low level API operations that the SDK can use to call the Customer Village API
  */
-protocol VillageCustomerApiRepository: VillageAdministrationApiRepository {
+public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository {
 	func retrieveTransactions(
 		paymentRequestId: String?,
 		page: Int?,

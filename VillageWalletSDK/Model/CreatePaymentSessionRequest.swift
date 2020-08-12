@@ -1,6 +1,6 @@
 import UIKit
 
-protocol CreatePaymentSessionRequest {
+public protocol CreatePaymentSessionRequest {
 	func location() -> String
 
 	func additionalInfo() -> DynamicPayload

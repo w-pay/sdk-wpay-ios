@@ -1,6 +1,6 @@
 import UIKit
 
-protocol NewPaymentRequestQRCode {
+public protocol NewPaymentRequestQRCode {
 	func referenceId() -> String
 
 	func referenceType() -> QRCodePaymentReferenceType

@@ -1,6 +1,6 @@
 import UIKit
 
-protocol PaymentSession {
+public protocol PaymentSession {
 	func paymentSessionId() -> String
 
 	func merchantId() -> String

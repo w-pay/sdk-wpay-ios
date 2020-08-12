@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ApiAuthenticator: Configurable {
+public protocol ApiAuthenticator: Configurable {
 	associatedtype T
 
 	func authenticate(callback: @escaping ApiResult<T>) -> Void
@@ -10,12 +10,16 @@ protocol ApiAuthenticator: Configurable {
  * Needed to be able to implement Decorators
  * @see https://stackoverflow.com/questions/62650193/implement-decorator-pattern-with-generics-in-swift
  */
-class AnyApiAuthenticator<T>: ApiAuthenticator {
-	func authenticate(callback: @escaping ApiResult<T>) {
+open class AnyApiAuthenticator<T>: ApiAuthenticator {
+	public init() {
+
+	}
+
+	open func authenticate(callback: @escaping ApiResult<T>) {
 		fatalError("Must implement")
 	}
 
-	func setHost(host: String) {
+	open func setHost(host: String) {
 		fatalError("Must implement")
 	}
 }

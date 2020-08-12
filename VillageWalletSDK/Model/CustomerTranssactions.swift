@@ -1,10 +1,10 @@
 import UIKit
 
-protocol CustomerTransactions {
+public protocol CustomerTransactions {
 
 }
 
-protocol CustomerTransactionUsedPaymentInstrument {
+public protocol CustomerTransactionUsedPaymentInstrument {
 	func paymentInstrumentId() -> String
 
 	func amount() -> NSNumber
@@ -12,16 +12,16 @@ protocol CustomerTransactionUsedPaymentInstrument {
 	func paymentTransactionRef() -> String?
 }
 
-protocol CustomerTransactionSummaries: CustomerTransactions {
+public protocol CustomerTransactionSummaries: CustomerTransactions {
 	func transactions() -> [CustomerTransactionSummary]
 }
 
-protocol CustomerTransactionSummary: TransactionSummary {
+public protocol CustomerTransactionSummary: TransactionSummary {
 	func merchantId() -> String
 
 	func instruments() -> [CustomerTransactionUsedPaymentInstrument]
 }
 
-protocol CustomerTransactionDetails: CustomerTransactionSummary {
+public protocol CustomerTransactionDetails: CustomerTransactionSummary {
 	func basket() -> Basket?
 }

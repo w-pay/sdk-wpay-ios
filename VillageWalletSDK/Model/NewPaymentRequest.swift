@@ -1,6 +1,6 @@
 import UIKit
 
-protocol NewPaymentRequest {
+public protocol NewPaymentRequest {
 	func merchantReferenceId() -> String
 	func grossAmount() -> Decimal
 	func generateQR() -> Bool

@@ -1,10 +1,10 @@
 import UIKit
 
-protocol Basket {
+public protocol Basket {
 	func items() -> [BasketItem]
 }
 
-protocol BasketItem {
+public protocol BasketItem {
 	func label() -> String
 	func description() -> String?
 	func quantity() -> Int?

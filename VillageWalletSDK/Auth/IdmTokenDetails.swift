@@ -1,6 +1,6 @@
 import UIKit
 
-class IdmTokenDetails: Codable {
+public class IdmTokenDetails: Codable {
 	let accessToken: String
 	let accessTokenExpiresIn: Int
 	let refreshToken: String
@@ -9,7 +9,7 @@ class IdmTokenDetails: Codable {
 	let isGuestToken: Bool
 	let idmStatusOK: Bool
 
-	init(
+	public init(
 		accessToken: String,
 		accessTokenExpiresIn: Int,
 		refreshToken: String,

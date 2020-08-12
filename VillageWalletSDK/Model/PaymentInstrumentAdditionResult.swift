@@ -1,6 +1,6 @@
 import UIKit
 
-protocol PaymentInstrumentAdditionResult {
+public protocol PaymentInstrumentAdditionResult {
 	func cardCaptureURL() -> String
 
 	func transactionRef() -> String?

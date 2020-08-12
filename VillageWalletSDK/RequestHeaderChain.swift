@@ -1,13 +1,13 @@
 import UIKit
 
-class RequestHeaderChain: RequestHeadersFactory {
+public class RequestHeaderChain: RequestHeadersFactory {
 	private let factories: [RequestHeaderFactory]
 
-	init(factories: [RequestHeaderFactory]) {
+	public init(factories: [RequestHeaderFactory]) {
 		self.factories = factories
 	}
 
-	func createHeaders() -> [String: String] {
+	public func createHeaders() -> [String: String] {
 		var headers = [String: String]()
 
 		factories.forEach { factory in

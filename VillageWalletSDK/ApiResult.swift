@@ -1,3 +1,3 @@
 import UIKit
 
-typealias ApiResult<T> = (T?, HTTPURLResponse?) -> Void
+public typealias ApiResult<T> = (T?, HTTPURLResponse?) -> Void

@@ -1,10 +1,10 @@
 import UIKit
 
-enum PaymentInstrumentStatus {
+public enum PaymentInstrumentStatus {
 	case UNVERIFIED_PERSISTENT
 	case VERIFIED
 
-	static func valueOf(value: String) -> PaymentInstrumentStatus? {
+	public static func valueOf(value: String) -> PaymentInstrumentStatus? {
 		switch(value.uppercased()) {
 		case "UNVERIFIED_PERSISTENT":
 			return PaymentInstrumentStatus.UNVERIFIED_PERSISTENT
@@ -18,16 +18,16 @@ enum PaymentInstrumentStatus {
 	}
 }
 
-protocol AllPaymentInstruments: PaymentInstruments {
+public protocol AllPaymentInstruments: PaymentInstruments {
 	func everydayPay() -> PaymentInstruments?
 }
 
-protocol PaymentInstruments {
+public protocol PaymentInstruments {
 	func creditCards() -> [CreditCard]
 	func giftCards() -> [GiftCard]
 }
 
-protocol PaymentInstrument {
+public protocol PaymentInstrument {
 	func allowed() -> Bool
 	func cardSuffix() -> String
 	func lastUpdated() -> Date
@@ -41,7 +41,7 @@ protocol PaymentInstrument {
 	func wallet() -> Wallet
 }
 
-protocol CreditCard: PaymentInstrument {
+public protocol CreditCard: PaymentInstrument {
 	func cardName() -> String
 	func cvvValidated() -> Bool
 	func expired() -> Bool
@@ -53,18 +53,18 @@ protocol CreditCard: PaymentInstrument {
 	func stepUp() -> CreditCardStepUp
 }
 
-protocol GiftCard: PaymentInstrument {
+public protocol GiftCard: PaymentInstrument {
 	func programName() -> String
 	func stepUp() -> GiftCardStepUp?
 }
 
-protocol CreditCardStepUp {
+public protocol CreditCardStepUp {
 	func type() -> String
 	func mandatory() -> Bool
 	func url() -> URL
 }
 
-protocol GiftCardStepUp {
+public protocol GiftCardStepUp {
 	func type() -> String
 	func mandatory() -> Bool
 }

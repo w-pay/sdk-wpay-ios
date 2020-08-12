@@ -1,13 +1,14 @@
 import UIKit
 
-protocol MerchantPayments {
+public protocol MerchantPayments {
+
 }
 
-protocol MerchantPaymentSummaries: MerchantPayments {
+public protocol MerchantPaymentSummaries: MerchantPayments {
 	func payments() -> [MerchantPaymentSummary]
 }
 
-protocol MerchantPaymentSummary: Payment {
+public protocol MerchantPaymentSummary: Payment {
 	func usesRemaining() -> Int?
 
 	func expiryTime() -> Date?
@@ -15,7 +16,7 @@ protocol MerchantPaymentSummary: Payment {
 	func specificWalletId() -> String?
 }
 
-protocol MerchantPaymentDetails: MerchantPaymentSummary {
+public protocol MerchantPaymentDetails: MerchantPaymentSummary {
 	func basket() -> Basket?
 
 	func posPayload() -> PosPayload?
