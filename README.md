@@ -1,29 +1,63 @@
-# VillageWalletSDK
+# Woolworths Village Wallet iOS SDK
 
-[![CI Status](https://img.shields.io/travis/Kieran Simpson/VillageWalletSDK.svg?style=flat)](https://travis-ci.org/Kieran Simpson/VillageWalletSDK)
-[![Version](https://img.shields.io/cocoapods/v/VillageWalletSDK.svg?style=flat)](https://cocoapods.org/pods/VillageWalletSDK)
-[![License](https://img.shields.io/cocoapods/l/VillageWalletSDK.svg?style=flat)](https://cocoapods.org/pods/VillageWalletSDK)
-[![Platform](https://img.shields.io/cocoapods/p/VillageWalletSDK.svg?style=flat)](https://cocoapods.org/pods/VillageWalletSDK)
+This project contains a Framework that can facilitate iOS applications accessing the Village API.
 
-## Example
+The SDK is currently in development. Therefore parts may change.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Usage
 
-## Requirements
+The SDK is aligned with the Android variant of the SDK. It has the following core design
+philosophies.
 
-## Installation
+1. Technology agnostic. Different applications may different technology
+choices and an SDK shouldn't force an application to depend on a different
+technology stack as this bloats the build and increases complexity.
 
-VillageWalletSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+2. Swappable. Don't like a particular implementation of a part in the SDK, then
+swap it out for another object that implements the correct protocol.
 
-```ruby
-pod 'VillageWalletSDK'
-```
+The SDK comprises of:
+ - An adaption layer between the Application and the API
+ - An API layer which knows how to communicate with the Village API
+ - An authentication layer.
 
-## Author
+Applications have the flexibility to plug in different implementations of
+the protocols to allow particular technology choices (eg: choice of
+HTTP client library). This makes it very easy to use the SDK in an
+existing project, without necessarily introducing extra dependencies.
 
-Kieran Simpson, kierans777@gmail.com
+The entry point for applications is the `CustomerVillage` class or
+`MerchantVillage` class depending on the goals of the application.
 
-## License
+### Authentication layer
 
-VillageWalletSDK is available under the MIT license. See the LICENSE file for more info.
+In order to access protected APIs, the SDK will need to know how to
+authenticate with the API or a gateway that protects the API. The
+`ApiAuthenticator` protocol abstracts how the SDK authenticates from
+the rest of the API protocol. Applications that have a preexisting
+authentication workflow can either update the relevant classes to implement the
+`ApiAuthenticator` protocol, or provide an [Adapter](https://en.wikipedia.org/wiki/Adapter_pattern#Java)
+to make the existing authentication details available to the application.
+
+### API layer
+
+The API layer is decoupled from the rest of the SDK via the
+`VillageCustomerApiRepository` and `VillageMerchantApiRepository`
+protocols. Consumers need to configure their `Village` instance with
+an implementation of the correct repository that conforms to needs and
+technology choices of the application.
+
+#### Open API Implementation
+
+For convenience, the [Woolworths Village SDK Open API Client](https://github.com/woolworthslimited/paysdk2-openapi-ios)
+project provides an implementation of the API Repository protocols
+that wraps an API Client created with the Open API generator.
+
+#### Reference Application
+
+A [Reference Application](https://github.com/woolworthslimited/paysdk2-reference-ios) is available
+to demonstrate the use of the SDK. The Framework can be imported directly into a XCode project
+or CocoaPods can be used. 
+
+- TODO: Publishing
+- TODO: Tagging
