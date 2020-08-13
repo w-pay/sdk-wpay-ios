@@ -1,6 +1,6 @@
-use_frameworks!
 target 'VillageWalletSDK_Tests' do
+  use_frameworks!
+  platform :ios, "11.0"
+
   pod 'VillageWalletSDK', :path => '../'
-  
-  
 end
