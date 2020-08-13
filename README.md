@@ -61,5 +61,13 @@ A [Reference Application](https://github.com/woolworthslimited/paysdk2-reference
 to demonstrate the use of the SDK. The Framework can be imported directly into a XCode project
 or CocoaPods can be used. 
 
+## Versioning
+
+The SDK follows [Semantic Versioning](https://semver.org/) principles.
+As such if the API specification changes in a way that introduces breaking
+changes (eg: path change or data changes) the major version of the SDK
+will be increased.
+
+The SDK currently supports version 0.0.5 of the API spec.
+
 - TODO: Publishing
-- TODO: Tagging
