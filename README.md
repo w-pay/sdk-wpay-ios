@@ -4,10 +4,9 @@ This project contains a Framework that can facilitate iOS applications accessing
 
 The SDK is currently in development. Therefore parts may change.
 
-## Usage
+## Features
 
-The SDK is aligned with the Android variant of the SDK. It has the following core design
-philosophies.
+The SDK is has the following core design philosophies.
 
 1. Technology agnostic. Different applications may different technology
 choices and an SDK shouldn't force an application to depend on a different
@@ -70,4 +69,65 @@ will be increased.
 
 The SDK currently supports version 0.0.5 of the API spec.
 
-- TODO: Publishing
+## Requirements
+
+The SDK was developed using Xcode 11.5 and is compatible with apps targeting iOS 9.0 or above.
+
+## Getting started
+
+TODO: SDK reference docs
+
+### CocoaPods
+
+If using [CocoaPods](https://cocoapods.org/) add the following to your Podfile
+
+```
+# substitute the tag for the version desired.
+pod "VillageWalletSDK", :git => "git@github.com:woolworthslimited/paysdk2-ios.git", :tag => "v1.0.0"
+
+# don't forget to include an implementation framework of the API repositories.
+```
+
+### Other
+
+Clone the repo and add the project to your XCode workspace.
+
+### Example usage
+
+The examples use the Open API implementation, however any class conforming to the correct protocol
+can be used
+
+```swift
+func createCustomerVillage() -> CustomerVillage<IdmTokenDetails> {
+  let options = VillageOptions(apiKey: "<your key here>")
+  let apiKeyRequestHeader = ApiKeyRequestHeader(options: options)
+  let bearerTokenRequestHeader = BearerTokenRequestHeader()
+  let api =
+    OpenApiVillageCustomerApiRepository(
+      requestHeadersFactory: RequestHeaderChain(
+        factories: [
+          apiKeyRequestHeader,
+          bearerTokenRequestHeader,
+          WalletIdRequestHeader()
+        ]
+      ),
+      // TODO: This should be in a project property
+      contextRoot: "/wow/v1/dpwallet"
+    )
+
+  /*
+   * Currently the creation of the `ApiAuthenticator` has to be in the consuming
+   * application.
+   */
+  let authenticator = ...
+
+  let authentication = StoringApiAuthenticator(delegate: authenticator, store: bearerTokenRequestHeader)
+
+  return CustomerVillage(api: api, authenticator: authentication)
+}
+```
+
+The different methods on the SDK can be now used.
+
+# TODO:
+ - Publishing
