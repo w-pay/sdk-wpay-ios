@@ -71,7 +71,7 @@ The SDK currently supports version 0.0.5 of the API spec.
 
 ## Requirements
 
-The SDK was developed using Xcode 11.5 and is compatible with apps targeting iOS 9.0 or above.
+The SDK was developed using Xcode 11.5, Swift 5.2 and is compatible with apps targeting iOS 9.0 or above.
 
 ## Getting started
 
