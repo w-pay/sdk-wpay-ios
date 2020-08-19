@@ -17,8 +17,14 @@ public class CustomerVillage<A>: Configurable {
 		return authenticator.authenticate(callback: callback)
 	}
 
-	public func retrievePaymentDetails(qrCode: String, callback: @escaping ApiResult<CustomerPaymentRequest>) -> Void {
-		api.retrievePaymentRequestDetailsByQRCode(qrCodeId: qrCode, callback: callback)
+	public func retrievePaymentRequestDetailsByQRCode(
+		qrCode: String,
+		callback: @escaping ApiResult<CustomerPaymentRequest>
+	) -> Void {
+		api.retrievePaymentRequestDetailsByQRCode(
+			qrCodeId: qrCode,
+			callback: callback
+		)
 	}
 
 	public func retrievePaymentInstruments(
