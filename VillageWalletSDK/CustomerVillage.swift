@@ -17,8 +17,14 @@ public class CustomerVillage<A>: Configurable {
 		return authenticator.authenticate(callback: callback)
 	}
 
-	public func retrievePaymentDetails(qrCode: String, callback: @escaping ApiResult<CustomerPaymentRequest>) -> Void {
-		api.retrievePaymentRequestDetailsByQRCode(qrCodeId: qrCode, callback: callback)
+	public func retrievePaymentRequestDetailsByQRCode(
+		qrCode: String,
+		callback: @escaping ApiResult<CustomerPaymentRequest>
+	) -> Void {
+		api.retrievePaymentRequestDetailsByQRCode(
+			qrCodeId: qrCode,
+			callback: callback
+		)
 	}
 
 	public func retrievePaymentInstruments(
@@ -33,7 +39,31 @@ public class CustomerVillage<A>: Configurable {
 		instrument: PaymentInstrument,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	) {
-		api.makePayment(paymentRequest: paymentRequest, instrument: instrument, callback: callback)
+		api.makePayment(
+			paymentRequest: paymentRequest,
+			instrument: instrument,
+			callback: callback
+		)
+	}
+
+	public func retrievePaymentSessionById(
+		paymentSessionId: String,
+		callback: @escaping ApiResult<PaymentSession>
+	) {
+		api.retrieveCustomerPaymentSessionById(
+			paymentSessionId: paymentSessionId,
+			callback: callback
+		)
+	}
+
+	public func retrievePaymentSessionByQRCode(
+		qrCodeId: String,
+		callback: @escaping ApiResult<PaymentSession>
+	) {
+		api.retrieveCustomerPaymentSessionByQRCode(
+			qrCodeId: qrCodeId,
+			callback: callback
+		)
 	}
 
 	public func setHost(host: String) {
