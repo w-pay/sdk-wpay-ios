@@ -27,18 +27,21 @@ public protocol PaymentInstruments {
 	func giftCards() -> [GiftCard]
 }
 
-public protocol PaymentInstrument {
+public protocol PaymentInstrumentIdentifier {
+	func paymentInstrumentId() -> String
+
+	/** what Wallet the instrument is from */
+	func wallet() -> Wallet
+}
+
+public protocol PaymentInstrument: PaymentInstrumentIdentifier {
 	func allowed() -> Bool
 	func cardSuffix() -> String
 	func lastUpdated() -> Date
 	func lastUsed() -> Date?
-	func paymentInstrumentId() -> String
 	func paymentToken() -> String
 	func primary() -> Bool
 	func status() -> PaymentInstrumentStatus?
-
-	/** what Wallet the instrument is from */
-	func wallet() -> Wallet
 }
 
 public protocol CreditCard: PaymentInstrument {
