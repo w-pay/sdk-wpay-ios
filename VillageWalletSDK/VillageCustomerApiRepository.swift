@@ -39,8 +39,8 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 	)
 
 	func makePayment(
-		paymentRequest: CustomerPaymentRequest,
-		instrument: PaymentInstrument,
+		paymentRequestId: String,
+		instrument: PaymentInstrumentIdentifier,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	)
 	
