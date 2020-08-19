@@ -29,11 +29,15 @@ public class CustomerVillage<A>: Configurable {
 	}
 
 	public func makePayment(
-		paymentRequest: CustomerPaymentRequest,
-		instrument: PaymentInstrument,
+		paymentRequestId: String,
+		instrument: PaymentInstrumentIdentifier,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	) {
-		api.makePayment(paymentRequest: paymentRequest, instrument: instrument, callback: callback)
+		api.makePayment(
+			paymentRequestId: paymentRequestId,
+			instrument: instrument,
+			callback: callback
+		)
 	}
 
 	public func setHost(host: String) {
