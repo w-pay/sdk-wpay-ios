@@ -87,4 +87,15 @@ public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
+
+	func updatePaymentSession(
+		paymentSessionId: String,
+		session: MerchantUpdatePaymentSessionRequest,
+		callback: @escaping ApiResult<Void>
+	)
+
+	func deletePaymentSession(
+		paymentSessionId: String,
+		callback: @escaping ApiResult<Void>
+	)
 }

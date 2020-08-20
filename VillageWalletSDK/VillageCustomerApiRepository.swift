@@ -38,9 +38,17 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<AllPaymentInstruments>
 	)
 
+	func deletePaymentInstrument(
+		instrumentId: String,
+		callback: @escaping ApiResult<Void>
+	)
+
 	func makePayment(
 		paymentRequestId: String,
-		instrument: PaymentInstrumentIdentifier,
+		primaryInstrument: PaymentInstrumentIdentifier,
+		secondaryInstruments: [SecondaryPaymentInstrument]?,
+		clientReference: String?,
+		challengeResponses: [ChallengeResponse]?,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	)
 	
@@ -56,19 +64,19 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<Void>
 	)
 
-	func retrieveCustomerPaymentSessionById(
+	func retrievePaymentSessionById(
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
 
-	func retrieveCustomerPaymentSessionByQRCode(
+	func retrievePaymentSessionByQRCode(
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
 
-	func updateCustomerPaymentSession(
+	func updatePaymentSession(
 		paymentSessionId: String,
-		session: UpdatePaymentSessionRequest,
+		session: CustomerUpdatePaymentSessionRequest,
 		callback: @escaping ApiResult<Void>
 	)
 }

@@ -7,7 +7,7 @@ public protocol CustomerTransactions {
 public protocol CustomerTransactionUsedPaymentInstrument {
 	func paymentInstrumentId() -> String
 
-	func amount() -> NSNumber
+	func amount() -> Decimal
 
 	func paymentTransactionRef() -> String?
 }

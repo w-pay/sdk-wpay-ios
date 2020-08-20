@@ -71,3 +71,9 @@ public protocol GiftCardStepUp {
 	func type() -> String
 	func mandatory() -> Bool
 }
+
+public protocol SecondaryPaymentInstrument {
+	func paymentInstrumentId() -> String
+
+	func amount() -> Decimal
+}

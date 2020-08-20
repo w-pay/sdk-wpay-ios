@@ -11,5 +11,7 @@ public protocol PaymentSession {
 
 	func location() -> String
 
-	func additionalInfo() -> DynamicPayload
+	func merchantInfo() -> DynamicPayload
+
+	func customerInfo() -> DynamicPayload?
 }

@@ -3,6 +3,8 @@ import UIKit
 public protocol TransactionSummary: Payment {
 	func transactionId() -> String
 
+	func clientReference() -> String?
+
 	func type() -> TransactionSummaryPaymentType?
 
 	func executionTime() -> Date

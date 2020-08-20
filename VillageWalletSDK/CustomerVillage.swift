@@ -18,11 +18,11 @@ public class CustomerVillage<A>: Configurable {
 	}
 
 	public func retrievePaymentRequestDetailsByQRCode(
-		qrCode: String,
+		qrCodeId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	) -> Void {
 		api.retrievePaymentRequestDetailsByQRCode(
-			qrCodeId: qrCode,
+			qrCodeId: qrCodeId,
 			callback: callback
 		)
 	}
@@ -37,11 +37,17 @@ public class CustomerVillage<A>: Configurable {
 	public func makePayment(
 		paymentRequestId: String,
 		instrument: PaymentInstrumentIdentifier,
+		secondaryInstruments: [SecondaryPaymentInstrument]?,
+		clientReference: String?,
+		challengeResponses: [ChallengeResponse]?,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	) {
 		api.makePayment(
 			paymentRequestId: paymentRequestId,
-			instrument: instrument,
+			primaryInstrument: instrument,
+			secondaryInstruments: secondaryInstruments,
+			clientReference: clientReference,
+			challengeResponses: challengeResponses,
 			callback: callback
 		)
 	}
@@ -50,7 +56,7 @@ public class CustomerVillage<A>: Configurable {
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	) {
-		api.retrieveCustomerPaymentSessionById(
+		api.retrievePaymentSessionById(
 			paymentSessionId: paymentSessionId,
 			callback: callback
 		)
@@ -60,7 +66,7 @@ public class CustomerVillage<A>: Configurable {
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	) {
-		api.retrieveCustomerPaymentSessionByQRCode(
+		api.retrievePaymentSessionByQRCode(
 			qrCodeId: qrCodeId,
 			callback: callback
 		)
