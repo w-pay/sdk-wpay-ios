@@ -20,7 +20,7 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<CustomerTransactionDetails>
 	)
 
-	func retrievePaymentRequestDetailsByQRCode(
+	func retrievePaymentRequestDetailsByQRCodeId(
 		qrCodeId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	)
@@ -69,7 +69,7 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<PaymentSession>
 	)
 
-	func retrievePaymentSessionByQRCode(
+	func retrievePaymentSessionByQRCodeId(
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)

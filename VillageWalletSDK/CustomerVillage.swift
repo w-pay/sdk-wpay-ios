@@ -17,11 +17,11 @@ public class CustomerVillage<A>: Configurable {
 		return authenticator.authenticate(callback: callback)
 	}
 
-	public func retrievePaymentRequestDetailsByQRCode(
+	public func retrievePaymentRequestDetailsByQRCodeId(
 		qrCodeId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	) -> Void {
-		api.retrievePaymentRequestDetailsByQRCode(
+		api.retrievePaymentRequestDetailsByQRCodeId(
 			qrCodeId: qrCodeId,
 			callback: callback
 		)
@@ -62,11 +62,11 @@ public class CustomerVillage<A>: Configurable {
 		)
 	}
 
-	public func retrievePaymentSessionByQRCode(
+	public func retrievePaymentSessionByQRCodeId(
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	) {
-		api.retrievePaymentSessionByQRCode(
+		api.retrievePaymentSessionByQRCodeId(
 			qrCodeId: qrCodeId,
 			callback: callback
 		)
