@@ -21,7 +21,7 @@ public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<QRCode>
 	)
 
-	func retrievePaymentRequestQRCodeContent(
+	func retrievePaymentRequestBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<QRCode>
 	)

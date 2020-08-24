@@ -20,12 +20,12 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<CustomerTransactionDetails>
 	)
 
-	func retrievePaymentRequestDetailsByQRCodeId(
+	func retrievePaymentRequestDetailsBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	)
 
-	func retrievePaymentRequestDetailsById(
+	func retrievePaymentRequestDetailsBy(
 		paymentRequestId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	)
@@ -64,12 +64,12 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<Void>
 	)
 
-	func retrievePaymentSessionById(
+	func retrievePaymentSessionBy(
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
 
-	func retrievePaymentSessionByQRCodeId(
+	func retrievePaymentSessionBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
