@@ -21,7 +21,7 @@ public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<QRCode>
 	)
 
-	func retrievePaymentRequestQRCodeContent(
+	func retrievePaymentRequestBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<QRCode>
 	)
@@ -86,5 +86,16 @@ public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository
 	func retrievePaymentSession(
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
+	)
+
+	func updatePaymentSession(
+		paymentSessionId: String,
+		session: MerchantUpdatePaymentSessionRequest,
+		callback: @escaping ApiResult<Void>
+	)
+
+	func deletePaymentSession(
+		paymentSessionId: String,
+		callback: @escaping ApiResult<Void>
 	)
 }

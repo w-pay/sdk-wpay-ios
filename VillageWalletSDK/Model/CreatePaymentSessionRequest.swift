@@ -3,7 +3,7 @@ import UIKit
 public protocol CreatePaymentSessionRequest {
 	func location() -> String
 
-	func additionalInfo() -> DynamicPayload
+	func merchantInfo() -> DynamicPayload
 
 	// return false by default
 	func generateQR() -> Bool

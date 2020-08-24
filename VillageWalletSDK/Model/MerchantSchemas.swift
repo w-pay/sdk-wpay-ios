@@ -22,4 +22,6 @@ public protocol MerchantSchema {
 	func type() -> String?
 
 	func description() -> String?
+
+	func created() -> Date?
 }

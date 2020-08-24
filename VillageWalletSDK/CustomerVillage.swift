@@ -17,12 +17,12 @@ public class CustomerVillage<A>: Configurable {
 		return authenticator.authenticate(callback: callback)
 	}
 
-	public func retrievePaymentRequestDetailsByQRCode(
-		qrCode: String,
+	public func retrievePaymentRequestDetailsBy(
+		qrCodeId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	) -> Void {
-		api.retrievePaymentRequestDetailsByQRCode(
-			qrCodeId: qrCode,
+		api.retrievePaymentRequestDetailsBy(
+			qrCodeId: qrCodeId,
 			callback: callback
 		)
 	}
@@ -37,30 +37,36 @@ public class CustomerVillage<A>: Configurable {
 	public func makePayment(
 		paymentRequestId: String,
 		instrument: PaymentInstrumentIdentifier,
+		secondaryInstruments: [SecondaryPaymentInstrument]?,
+		clientReference: String?,
+		challengeResponses: [ChallengeResponse]?,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	) {
 		api.makePayment(
 			paymentRequestId: paymentRequestId,
-			instrument: instrument,
+			primaryInstrument: instrument,
+			secondaryInstruments: secondaryInstruments,
+			clientReference: clientReference,
+			challengeResponses: challengeResponses,
 			callback: callback
 		)
 	}
 
-	public func retrievePaymentSessionById(
+	public func retrievePaymentSessionBy(
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	) {
-		api.retrieveCustomerPaymentSessionById(
+		api.retrievePaymentSessionBy(
 			paymentSessionId: paymentSessionId,
 			callback: callback
 		)
 	}
 
-	public func retrievePaymentSessionByQRCode(
+	public func retrievePaymentSessionBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	) {
-		api.retrieveCustomerPaymentSessionByQRCode(
+		api.retrievePaymentSessionBy(
 			qrCodeId: qrCodeId,
 			callback: callback
 		)

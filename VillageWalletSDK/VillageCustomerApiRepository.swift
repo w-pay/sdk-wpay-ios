@@ -20,12 +20,12 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<CustomerTransactionDetails>
 	)
 
-	func retrievePaymentRequestDetailsByQRCode(
+	func retrievePaymentRequestDetailsBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	)
 
-	func retrievePaymentRequestDetailsById(
+	func retrievePaymentRequestDetailsBy(
 		paymentRequestId: String,
 		callback: @escaping ApiResult<CustomerPaymentRequest>
 	)
@@ -38,9 +38,17 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<AllPaymentInstruments>
 	)
 
+	func deletePaymentInstrument(
+		instrumentId: String,
+		callback: @escaping ApiResult<Void>
+	)
+
 	func makePayment(
 		paymentRequestId: String,
-		instrument: PaymentInstrumentIdentifier,
+		primaryInstrument: PaymentInstrumentIdentifier,
+		secondaryInstruments: [SecondaryPaymentInstrument]?,
+		clientReference: String?,
+		challengeResponses: [ChallengeResponse]?,
 		callback: @escaping ApiResult<CustomerTransactionSummary>
 	)
 	
@@ -56,19 +64,19 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		callback: @escaping ApiResult<Void>
 	)
 
-	func retrieveCustomerPaymentSessionById(
+	func retrievePaymentSessionBy(
 		paymentSessionId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
 
-	func retrieveCustomerPaymentSessionByQRCode(
+	func retrievePaymentSessionBy(
 		qrCodeId: String,
 		callback: @escaping ApiResult<PaymentSession>
 	)
 
-	func updateCustomerPaymentSession(
+	func updatePaymentSession(
 		paymentSessionId: String,
-		session: UpdatePaymentSessionRequest,
+		session: CustomerUpdatePaymentSessionRequest,
 		callback: @escaping ApiResult<Void>
 	)
 }
