@@ -1,8 +1,8 @@
 import UIKit
 
-public enum ChallengeResponseType {
-	case STEP_UP
-	case PASSCODE
+public enum ChallengeResponseType: String {
+	case STEP_UP = "STEP_UP"
+	case PASSCODE = "PASSCODE"
 }
 
 public protocol ChallengeResponse {
