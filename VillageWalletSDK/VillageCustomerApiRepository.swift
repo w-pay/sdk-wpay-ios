@@ -39,7 +39,7 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 	)
 
 	func deletePaymentInstrument(
-		instrumentId: String,
+		instrument: PaymentInstrumentIdentifier,
 		callback: @escaping ApiResult<Void>
 	)
 
