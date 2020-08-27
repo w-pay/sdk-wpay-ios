@@ -13,11 +13,11 @@ class StubApiAuthenticator: AnyApiAuthenticator<String> {
 		self.init(error: nil)
 	}
 
-	override func authenticate(callback: @escaping ApiResult<String>) {
+	override func authenticate(completion: @escaping ApiResult<String>) {
 		guard let error = self.error else {
-			return callback(.success("credentials!"))
+			return completion(.success("credentials!"))
 		}
 
-		callback(.failure(error))
+		completion(.failure(error))
 	}
 }

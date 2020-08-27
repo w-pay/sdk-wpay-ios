@@ -12,22 +12,22 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		pageSize: Int?,
 		endTime: Date?,
 		startTime: Date?,
-		callback: @escaping ApiResult<CustomerTransactionSummaries>
+		completion: @escaping ApiResult<CustomerTransactionSummaries>
 	)
 
 	func retrieveTransactionDetails(
 		transactionId: String,
-		callback: @escaping ApiResult<CustomerTransactionDetails>
+		completion: @escaping ApiResult<CustomerTransactionDetails>
 	)
 
 	func retrievePaymentRequestDetailsBy(
 		qrCodeId: String,
-		callback: @escaping ApiResult<CustomerPaymentRequest>
+		completion: @escaping ApiResult<CustomerPaymentRequest>
 	)
 
 	func retrievePaymentRequestDetailsBy(
 		paymentRequestId: String,
-		callback: @escaping ApiResult<CustomerPaymentRequest>
+		completion: @escaping ApiResult<CustomerPaymentRequest>
 	)
 
 	/**
@@ -35,12 +35,12 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 	 */
 	func retrievePaymentInstruments(
 		wallet: Wallet,
-		callback: @escaping ApiResult<AllPaymentInstruments>
+		completion: @escaping ApiResult<AllPaymentInstruments>
 	)
 
 	func deletePaymentInstrument(
 		instrument: PaymentInstrumentIdentifier,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiResult<Void>
 	)
 
 	func makePayment(
@@ -49,34 +49,34 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		secondaryInstruments: [SecondaryPaymentInstrument]?,
 		clientReference: String?,
 		challengeResponses: [ChallengeResponse]?,
-		callback: @escaping ApiResult<CustomerTransactionSummary>
+		completion: @escaping ApiResult<CustomerTransactionSummary>
 	)
 	
 	func initiatePaymentInstrumentAddition(
 		instrument: PaymentInstrumentAddition,
-		callback: @escaping ApiResult<PaymentInstrumentAdditionResult>
+		completion: @escaping ApiResult<PaymentInstrumentAdditionResult>
 	)
 
-	func retrievePreferences(callback: @escaping ApiResult<CustomerPreferences>)
+	func retrievePreferences(completion: @escaping ApiResult<CustomerPreferences>)
 
 	func setPreferences(
 		preferences: CustomerPreferences,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiResult<Void>
 	)
 
 	func retrievePaymentSessionBy(
 		paymentSessionId: String,
-		callback: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiResult<PaymentSession>
 	)
 
 	func retrievePaymentSessionBy(
 		qrCodeId: String,
-		callback: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiResult<PaymentSession>
 	)
 
 	func updatePaymentSession(
 		paymentSessionId: String,
 		session: CustomerUpdatePaymentSessionRequest,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiResult<Void>
 	)
 }

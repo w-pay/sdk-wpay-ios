@@ -9,15 +9,15 @@ public class StoringApiAuthenticator<T>: AnyApiAuthenticator<T> {
 		self.store = store
 	}
 
-	override public func authenticate(callback: @escaping ApiResult<T>) -> Void {
-		delegate.authenticate(callback: { result in
+	override public func authenticate(completion: @escaping ApiResult<T>) -> Void {
+		delegate.authenticate(completion: { result in
 			let credentials = try? result.get()
 
 			if (credentials != nil) {
 				self.store.storeCredentials(credentials: credentials!)
 			}
 
-			callback(result)
+			completion(result)
 		})
 	}
 
