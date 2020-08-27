@@ -16,3 +16,4 @@ public enum ApiError: Error {
 	}
 }
 
+public typealias ApiResult<T> = (Result<T, ApiError>) -> Void

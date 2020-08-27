@@ -1,6 +1,8 @@
-target 'VillageWalletSDK_Tests' do
+target "VillageWalletSDK_Tests" do
   use_frameworks!
   platform :ios, "11.0"
 
-  pod 'VillageWalletSDK', :path => '../'
+  pod "VillageWalletSDK", :path => "../"
+
+  pod "SwiftHamcrest", "~> 2.2.1"
 end

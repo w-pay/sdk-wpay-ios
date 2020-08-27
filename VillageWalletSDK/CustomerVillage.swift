@@ -29,7 +29,7 @@ public class CustomerVillage<A>: Configurable {
 
 	public func retrievePaymentInstruments(
 		wallet: Wallet,
-		callback: @escaping ApiResult<PaymentInstruments>
+		callback: @escaping ApiResult<AllPaymentInstruments>
 	) -> Void {
 		api.retrievePaymentInstruments(wallet: wallet, callback: callback)
 	}

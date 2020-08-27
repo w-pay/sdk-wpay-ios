@@ -1,16 +1,23 @@
 PODS:
-  - VillageWalletSDK (1.0.0)
+  - SwiftHamcrest (2.2.1)
+  - VillageWalletSDK (2.1.0)
 
 DEPENDENCIES:
+  - SwiftHamcrest (~> 2.2.1)
   - VillageWalletSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftHamcrest
 
 EXTERNAL SOURCES:
   VillageWalletSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VillageWalletSDK: 74b446587ad593628facc754b5f354ce8c683754
+  SwiftHamcrest: 67454f9c4c7fae8d7a0f82dfd42f8a54a79095b1
+  VillageWalletSDK: 8470ef438558d2f5b9dd7f1ef96d71ae89bab777
 
-PODFILE CHECKSUM: ef4a437bae1ec352ae24d143a755f014a9e1a8f5
+PODFILE CHECKSUM: aa0efc044c3ab062130326c8b12b1d63e17a9227
 
 COCOAPODS: 1.9.3
