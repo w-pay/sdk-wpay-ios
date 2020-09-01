@@ -17,4 +17,4 @@ public enum ApiError: Error {
 	}
 }
 
-public typealias ApiResult<T> = (Result<T, ApiError>) -> Void
+public typealias ApiCompletion<T> = (Result<T, ApiError>) -> Void

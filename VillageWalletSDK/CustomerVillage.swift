@@ -13,13 +13,13 @@ public class CustomerVillage<A>: Configurable {
 		self.authenticator = authenticator
 	}
 
-	public func authenticate(completion: @escaping ApiResult<A>) {
+	public func authenticate(completion: @escaping ApiCompletion<A>) {
 		return authenticator.authenticate(completion: completion)
 	}
 
 	public func retrievePaymentRequestDetailsBy(
 		qrCodeId: String,
-		completion: @escaping ApiResult<CustomerPaymentRequest>
+		completion: @escaping ApiCompletion<CustomerPaymentRequest>
 	) -> Void {
 		api.retrievePaymentRequestDetailsBy(
 			qrCodeId: qrCodeId,
@@ -29,7 +29,7 @@ public class CustomerVillage<A>: Configurable {
 
 	public func retrievePaymentInstruments(
 		wallet: Wallet,
-		completion: @escaping ApiResult<AllPaymentInstruments>
+		completion: @escaping ApiCompletion<AllPaymentInstruments>
 	) -> Void {
 		api.retrievePaymentInstruments(wallet: wallet, completion: completion)
 	}
@@ -40,7 +40,7 @@ public class CustomerVillage<A>: Configurable {
 		secondaryInstruments: [SecondaryPaymentInstrument]?,
 		clientReference: String?,
 		challengeResponses: [ChallengeResponse]?,
-		completion: @escaping ApiResult<CustomerTransactionSummary>
+		completion: @escaping ApiCompletion<CustomerTransactionSummary>
 	) {
 		api.makePayment(
 			paymentRequestId: paymentRequestId,
@@ -54,7 +54,7 @@ public class CustomerVillage<A>: Configurable {
 
 	public func retrievePaymentSessionBy(
 		paymentSessionId: String,
-		completion: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiCompletion<PaymentSession>
 	) {
 		api.retrievePaymentSessionBy(
 			paymentSessionId: paymentSessionId,
@@ -64,7 +64,7 @@ public class CustomerVillage<A>: Configurable {
 
 	public func retrievePaymentSessionBy(
 		qrCodeId: String,
-		completion: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiCompletion<PaymentSession>
 	) {
 		api.retrievePaymentSessionBy(
 			qrCodeId: qrCodeId,

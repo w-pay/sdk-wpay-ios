@@ -3,7 +3,7 @@ import UIKit
 public protocol ApiAuthenticator: Configurable {
 	associatedtype T
 
-	func authenticate(completion: @escaping ApiResult<T>) -> Void
+	func authenticate(completion: @escaping ApiCompletion<T>) -> Void
 }
 
 /**
@@ -15,7 +15,7 @@ open class AnyApiAuthenticator<T>: ApiAuthenticator {
 
 	}
 
-	open func authenticate(completion: @escaping ApiResult<T>) {
+	open func authenticate(completion: @escaping ApiCompletion<T>) {
 		fatalError("Must implement")
 	}
 
