@@ -10,9 +10,9 @@ public class StoringApiAuthenticator<T>: AnyApiAuthenticator<T> {
 	}
 
 	override public func authenticate(completion: @escaping ApiCompletion<T>) -> Void {
-		delegate.authenticate(completion: { result in
+		delegate.authenticate(completion: { [weak self] result in
 			if let credentials = try? result.get() {
-				self.store.storeCredentials(credentials: credentials)
+				self?.store.storeCredentials(credentials: credentials)
 			}
 
 			completion(result)
