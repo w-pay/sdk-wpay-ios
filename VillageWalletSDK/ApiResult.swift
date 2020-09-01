@@ -1,8 +1,9 @@
 import UIKit
 
 public enum ApiError: Error {
-	case jsonEncoding
-	case jsonDecoding
+	/* details of encoding/decoding errors will be library specific */
+	case jsonEncoding(message: String, details: [String: Any])
+	case jsonDecoding(message: String, details: [String: Any])
 	case httpError(reason: HttpErrorReason, response: HTTPURLResponse)
 
 	// catch all
