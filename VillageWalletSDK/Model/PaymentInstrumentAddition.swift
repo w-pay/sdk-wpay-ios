@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol PaymentInstrumentAddition {
-	func clientReference() -> String
+	var clientReference: String { get }
 
-	func wallet() -> Wallet
+	var wallet: Wallet { get }
 }

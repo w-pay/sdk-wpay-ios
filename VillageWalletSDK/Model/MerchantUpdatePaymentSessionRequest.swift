@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol MerchantUpdatePaymentSessionRequest {
-	func merchantInfo() -> DynamicPayload
+	var merchantInfo: DynamicPayload { get }
 
-	func paymentRequestId() -> String?
+	var paymentRequestId: String? { get }
 }

@@ -5,23 +5,23 @@ public protocol MerchantSchemas {
 }
 
 public protocol MerchantSchemaSummaries: MerchantSchemas {
-	func schemas() -> [MerchantSchemaSummary]
+	var schemas: [MerchantSchemaSummary] { get }
 }
 
 public protocol MerchantSchemaSummary {
-	func schemaId() -> String
+	var schemaId: String { get }
 
-	func type() -> String
+	var type: String { get }
 
-	func description() -> String?
+	var description: String? { get }
 }
 
 public protocol MerchantSchema {
-	func schema() -> [String: AnyObject]
+	var schema: [String: AnyObject] { get }
 
-	func type() -> String?
+	var type: String? { get }
 
-	func description() -> String?
+	var description: String? { get }
 
-	func created() -> Date?
+	var created: Date? { get }
 }

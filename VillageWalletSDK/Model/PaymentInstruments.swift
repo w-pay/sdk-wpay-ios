@@ -19,61 +19,61 @@ public enum PaymentInstrumentStatus {
 }
 
 public protocol AllPaymentInstruments: PaymentInstruments {
-	func everydayPay() -> PaymentInstruments?
+	var everydayPay: PaymentInstruments? { get }
 }
 
 public protocol PaymentInstruments {
-	func creditCards() -> [CreditCard]
-	func giftCards() -> [GiftCard]
+	var creditCards: [CreditCard] { get }
+	var giftCards: [GiftCard] { get }
 }
 
 public protocol PaymentInstrumentIdentifier {
-	func paymentInstrumentId() -> String
+	var paymentInstrumentId: String { get }
 
 	/** what Wallet the instrument is from */
-	func wallet() -> Wallet
+	var wallet: Wallet { get }
 }
 
 public protocol PaymentInstrument: PaymentInstrumentIdentifier {
-	func allowed() -> Bool
-	func cardSuffix() -> String
-	func lastUpdated() -> Date
-	func lastUsed() -> Date?
-	func paymentToken() -> String
-	func primary() -> Bool
-	func status() -> PaymentInstrumentStatus?
+	var allowed: Bool { get }
+	var cardSuffix: String { get }
+	var lastUpdated: Date { get }
+	var lastUsed: Date? { get }
+	var paymentToken: String { get }
+	var primary: Bool { get }
+	var status: PaymentInstrumentStatus? { get }
 }
 
 public protocol CreditCard: PaymentInstrument {
-	func cardName() -> String
-	func cvvValidated() -> Bool
-	func expired() -> Bool
-	func expiryMonth() -> String
-	func expiryYear() -> String
-	func requiresCVV() -> Bool
-	func scheme() -> String
-	func updateURL() -> URL
-	func stepUp() -> CreditCardStepUp
+	var cardName: String { get }
+	var cvvValidated: Bool { get }
+	var expired: Bool { get }
+	var expiryMonth: String { get }
+	var expiryYear: String { get }
+	var requiresCVV: Bool { get }
+	var scheme: String { get }
+	var updateURL: URL { get }
+	var stepUp: CreditCardStepUp { get }
 }
 
 public protocol GiftCard: PaymentInstrument {
-	func programName() -> String
-	func stepUp() -> GiftCardStepUp?
+	var programName: String { get }
+	var stepUp: GiftCardStepUp? { get }
 }
 
 public protocol CreditCardStepUp {
-	func type() -> String
-	func mandatory() -> Bool
-	func url() -> URL
+	var type: String { get }
+	var mandatory: Bool { get }
+	var url: URL { get }
 }
 
 public protocol GiftCardStepUp {
-	func type() -> String
-	func mandatory() -> Bool
+	var type: String { get }
+	var mandatory: Bool { get }
 }
 
 public protocol SecondaryPaymentInstrument {
-	func paymentInstrumentId() -> String
+	var paymentInstrumentId: String { get }
 
-	func amount() -> Decimal
+	var amount: Decimal { get }
 }

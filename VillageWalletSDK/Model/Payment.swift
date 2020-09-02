@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol Payment {
-	func paymentRequestId() -> String
-	func merchantReferenceId() -> String
-	func grossAmount() -> Decimal
+	var paymentRequestId: String { get }
+	var merchantReferenceId: String { get }
+	var grossAmount: Decimal { get }
 }

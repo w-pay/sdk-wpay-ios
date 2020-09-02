@@ -1,15 +1,15 @@
 import UIKit
 
 public protocol QRCode {
-	func qrId() -> String
+	var qrId: String { get }
 
-	func referenceId() -> String
+	var referenceId: String { get }
 
-	func referenceType() -> QRCodePaymentReferenceType?
+	var referenceType: QRCodePaymentReferenceType? { get }
 
-	func content() -> String
+	var content: String { get }
 
-	func image() -> String
+	var image: String { get }
 
-	func expiryTime() -> Date?
+	var expiryTime: Date? { get }
 }

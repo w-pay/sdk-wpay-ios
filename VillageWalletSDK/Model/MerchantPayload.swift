@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol MerchantPayload {
-	func schemaId() -> String?
+	var schemaId: String? { get }
 
-	func payload() -> [String: AnyObject]
+	var payload: [String: AnyObject] { get }
 }

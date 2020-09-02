@@ -1,10 +1,10 @@
 import UIKit
 
 public protocol NewPaymentRequestQRCode {
-	func referenceId() -> String
+	var referenceId: String { get }
 
-	func referenceType() -> QRCodePaymentReferenceType
+	var referenceType: QRCodePaymentReferenceType { get }
 
-	// default is 0
-	func timeToLive() -> Int
+	// should default to 0
+	var timeToLive: Int { get }
 }

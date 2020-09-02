@@ -1,15 +1,15 @@
 import UIKit
 
 public protocol Basket {
-	func items() -> [BasketItem]
+	var items: [BasketItem] { get }
 }
 
 public protocol BasketItem {
-	func label() -> String
-	func description() -> String?
-	func quantity() -> Int?
-	func unitPrice() -> Decimal?
-	func unitMeasure() -> String?
-	func totalPrice() -> Decimal?
-	func tags() -> [String: String]
+	var label: String { get }
+	var description: String?{ get }
+	var quantity: Int? { get }
+	var unitPrice: Decimal? { get }
+	var unitMeasure: String? { get }
+	var totalPrice: Decimal? { get }
+	var tags: [String: String] { get }
 }

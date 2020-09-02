@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol CreatePaymentRequestResult {
-	func paymentRequestId() -> String
+	var paymentRequestId: String { get }
 
-	func qr() -> QRCode?
+	var qr: QRCode? { get }
 }

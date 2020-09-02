@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol CreatePaymentSessionResult {
-	func paymentSessionId() -> String
+	var paymentSessionId: String { get }
 
-	func qr() -> QRCode?
+	var qr: QRCode? { get }
 }

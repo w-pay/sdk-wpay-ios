@@ -4,7 +4,7 @@ public protocol HealthCheck {
 	/**
 	 * @return nil if invalid API data received.
 	 */
-	func result() -> HealthCheckStatus?
+	var result: HealthCheckStatus? { get }
 }
 
 public enum HealthCheckStatus {
