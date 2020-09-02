@@ -8,94 +8,94 @@ public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository
 		pageSize: Int?,
 		endTime: Date?,
 		startTime: Date?,
-		callback: @escaping ApiResult<MerchantTransactionSummaries>
+		completion: @escaping ApiCompletion<MerchantTransactionSummaries>
 	)
 
 	func retrieveTransactionDetails(
 		transactionId: String,
-		callback: @escaping ApiResult<MerchantTransactionDetails>
+		completion: @escaping ApiCompletion<MerchantTransactionDetails>
 	)
 
 	func createPaymentRequestQRCode(
 		details: NewPaymentRequestQRCode,
-		callback: @escaping ApiResult<QRCode>
+		completion: @escaping ApiCompletion<QRCode>
 	)
 
 	func retrievePaymentRequestBy(
 		qrCodeId: String,
-		callback: @escaping ApiResult<QRCode>
+		completion: @escaping ApiCompletion<QRCode>
 	)
 
 	func cancelPaymentQRCode(
 		qrCodeId: String,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiCompletion<Void>
 	)
 
 	func retrievePaymentList(
 		type: String?,
 		page: Int?,
 		pageSize: Int?,
-		callback: @escaping ApiResult<MerchantPaymentSummaries>
+		completion: @escaping ApiCompletion<MerchantPaymentSummaries>
 	)
 
 	func createNewPaymentRequest(
 		paymentRequest: NewPaymentRequest,
-		callback: @escaping ApiResult<CreatePaymentRequestResult>
+		completion: @escaping ApiCompletion<CreatePaymentRequestResult>
 	)
 
 	func retrievePaymentRequestDetails(
 		paymentRequestId: String,
-		callback: @escaping ApiResult<MerchantPaymentDetails>
+		completion: @escaping ApiCompletion<MerchantPaymentDetails>
 	)
 
 	func deletePaymentRequest(
 		paymentRequestId: String,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiCompletion<Void>
 	)
 
 	func refundTransaction(
 		transactionId: String,
 		refundDetails: TransactionRefundDetails,
-		callback: @escaping ApiResult<MerchantTransactionSummary>
+		completion: @escaping ApiCompletion<MerchantTransactionSummary>
 	)
 
-	func retrievePreferences(callback: @escaping ApiResult<MerchantPreferences>)
+	func retrievePreferences(completion: @escaping ApiCompletion<MerchantPreferences>)
 
 	func setPreferences(
 		preferences: MerchantPreferences,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiCompletion<Void>
 	)
 
-	func retrieveSchemas(callback: @escaping ApiResult<MerchantSchemaSummaries>)
+	func retrieveSchemas(completion: @escaping ApiCompletion<MerchantSchemaSummaries>)
 
 	func retrieveSchemaDetails(
 		schemaId: String,
-		callback: @escaping ApiResult<MerchantSchema>
+		completion: @escaping ApiCompletion<MerchantSchema>
 	)
 
 	func createSchema(
 		schema: MerchantSchema,
-		callback: @escaping ApiResult<MerchantSchemaSummary>
+		completion: @escaping ApiCompletion<MerchantSchemaSummary>
 	)
 
 	func createPaymentSession(
 		request: CreatePaymentSessionRequest,
-		callback: @escaping ApiResult<CreatePaymentSessionResult>
+		completion: @escaping ApiCompletion<CreatePaymentSessionResult>
 	)
 
 	func retrievePaymentSession(
 		paymentSessionId: String,
-		callback: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiCompletion<PaymentSession>
 	)
 
 	func updatePaymentSession(
 		paymentSessionId: String,
 		session: MerchantUpdatePaymentSessionRequest,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiCompletion<Void>
 	)
 
 	func deletePaymentSession(
 		paymentSessionId: String,
-		callback: @escaping ApiResult<Void>
+		completion: @escaping ApiCompletion<Void>
 	)
 }

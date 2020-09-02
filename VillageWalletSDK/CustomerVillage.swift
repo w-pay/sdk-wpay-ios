@@ -13,25 +13,25 @@ public class CustomerVillage<A>: Configurable {
 		self.authenticator = authenticator
 	}
 
-	public func authenticate(callback: @escaping ApiResult<A>) {
-		return authenticator.authenticate(callback: callback)
+	public func authenticate(completion: @escaping ApiCompletion<A>) {
+		return authenticator.authenticate(completion: completion)
 	}
 
 	public func retrievePaymentRequestDetailsBy(
 		qrCodeId: String,
-		callback: @escaping ApiResult<CustomerPaymentRequest>
+		completion: @escaping ApiCompletion<CustomerPaymentRequest>
 	) -> Void {
 		api.retrievePaymentRequestDetailsBy(
 			qrCodeId: qrCodeId,
-			callback: callback
+			completion: completion
 		)
 	}
 
 	public func retrievePaymentInstruments(
 		wallet: Wallet,
-		callback: @escaping ApiResult<PaymentInstruments>
+		completion: @escaping ApiCompletion<AllPaymentInstruments>
 	) -> Void {
-		api.retrievePaymentInstruments(wallet: wallet, callback: callback)
+		api.retrievePaymentInstruments(wallet: wallet, completion: completion)
 	}
 
 	public func makePayment(
@@ -40,7 +40,7 @@ public class CustomerVillage<A>: Configurable {
 		secondaryInstruments: [SecondaryPaymentInstrument]?,
 		clientReference: String?,
 		challengeResponses: [ChallengeResponse]?,
-		callback: @escaping ApiResult<CustomerTransactionSummary>
+		completion: @escaping ApiCompletion<CustomerTransactionSummary>
 	) {
 		api.makePayment(
 			paymentRequestId: paymentRequestId,
@@ -48,27 +48,27 @@ public class CustomerVillage<A>: Configurable {
 			secondaryInstruments: secondaryInstruments,
 			clientReference: clientReference,
 			challengeResponses: challengeResponses,
-			callback: callback
+			completion: completion
 		)
 	}
 
 	public func retrievePaymentSessionBy(
 		paymentSessionId: String,
-		callback: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiCompletion<PaymentSession>
 	) {
 		api.retrievePaymentSessionBy(
 			paymentSessionId: paymentSessionId,
-			callback: callback
+			completion: completion
 		)
 	}
 
 	public func retrievePaymentSessionBy(
 		qrCodeId: String,
-		callback: @escaping ApiResult<PaymentSession>
+		completion: @escaping ApiCompletion<PaymentSession>
 	) {
 		api.retrievePaymentSessionBy(
 			qrCodeId: qrCodeId,
-			callback: callback
+			completion: completion
 		)
 	}
 
