@@ -129,5 +129,13 @@ func createCustomerVillage() -> CustomerVillage<IdmTokenDetails> {
 
 The different methods on the SDK can be now used.
 
+### Documentation
+
+The SDK reference docs are generated using [Jazzy](https://github.com/realm/jazzy)
+
+```
+$ jazzy --config .jazzy.yml
+```
+
 # TODO:
  - Publishing

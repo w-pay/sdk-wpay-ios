@@ -1,0 +1,12 @@
+output: docs
+clean: true
+sdk: iphonesimulator
+author: Woolworths
+author_url: https://www.woolworths.com.au/
+podspec: VillageWalletSDK.podspec
+github_url: https://github.com/woolworthslimited/paysdk2-ios
+#github_file_prefix: https://github.com/woolworthslimited/paysdk2-ios/tree/master
+skip_undocumented: false
+hide_documentation_coverage: false
+theme: fullwidth
+
