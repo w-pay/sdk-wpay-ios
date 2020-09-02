@@ -1,16 +1,16 @@
 import UIKit
 
 public protocol CreatePaymentSessionRequest {
-	func location() -> String
+	var location: String { get }
 
-	func merchantInfo() -> DynamicPayload
+	var merchantInfo: DynamicPayload { get }
 
-	// return false by default
-	func generateQR() -> Bool
+	// should return false by default
+	var generateQR: Bool { get }
 
-	// return 0 by default
-	func timeToLivePaymentSession() -> Int
+	// should return 0 by default
+	var timeToLivePaymentSession: Int { get }
 
-	// return 0 by default
-	func timeToLiveQR() -> Int
+	// should return 0 by default
+	var timeToLiveQR: Int { get }
 }

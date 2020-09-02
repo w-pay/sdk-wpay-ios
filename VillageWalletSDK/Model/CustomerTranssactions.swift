@@ -5,23 +5,23 @@ public protocol CustomerTransactions {
 }
 
 public protocol CustomerTransactionUsedPaymentInstrument {
-	func paymentInstrumentId() -> String
+	var paymentInstrumentId: String { get }
 
-	func amount() -> Decimal
+	var amount: Decimal { get }
 
-	func paymentTransactionRef() -> String?
+	var paymentTransactionRef: String? { get }
 }
 
 public protocol CustomerTransactionSummaries: CustomerTransactions {
-	func transactions() -> [CustomerTransactionSummary]
+	var transactions: [CustomerTransactionSummary] { get }
 }
 
 public protocol CustomerTransactionSummary: TransactionSummary {
-	func merchantId() -> String
+	var merchantId: String { get }
 
-	func instruments() -> [CustomerTransactionUsedPaymentInstrument]
+	var instruments: [CustomerTransactionUsedPaymentInstrument] { get }
 }
 
 public protocol CustomerTransactionDetails: CustomerTransactionSummary {
-	func basket() -> Basket?
+	var basket: Basket? { get }
 }

@@ -1,17 +1,17 @@
 import UIKit
 
 public protocol PaymentSession {
-	func paymentSessionId() -> String
+	var paymentSessionId: String { get }
 
-	func merchantId() -> String
+	var merchantId: String { get }
 
-	func walletId() -> String?
+	var walletId: String? { get }
 
-	func expiryTime() -> Date
+	var expiryTime: Date { get }
 
-	func location() -> String
+	var location: String { get }
 
-	func merchantInfo() -> DynamicPayload
+	var merchantInfo: DynamicPayload { get }
 
-	func customerInfo() -> DynamicPayload?
+	var customerInfo: DynamicPayload? { get }
 }

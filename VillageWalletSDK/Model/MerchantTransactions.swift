@@ -5,15 +5,15 @@ public protocol MerchantTransactions {
 }
 
 public protocol MerchantTransactionSummaries: MerchantTransactions {
-	func transactions() -> [MerchantTransactionSummary]
+	var transactions: [MerchantTransactionSummary] { get }
 }
 
 public protocol MerchantTransactionSummary: TransactionSummary {
-	func walletId() -> String
+	var walletId: String { get }
 }
 
 public protocol MerchantTransactionDetails: MerchantTransactionSummary {
-	func basket() -> Basket?
-	func posPayload() -> PosPayload?
-	func merchantPayload() -> MerchantPayload?
+	var basket: Basket? { get }
+	var posPayload: PosPayload? { get }
+	var merchantPayload: MerchantPayload? { get }
 }

@@ -6,11 +6,11 @@ public enum ChallengeResponseType: String {
 }
 
 public protocol ChallengeResponse {
-	func instrumentId() -> String
+	var instrumentId: String { get }
 
-	func type() -> ChallengeResponseType
+	var type: ChallengeResponseType { get }
 
-	func token() -> String
+	var token: String { get }
 
-	func reference() -> String?
+	var reference: String? { get }
 }

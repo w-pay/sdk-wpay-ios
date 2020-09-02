@@ -1,22 +1,22 @@
 import UIKit
 
 public protocol TransactionSummary: Payment {
-	func transactionId() -> String
+	var transactionId: String { get }
 
-	func clientReference() -> String?
+	var clientReference: String? { get }
 
-	func type() -> TransactionSummaryPaymentType?
+	var type: TransactionSummaryPaymentType? { get }
 
-	func executionTime() -> Date
+	var executionTime: Date { get }
 
-	func status() -> TransactionSummaryPaymentStatus?
+	var status: TransactionSummaryPaymentStatus? { get }
 
 	/*
 	 * The return type has yet to be defined in the spec.
 	 */
-	func statusDetail() -> AnyObject?
+	var statusDetail: AnyObject? { get }
 
-	func refundReason() -> String?
+	var refundReason: String? { get }
 }
 
 public enum TransactionSummaryPaymentType {

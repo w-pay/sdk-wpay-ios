@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol TransactionRefundDetails {
-	func reason() -> String
+	var reason: String { get }
 
-	func clientReference() -> String?
+	var clientReference: String? { get }
 }

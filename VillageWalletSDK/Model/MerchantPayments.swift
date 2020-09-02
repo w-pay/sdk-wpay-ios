@@ -5,21 +5,21 @@ public protocol MerchantPayments {
 }
 
 public protocol MerchantPaymentSummaries: MerchantPayments {
-	func payments() -> [MerchantPaymentSummary]
+	var payments: [MerchantPaymentSummary] { get }
 }
 
 public protocol MerchantPaymentSummary: Payment {
-	func usesRemaining() -> Int?
+	var usesRemaining: Int? { get }
 
-	func expiryTime() -> Date?
+	var expiryTime: Date? { get }
 
-	func specificWalletId() -> String?
+	var specificWalletId: String? { get }
 }
 
 public protocol MerchantPaymentDetails: MerchantPaymentSummary {
-	func basket() -> Basket?
+	var basket: Basket? { get }
 
-	func posPayload() -> PosPayload?
+	var posPayload: PosPayload? { get }
 
-	func merchantPayload() -> MerchantPayload?
+	var merchantPayload: MerchantPayload? { get }
 }
