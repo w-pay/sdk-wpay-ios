@@ -24,7 +24,77 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
       "line": 3,
-      "symbol": "ApiResult",
+      "symbol": "ApiError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 5,
+      "symbol": "ApiError.jsonEncoding(message:details:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 6,
+      "symbol": "ApiError.jsonDecoding(message:details:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 7,
+      "symbol": "ApiError.httpError(reason:response:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 10,
+      "symbol": "ApiError.error(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 12,
+      "symbol": "ApiError.HTTPErrorReason",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 13,
+      "symbol": "ApiError.HTTPErrorReason.invalidInput",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 14,
+      "symbol": "ApiError.HTTPErrorReason.unauthorised",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 15,
+      "symbol": "ApiError.HTTPErrorReason.processingError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 16,
+      "symbol": "ApiError.HTTPErrorReason.serverError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/ApiResult.swift",
+      "line": 20,
+      "symbol": "ApiCompletion",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
@@ -45,7 +115,7 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Auth/ApiAuthenticator.swift",
       "line": 6,
-      "symbol": "ApiAuthenticator.authenticate(callback:)",
+      "symbol": "ApiAuthenticator.authenticate(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -59,7 +129,7 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Auth/ApiAuthenticator.swift",
       "line": 18,
-      "symbol": "AnyApiAuthenticator.authenticate(callback:)",
+      "symbol": "AnyApiAuthenticator.authenticate(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -136,7 +206,7 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Auth/StoringApiAuthenticator.swift",
       "line": 12,
-      "symbol": "StoringApiAuthenticator.authenticate(callback:)",
+      "symbol": "StoringApiAuthenticator.authenticate(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -199,34 +269,48 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
       "line": 16,
-      "symbol": "CustomerVillage.authenticate(callback:)",
+      "symbol": "CustomerVillage.authenticate(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
       "line": 20,
-      "symbol": "CustomerVillage.retrievePaymentDetails(qrCode:callback:)",
+      "symbol": "CustomerVillage.retrievePaymentRequestDetailsBy(qrCodeId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
-      "line": 24,
-      "symbol": "CustomerVillage.retrievePaymentInstruments(wallet:callback:)",
+      "line": 30,
+      "symbol": "CustomerVillage.retrievePaymentInstruments(wallet:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
-      "line": 31,
-      "symbol": "CustomerVillage.makePayment(paymentRequest:instrument:callback:)",
+      "line": 37,
+      "symbol": "CustomerVillage.makePayment(paymentRequestId:instrument:secondaryInstruments:clientReference:challengeResponses:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
-      "line": 39,
+      "line": 55,
+      "symbol": "CustomerVillage.retrievePaymentSessionBy(paymentSessionId:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
+      "line": 65,
+      "symbol": "CustomerVillage.retrievePaymentSessionBy(qrCodeId:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/CustomerVillage.swift",
+      "line": 75,
       "symbol": "CustomerVillage.setHost(host:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -276,8 +360,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 4,
-      "symbol": "Basket.items()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "Basket.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -290,50 +374,106 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 8,
-      "symbol": "BasketItem.label()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 9,
-      "symbol": "BasketItem.description()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 10,
-      "symbol": "BasketItem.quantity()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 11,
-      "symbol": "BasketItem.unitPrice()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.unitPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 12,
-      "symbol": "BasketItem.unitMeasure()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.unitMeasure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 13,
-      "symbol": "BasketItem.totalPrice()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.totalPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Basket.swift",
       "line": 14,
-      "symbol": "BasketItem.tags()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "BasketItem.tags",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 3,
+      "symbol": "ChallengeResponseType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 4,
+      "symbol": "ChallengeResponseType.STEP_UP",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 5,
+      "symbol": "ChallengeResponseType.PASSCODE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 8,
+      "symbol": "ChallengeResponse",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 9,
+      "symbol": "ChallengeResponse.instrumentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 11,
+      "symbol": "ChallengeResponse.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 13,
+      "symbol": "ChallengeResponse.token",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
+      "line": 15,
+      "symbol": "ChallengeResponse.reference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -346,15 +486,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentRequestResult.swift",
       "line": 4,
-      "symbol": "CreatePaymentRequestResult.paymentRequestId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentRequestResult.paymentRequestId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentRequestResult.swift",
       "line": 6,
-      "symbol": "CreatePaymentRequestResult.qr()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentRequestResult.qr",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -367,36 +507,36 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionRequest.swift",
       "line": 4,
-      "symbol": "CreatePaymentSessionRequest.location()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionRequest.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionRequest.swift",
       "line": 6,
-      "symbol": "CreatePaymentSessionRequest.additionalInfo()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionRequest.merchantInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionRequest.swift",
       "line": 9,
-      "symbol": "CreatePaymentSessionRequest.generateQR()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionRequest.generateQR",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionRequest.swift",
       "line": 12,
-      "symbol": "CreatePaymentSessionRequest.timeToLivePaymentSession()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionRequest.timeToLivePaymentSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionRequest.swift",
       "line": 15,
-      "symbol": "CreatePaymentSessionRequest.timeToLiveQR()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionRequest.timeToLiveQR",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -409,15 +549,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionResult.swift",
       "line": 4,
-      "symbol": "CreatePaymentSessionResult.paymentSessionId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionResult.paymentSessionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CreatePaymentSessionResult.swift",
       "line": 6,
-      "symbol": "CreatePaymentSessionResult.qr()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreatePaymentSessionResult.qr",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -430,15 +570,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerPaymentRequest.swift",
       "line": 4,
-      "symbol": "CustomerPaymentRequest.merchantId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerPaymentRequest.merchantId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerPaymentRequest.swift",
       "line": 5,
-      "symbol": "CustomerPaymentRequest.basket()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerPaymentRequest.basket",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -458,22 +598,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 8,
-      "symbol": "CustomerTransactionUsedPaymentInstrument.paymentInstrumentId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionUsedPaymentInstrument.paymentInstrumentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 10,
-      "symbol": "CustomerTransactionUsedPaymentInstrument.amount()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionUsedPaymentInstrument.amount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 12,
-      "symbol": "CustomerTransactionUsedPaymentInstrument.paymentTransactionRef()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionUsedPaymentInstrument.paymentTransactionRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -486,8 +626,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 16,
-      "symbol": "CustomerTransactionSummaries.transactions()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionSummaries.transactions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -500,15 +640,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 20,
-      "symbol": "CustomerTransactionSummary.merchantId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionSummary.merchantId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 22,
-      "symbol": "CustomerTransactionSummary.instruments()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionSummary.instruments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -521,8 +661,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerTranssactions.swift",
       "line": 26,
-      "symbol": "CustomerTransactionDetails.basket()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CustomerTransactionDetails.basket",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerUpdatePaymentSessionRequest.swift",
+      "line": 3,
+      "symbol": "CustomerUpdatePaymentSessionRequest",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerUpdatePaymentSessionRequest.swift",
+      "line": 4,
+      "symbol": "CustomerUpdatePaymentSessionRequest.customerInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -535,15 +689,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DynamicPayload.swift",
       "line": 4,
-      "symbol": "DynamicPayload.schemaId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "DynamicPayload.schemaId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DynamicPayload.swift",
       "line": 6,
-      "symbol": "DynamicPayload.payload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "DynamicPayload.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -584,15 +738,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayload.swift",
       "line": 4,
-      "symbol": "MerchantPayload.schemaId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPayload.schemaId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayload.swift",
       "line": 6,
-      "symbol": "MerchantPayload.payload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPayload.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -612,8 +766,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 8,
-      "symbol": "MerchantPaymentSummaries.payments()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentSummaries.payments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -626,22 +780,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 12,
-      "symbol": "MerchantPaymentSummary.usesRemaining()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentSummary.usesRemaining",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 14,
-      "symbol": "MerchantPaymentSummary.expiryTime()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentSummary.expiryTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 16,
-      "symbol": "MerchantPaymentSummary.specificWalletId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentSummary.specificWalletId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -654,22 +808,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 20,
-      "symbol": "MerchantPaymentDetails.basket()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentDetails.basket",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 22,
-      "symbol": "MerchantPaymentDetails.posPayload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentDetails.posPayload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantPayments.swift",
       "line": 24,
-      "symbol": "MerchantPaymentDetails.merchantPayload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantPaymentDetails.merchantPayload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -689,8 +843,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 8,
-      "symbol": "MerchantSchemaSummaries.schemas()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchemaSummaries.schemas",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -703,22 +857,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 12,
-      "symbol": "MerchantSchemaSummary.schemaId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchemaSummary.schemaId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 14,
-      "symbol": "MerchantSchemaSummary.type()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchemaSummary.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 16,
-      "symbol": "MerchantSchemaSummary.description()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchemaSummary.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -731,22 +885,29 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 20,
-      "symbol": "MerchantSchema.schema()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchema.schema",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 22,
-      "symbol": "MerchantSchema.type()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchema.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
       "line": 24,
-      "symbol": "MerchantSchema.description()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantSchema.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantSchemas.swift",
+      "line": 26,
+      "symbol": "MerchantSchema.created",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -766,8 +927,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantTransactions.swift",
       "line": 8,
-      "symbol": "MerchantTransactionSummaries.transactions()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantTransactionSummaries.transactions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -780,8 +941,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantTransactions.swift",
       "line": 12,
-      "symbol": "MerchantTransactionSummary.walletId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantTransactionSummary.walletId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -794,22 +955,43 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantTransactions.swift",
       "line": 16,
-      "symbol": "MerchantTransactionDetails.basket()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantTransactionDetails.basket",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantTransactions.swift",
       "line": 17,
-      "symbol": "MerchantTransactionDetails.posPayload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantTransactionDetails.posPayload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantTransactions.swift",
       "line": 18,
-      "symbol": "MerchantTransactionDetails.merchantPayload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "MerchantTransactionDetails.merchantPayload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantUpdatePaymentSessionRequest.swift",
+      "line": 3,
+      "symbol": "MerchantUpdatePaymentSessionRequest",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantUpdatePaymentSessionRequest.swift",
+      "line": 4,
+      "symbol": "MerchantUpdatePaymentSessionRequest.merchantInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantUpdatePaymentSessionRequest.swift",
+      "line": 6,
+      "symbol": "MerchantUpdatePaymentSessionRequest.paymentRequestId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -822,71 +1004,71 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 4,
-      "symbol": "NewPaymentRequest.merchantReferenceId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.merchantReferenceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 5,
-      "symbol": "NewPaymentRequest.grossAmount()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.grossAmount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 6,
-      "symbol": "NewPaymentRequest.generateQR()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.generateQR",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 7,
-      "symbol": "NewPaymentRequest.maxUses()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.maxUses",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 8,
-      "symbol": "NewPaymentRequest.timeToLivePayment()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.timeToLivePayment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 9,
-      "symbol": "NewPaymentRequest.timeToLiveQR()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.timeToLiveQR",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 10,
-      "symbol": "NewPaymentRequest.specificWalletId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.specificWalletId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 11,
-      "symbol": "NewPaymentRequest.basket()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.basket",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 12,
-      "symbol": "NewPaymentRequest.posPayload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.posPayload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequest.swift",
       "line": 13,
-      "symbol": "NewPaymentRequest.merchantPayload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequest.merchantPayload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -899,22 +1081,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequestQRCode.swift",
       "line": 4,
-      "symbol": "NewPaymentRequestQRCode.referenceId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequestQRCode.referenceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequestQRCode.swift",
       "line": 6,
-      "symbol": "NewPaymentRequestQRCode.referenceType()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequestQRCode.referenceType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/NewPaymentRequestQRCode.swift",
       "line": 9,
-      "symbol": "NewPaymentRequestQRCode.timeToLive()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "NewPaymentRequestQRCode.timeToLive",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -927,22 +1109,22 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Payment.swift",
       "line": 4,
-      "symbol": "Payment.paymentRequestId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "Payment.paymentRequestId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Payment.swift",
       "line": 5,
-      "symbol": "Payment.merchantReferenceId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "Payment.merchantReferenceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/Payment.swift",
       "line": 6,
-      "symbol": "Payment.grossAmount()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "Payment.grossAmount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -955,15 +1137,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstrumentAddition.swift",
       "line": 4,
-      "symbol": "PaymentInstrumentAddition.clientReference()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrumentAddition.clientReference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstrumentAddition.swift",
       "line": 6,
-      "symbol": "PaymentInstrumentAddition.wallet()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrumentAddition.wallet",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -976,15 +1158,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstrumentAdditionResult.swift",
       "line": 4,
-      "symbol": "PaymentInstrumentAdditionResult.cardCaptureURL()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrumentAdditionResult.cardCaptureURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstrumentAdditionResult.swift",
       "line": 6,
-      "symbol": "PaymentInstrumentAdditionResult.transactionRef()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrumentAdditionResult.transactionRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1025,8 +1207,8 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 22,
-      "symbol": "AllPaymentInstruments.everydayPay()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "AllPaymentInstruments.everydayPay",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1039,218 +1221,246 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 26,
-      "symbol": "PaymentInstruments.creditCards()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstruments.creditCards",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 27,
-      "symbol": "PaymentInstruments.giftCards()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstruments.giftCards",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 30,
-      "symbol": "PaymentInstrument",
+      "symbol": "PaymentInstrumentIdentifier",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 31,
-      "symbol": "PaymentInstrument.allowed()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 32,
-      "symbol": "PaymentInstrument.cardSuffix()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 33,
-      "symbol": "PaymentInstrument.lastUpdated()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 34,
-      "symbol": "PaymentInstrument.lastUsed()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 35,
-      "symbol": "PaymentInstrument.paymentInstrumentId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 36,
-      "symbol": "PaymentInstrument.paymentToken()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrumentIdentifier.paymentInstrumentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 37,
-      "symbol": "PaymentInstrument.primary()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrument",
+      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 38,
-      "symbol": "PaymentInstrument.status()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentInstrument.allowed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 39,
+      "symbol": "PaymentInstrument.cardSuffix",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 40,
+      "symbol": "PaymentInstrument.lastUpdated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 41,
+      "symbol": "PaymentInstrument.lastUsed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 42,
+      "symbol": "PaymentInstrument.paymentToken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 43,
+      "symbol": "PaymentInstrument.primary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 44,
+      "symbol": "PaymentInstrument.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 47,
       "symbol": "CreditCard",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 45,
-      "symbol": "CreditCard.cardName()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 46,
-      "symbol": "CreditCard.cvvValidated()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 47,
-      "symbol": "CreditCard.expired()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 48,
-      "symbol": "CreditCard.expiryMonth()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreditCard.cardName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 49,
-      "symbol": "CreditCard.expiryYear()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreditCard.cvvValidated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 50,
-      "symbol": "CreditCard.requiresCVV()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreditCard.expired",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 51,
-      "symbol": "CreditCard.scheme()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreditCard.expiryMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 52,
-      "symbol": "CreditCard.updateURL()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreditCard.expiryYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 53,
-      "symbol": "CreditCard.stepUp()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "CreditCard.requiresCVV",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 54,
+      "symbol": "CreditCard.scheme",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 55,
+      "symbol": "CreditCard.updateURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 56,
+      "symbol": "CreditCard.stepUp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 59,
       "symbol": "GiftCard",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 57,
-      "symbol": "GiftCard.programName()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 58,
-      "symbol": "GiftCard.stepUp()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 60,
+      "symbol": "GiftCard.programName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 61,
+      "symbol": "GiftCard.stepUp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 64,
       "symbol": "CreditCardStepUp",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 62,
-      "symbol": "CreditCardStepUp.type()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 65,
+      "symbol": "CreditCardStepUp.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 63,
-      "symbol": "CreditCardStepUp.mandatory()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 64,
-      "symbol": "CreditCardStepUp.url()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 66,
+      "symbol": "CreditCardStepUp.mandatory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
       "line": 67,
+      "symbol": "CreditCardStepUp.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 70,
       "symbol": "GiftCardStepUp",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 68,
-      "symbol": "GiftCardStepUp.type()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 71,
+      "symbol": "GiftCardStepUp.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
-      "line": 69,
-      "symbol": "GiftCardStepUp.mandatory()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 72,
+      "symbol": "GiftCardStepUp.mandatory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 75,
+      "symbol": "SecondaryPaymentInstrument",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 76,
+      "symbol": "SecondaryPaymentInstrument.paymentInstrumentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentInstruments.swift",
+      "line": 78,
+      "symbol": "SecondaryPaymentInstrument.amount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1263,43 +1473,50 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
       "line": 4,
-      "symbol": "PaymentSession.paymentSessionId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentSession.paymentSessionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
       "line": 6,
-      "symbol": "PaymentSession.merchantId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentSession.merchantId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
       "line": 8,
-      "symbol": "PaymentSession.walletId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentSession.walletId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
       "line": 10,
-      "symbol": "PaymentSession.expiryTime()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentSession.expiryTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
       "line": 12,
-      "symbol": "PaymentSession.location()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentSession.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
       "line": 14,
-      "symbol": "PaymentSession.additionalInfo()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PaymentSession.merchantInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PaymentSession.swift",
+      "line": 16,
+      "symbol": "PaymentSession.customerInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1312,15 +1529,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PosPayload.swift",
       "line": 4,
-      "symbol": "PosPayload.schemaId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PosPayload.schemaId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/PosPayload.swift",
       "line": 6,
-      "symbol": "PosPayload.payload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "PosPayload.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1333,43 +1550,43 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/QRCode.swift",
       "line": 4,
-      "symbol": "QRCode.qrId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "QRCode.qrId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/QRCode.swift",
       "line": 6,
-      "symbol": "QRCode.referenceId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "QRCode.referenceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/QRCode.swift",
       "line": 8,
-      "symbol": "QRCode.referenceType()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "QRCode.referenceType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/QRCode.swift",
       "line": 10,
-      "symbol": "QRCode.content()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "QRCode.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/QRCode.swift",
       "line": 12,
-      "symbol": "QRCode.image()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "QRCode.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/QRCode.swift",
       "line": 14,
-      "symbol": "QRCode.expiryTime()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "QRCode.expiryTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1410,8 +1627,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionRefundDetails.swift",
       "line": 4,
-      "symbol": "TransactionRefundDetails.reason()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "TransactionRefundDetails.reason",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionRefundDetails.swift",
+      "line": 6,
+      "symbol": "TransactionRefundDetails.clientReference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1424,120 +1648,113 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
       "line": 4,
-      "symbol": "TransactionSummary.transactionId()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "TransactionSummary.transactionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
       "line": 6,
-      "symbol": "TransactionSummary.type()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "TransactionSummary.clientReference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
       "line": 8,
-      "symbol": "TransactionSummary.executionTime()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "TransactionSummary.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
       "line": 10,
-      "symbol": "TransactionSummary.status()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "TransactionSummary.executionTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 15,
-      "symbol": "TransactionSummary.statusDetail()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 12,
+      "symbol": "TransactionSummary.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
       "line": 17,
-      "symbol": "TransactionSummary.refundReason()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "TransactionSummary.statusDetail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 20,
+      "line": 19,
+      "symbol": "TransactionSummary.refundReason",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
+      "line": 22,
       "symbol": "TransactionSummaryPaymentType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "TransactionSummaryPaymentType.PAYMENT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "TransactionSummaryPaymentType.REFUND",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 24,
+      "line": 26,
       "symbol": "TransactionSummaryPaymentType.valueOf(value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 38,
+      "line": 40,
       "symbol": "TransactionSummaryPaymentStatus",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 39,
+      "line": 41,
       "symbol": "TransactionSummaryPaymentStatus.PROCESSING",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 40,
+      "line": 42,
       "symbol": "TransactionSummaryPaymentStatus.APPROVED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 41,
+      "line": 43,
       "symbol": "TransactionSummaryPaymentStatus.REJECTED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/TransactionSummary.swift",
-      "line": 43,
+      "line": 45,
       "symbol": "TransactionSummaryPaymentStatus.valueOf(value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/UpdatePaymentSessionRequest.swift",
-      "line": 3,
-      "symbol": "UpdatePaymentSessionRequest",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/UpdatePaymentSessionRequest.swift",
-      "line": 4,
-      "symbol": "UpdatePaymentSessionRequest.additionalInfo()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -1599,7 +1816,7 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageAdministrationApiRepository.swift",
       "line": 4,
-      "symbol": "VillageAdministrationApiRepository.checkHealth(callback:)",
+      "symbol": "VillageAdministrationApiRepository.checkHealth(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1613,77 +1830,84 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
       "line": 9,
-      "symbol": "VillageCustomerApiRepository.retrieveTransactions(paymentRequestId:page:pageSize:endTime:startTime:callback:)",
+      "symbol": "VillageCustomerApiRepository.retrieveTransactions(paymentRequestId:page:pageSize:endTime:startTime:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
       "line": 18,
-      "symbol": "VillageCustomerApiRepository.retrieveTransactionDetails(transactionId:callback:)",
+      "symbol": "VillageCustomerApiRepository.retrieveTransactionDetails(transactionId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
       "line": 23,
-      "symbol": "VillageCustomerApiRepository.retrievePaymentRequestDetailsByQRCode(qrCodeId:callback:)",
+      "symbol": "VillageCustomerApiRepository.retrievePaymentRequestDetailsBy(qrCodeId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
       "line": 28,
-      "symbol": "VillageCustomerApiRepository.retrievePaymentRequestDetailsByRequestId(paymentRequestId:callback:)",
+      "symbol": "VillageCustomerApiRepository.retrievePaymentRequestDetailsBy(paymentRequestId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
       "line": 41,
-      "symbol": "VillageCustomerApiRepository.makePayment(paymentRequest:instrument:callback:)",
+      "symbol": "VillageCustomerApiRepository.deletePaymentInstrument(instrument:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
-      "line": 47,
-      "symbol": "VillageCustomerApiRepository.initiatePaymentInstrumentAddition(instrument:callback:)",
+      "line": 46,
+      "symbol": "VillageCustomerApiRepository.makePayment(paymentRequestId:primaryInstrument:secondaryInstruments:clientReference:challengeResponses:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
-      "line": 52,
-      "symbol": "VillageCustomerApiRepository.retrievePreferences(callback:)",
+      "line": 55,
+      "symbol": "VillageCustomerApiRepository.initiatePaymentInstrumentAddition(instrument:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
-      "line": 54,
-      "symbol": "VillageCustomerApiRepository.setPreferences(preferences:callback:)",
+      "line": 60,
+      "symbol": "VillageCustomerApiRepository.retrievePreferences(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
-      "line": 59,
-      "symbol": "VillageCustomerApiRepository.retrieveCustomerPaymentSession(paymentSessionId:callback:)",
+      "line": 62,
+      "symbol": "VillageCustomerApiRepository.setPreferences(preferences:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
-      "line": 64,
-      "symbol": "VillageCustomerApiRepository.retrieveCustomerPaymentSessionByQR(qrCodeId:callback:)",
+      "line": 67,
+      "symbol": "VillageCustomerApiRepository.retrievePaymentSessionBy(paymentSessionId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
-      "line": 69,
-      "symbol": "VillageCustomerApiRepository.updateCustomerPaymentSession(paymentSessionId:session:callback:)",
+      "line": 72,
+      "symbol": "VillageCustomerApiRepository.retrievePaymentSessionBy(qrCodeId:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
+      "line": 77,
+      "symbol": "VillageCustomerApiRepository.updatePaymentSession(paymentSessionId:session:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1704,119 +1928,133 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 6,
-      "symbol": "VillageMerchantApiRepository.retrieveTransactions(page:pageSize:endTime:startTime:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrieveTransactions(page:pageSize:endTime:startTime:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 14,
-      "symbol": "VillageMerchantApiRepository.retrieveTransactionDetails(transactionId:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrieveTransactionDetails(transactionId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 19,
-      "symbol": "VillageMerchantApiRepository.createPaymentRequestQRCode(details:callback:)",
+      "symbol": "VillageMerchantApiRepository.createPaymentRequestQRCode(details:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 24,
-      "symbol": "VillageMerchantApiRepository.retrievePaymentRequestQRCodeContent(qrCodeId:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrievePaymentRequestBy(qrCodeId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 29,
-      "symbol": "VillageMerchantApiRepository.cancelPaymentQRCode(qrCodeId:callback:)",
+      "symbol": "VillageMerchantApiRepository.cancelPaymentQRCode(qrCodeId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 34,
-      "symbol": "VillageMerchantApiRepository.retrievePaymentList(type:page:pageSize:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrievePaymentList(type:page:pageSize:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 41,
-      "symbol": "VillageMerchantApiRepository.createNewPaymentRequest(paymentRequest:callback:)",
+      "symbol": "VillageMerchantApiRepository.createNewPaymentRequest(paymentRequest:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 46,
-      "symbol": "VillageMerchantApiRepository.retrievePaymentRequestDetails(paymentRequestId:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrievePaymentRequestDetails(paymentRequestId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 51,
-      "symbol": "VillageMerchantApiRepository.deletePaymentRequest(paymentRequestId:callback:)",
+      "symbol": "VillageMerchantApiRepository.deletePaymentRequest(paymentRequestId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 56,
-      "symbol": "VillageMerchantApiRepository.refundTransaction(transactionId:refundDetails:callback:)",
+      "symbol": "VillageMerchantApiRepository.refundTransaction(transactionId:refundDetails:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 62,
-      "symbol": "VillageMerchantApiRepository.retrievePreferences(callback:)",
+      "symbol": "VillageMerchantApiRepository.retrievePreferences(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 64,
-      "symbol": "VillageMerchantApiRepository.setPreferences(preferences:callback:)",
+      "symbol": "VillageMerchantApiRepository.setPreferences(preferences:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 69,
-      "symbol": "VillageMerchantApiRepository.retrieveSchemas(callback:)",
+      "symbol": "VillageMerchantApiRepository.retrieveSchemas(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 71,
-      "symbol": "VillageMerchantApiRepository.retrieveSchemaDetails(schemaId:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrieveSchemaDetails(schemaId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 76,
-      "symbol": "VillageMerchantApiRepository.createSchema(schema:callback:)",
+      "symbol": "VillageMerchantApiRepository.createSchema(schema:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 81,
-      "symbol": "VillageMerchantApiRepository.createPaymentSession(request:callback:)",
+      "symbol": "VillageMerchantApiRepository.createPaymentSession(request:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 86,
-      "symbol": "VillageMerchantApiRepository.retrievePaymentSession(paymentSessionId:callback:)",
+      "symbol": "VillageMerchantApiRepository.retrievePaymentSession(paymentSessionId:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
+      "line": 91,
+      "symbol": "VillageMerchantApiRepository.updatePaymentSession(paymentSessionId:session:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
+      "line": 97,
+      "symbol": "VillageMerchantApiRepository.deletePaymentSession(paymentSessionId:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
