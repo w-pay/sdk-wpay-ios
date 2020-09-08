@@ -79,4 +79,9 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		session: CustomerUpdatePaymentSessionRequest,
 		completion: @escaping ApiCompletion<Void>
 	)
+
+	func deletePaymentSession(
+		paymentSessionId: String,
+		completion: @escaping ApiCompletion<Void>
+	)
 }
