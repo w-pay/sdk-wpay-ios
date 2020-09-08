@@ -84,4 +84,13 @@ public protocol VillageCustomerApiRepository: VillageAdministrationApiRepository
 		paymentSessionId: String,
 		completion: @escaping ApiCompletion<Void>
 	)
+
+	func preApprovePaymentSession(
+		paymentSessionId: String,
+		primaryInstrument: PaymentInstrumentIdentifier,
+		secondaryInstruments: [SecondaryPaymentInstrument]?,
+		clientReference: String?,
+		challengeResponses: [ChallengeResponse]?,
+		completion: @escaping ApiCompletion<Void>
+	)
 }
