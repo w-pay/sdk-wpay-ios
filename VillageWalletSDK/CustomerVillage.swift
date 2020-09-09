@@ -72,6 +72,52 @@ public class CustomerVillage<A>: Configurable {
 		)
 	}
 
+	func deletePaymentSession(
+		paymentSessionId: String,
+		completion: @escaping ApiCompletion<Void>
+	) {
+		api.deletePaymentSession(
+			paymentSessionId: paymentSessionId,
+			completion: completion
+		)
+	}
+
+	func preApprovePaymentSession(
+		paymentSessionId: String,
+		primaryInstrument: PaymentInstrumentIdentifier,
+		secondaryInstruments: [SecondaryPaymentInstrument]?,
+		clientReference: String?,
+		challengeResponses: [ChallengeResponse]?,
+		completion: @escaping ApiCompletion<Void>
+	) {
+		api.preApprovePaymentSession(
+			paymentSessionId: paymentSessionId,
+			primaryInstrument: primaryInstrument,
+			secondaryInstruments: secondaryInstruments,
+			clientReference: clientReference,
+			challengeResponses: challengeResponses,
+			completion: completion
+		)
+	}
+
+	func retrieveTransactions(
+		paymentRequestId: String?,
+		page: Int?,
+		pageSize: Int?,
+		endTime: Date?,
+		startTime: Date?,
+		completion: @escaping ApiCompletion<CustomerTransactionSummaries>
+	) {
+		api.retrieveTransactions(
+			paymentRequestId: paymentRequestId,
+			page: page,
+			pageSize: pageSize,
+			endTime: endTime,
+			startTime: startTime,
+			completion: completion
+		)
+	}
+
 	public func setHost(host: String) {
 		api.setHost(host: host)
 		authenticator.setHost(host: host)
