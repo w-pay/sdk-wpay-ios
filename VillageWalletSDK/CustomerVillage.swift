@@ -72,7 +72,7 @@ public class CustomerVillage<A>: Configurable {
 		)
 	}
 
-	func deletePaymentSession(
+	public func deletePaymentSession(
 		paymentSessionId: String,
 		completion: @escaping ApiCompletion<Void>
 	) {
@@ -82,7 +82,7 @@ public class CustomerVillage<A>: Configurable {
 		)
 	}
 
-	func preApprovePaymentSession(
+	public func preApprovePaymentSession(
 		paymentSessionId: String,
 		primaryInstrument: PaymentInstrumentIdentifier,
 		secondaryInstruments: [SecondaryPaymentInstrument]?,
@@ -100,7 +100,7 @@ public class CustomerVillage<A>: Configurable {
 		)
 	}
 
-	func retrieveTransactions(
+	public func retrieveTransactions(
 		paymentRequestId: String?,
 		page: Int?,
 		pageSize: Int?,
