@@ -3,7 +3,7 @@ import UIKit
 public protocol PaymentSession {
 	var paymentSessionId: String { get }
 
-	var paymentRequestId: String { get }
+	var paymentRequestId: String? { get }
 
 	var merchantId: String { get }
 
