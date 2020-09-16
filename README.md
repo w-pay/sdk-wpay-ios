@@ -8,7 +8,7 @@ The SDK is currently in development. Therefore parts may change.
 
 The SDK is has the following core design philosophies.
 
-1. Technology agnostic. Different applications may different technology
+1. Technology agnostic. Different applications may have different technology
 choices and an SDK shouldn't force an application to depend on a different
 technology stack as this bloats the build and increases complexity.
 
@@ -36,7 +36,7 @@ authenticate with the API or a gateway that protects the API. The
 the rest of the API protocol. Applications that have a preexisting
 authentication workflow can either update the relevant classes to implement the
 `ApiAuthenticator` protocol, or provide an [Adapter](https://en.wikipedia.org/wiki/Adapter_pattern#Java)
-to make the existing authentication details available to the application.
+to make the existing authentication details available to the SDK.
 
 ### API layer
 
@@ -46,7 +46,7 @@ protocols. Consumers need to configure their `Village` instance with
 an implementation of the correct repository that conforms to needs and
 technology choices of the application.
 
-The SDK currently supports version 0.0.5 of the API spec.
+The SDK currently supports version 0.0.7 of the API spec.
 
 #### Open API Implementation
 
@@ -67,15 +67,14 @@ As such if the API specification changes in a way that introduces breaking
 changes (eg: path change or data changes) the major version of the SDK
 will be increased.
 
-The SDK currently supports version 0.0.5 of the API spec.
-
 ## Requirements
 
 The SDK was developed using Xcode 11.5, Swift 5.2 and is compatible with apps targeting iOS 9.0 or above.
 
 ## Getting started
 
-TODO: SDK reference docs
+Read the [📘 SDK reference docs](/docs/index.html) for more information on the different types
+in the SDK. 
 
 ### CocoaPods
 
@@ -119,7 +118,7 @@ func createCustomerVillage() -> CustomerVillage<IdmTokenDetails> {
    * Currently the creation of the `ApiAuthenticator` has to be in the consuming
    * application.
    */
-  let authenticator = ...
+  let authenticator = createAuthenticator()
 
   let authentication = StoringApiAuthenticator(
     delegate: authenticator,
@@ -140,5 +139,9 @@ The SDK reference docs are generated using [Jazzy](https://github.com/realm/jazz
 $ jazzy --config .jazzy.yml
 ```
 
-# TODO:
- - Publishing
+## Publishing
+
+Newer versions of the SDK are tagged in GitHub and thus can be used by either:
+- Cloning the repo at the tagged version and integrating into XCode
+- Downloading a ZIP of the repo at the tagged version and integrating into XCode
+- Updating the tag in the Podfile

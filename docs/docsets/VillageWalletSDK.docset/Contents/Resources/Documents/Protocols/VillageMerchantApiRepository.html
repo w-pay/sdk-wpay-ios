@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          VillageWalletSDK 3.0.0 Docs
+          VillageWalletSDK 3.3.0 Docs
         </a>
-         (2% documented)
+         (94% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -67,9 +67,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/CustomerVillage.html">CustomerVillage</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/IdmTokenDetails.html">IdmTokenDetails</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MerchantVillage.html">MerchantVillage</a>
@@ -186,9 +183,6 @@
                 <a class="nav-group-task-link" href="../Protocols/CustomerTransactionUsedPaymentInstrument.html">CustomerTransactionUsedPaymentInstrument</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerUpdatePaymentSessionRequest.html">CustomerUpdatePaymentSessionRequest</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +193,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/GiftCardStepUp.html">GiftCardStepUp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HasAccessToken.html">HasAccessToken</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/HealthCheck.html">HealthCheck</a>
@@ -216,9 +213,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchema.html">MerchantSchema</a>
               </li>
               <li class="nav-group-task">
@@ -228,9 +222,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchemaSummary.html">MerchantSchemaSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionDetails.html">MerchantTransactionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -238,9 +229,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionSummary.html">MerchantTransactionSummary</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantUpdatePaymentSessionRequest.html">MerchantUpdatePaymentSessionRequest</a>
@@ -332,7 +320,12 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Defines the API operations that the SDK can use to call the Merchant Village API</p>
+
+<p>The SDK is technology agnostic with applications being able to choose an implementation that
+meets the needs and preexisting technology choices of the application.</p>
+
+<p>Implementations of the protocol may provide additional constraints on the user.</p>
 
           </div>
         </section>
@@ -354,7 +347,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a list of previously executed transactions with the merchant.</p>
 
                       </div>
                       <div class="declaration">
@@ -370,6 +363,61 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page of results to return with 1 indicating the first page (defaults to 1).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of records to return for this page (current default is 25)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, transactions newer than this time will not be returned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, transactions older than this time will not be returned</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -387,7 +435,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve details about a specific transaction</p>
 
                       </div>
                       <div class="declaration">
@@ -400,6 +448,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The transaction id</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -417,7 +484,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Create a new QR code for an existing payment request</p>
 
                       </div>
                       <div class="declaration">
@@ -431,15 +498,34 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>details</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The details for the new QR code.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16VillageWalletSDK0A21MerchantApiRepositoryP24retrievePaymentRequestBy8qrCodeId10completionySS_ys6ResultOyAA6QRCode_pAA0E5ErrorOGctF"></a>
-                    <a name="//apple_ref/swift/Method/retrievePaymentRequestBy(qrCodeId:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK0A21MerchantApiRepositoryP24retrievePaymentRequestBy8qrCodeId10completionySS_ys6ResultOyAA6QRCode_pAA0E5ErrorOGctF">retrievePaymentRequestBy(qrCodeId:<wbr>completion:<wbr>)</a>
+                    <a name="/s:16VillageWalletSDK0A21MerchantApiRepositoryP28retrievePaymentRequestQRCode8qrCodeId10completionySS_ys6ResultOyAA0J0_pAA0E5ErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/retrievePaymentRequestQRCode(qrCodeId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK0A21MerchantApiRepositoryP28retrievePaymentRequestQRCode8qrCodeId10completionySS_ys6ResultOyAA0J0_pAA0E5ErrorOGctF">retrievePaymentRequestQRCode(qrCodeId:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -447,19 +533,38 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/QRCode.html">QRCode</a></code> that is associated to a Payment Request by its ID</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retrievePaymentRequestBy</span><span class="p">(</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retrievePaymentRequestQRCode</span><span class="p">(</span>
 	<span class="nv">qrCodeId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
 	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/QRCode.html">QRCode</a></span><span class="o">&gt;</span>
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>qrCodeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -477,7 +582,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Cancels a QR code making it unusable</p>
 
                       </div>
                       <div class="declaration">
@@ -490,6 +595,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>qrCodeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the QR code to cancel.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -507,7 +631,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a list of the payments initiated by the merchant, both pending and complete</p>
 
                       </div>
                       <div class="declaration">
@@ -522,6 +646,49 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of payment requests to return</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page of results to return with 1 indicating the first page (defaults to 1).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of records to return for this page (current default is 25)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -539,7 +706,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Create a new payment request for a customer</p>
 
                       </div>
                       <div class="declaration">
@@ -552,6 +719,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The details of the new payment request</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -569,7 +755,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a payment request by it&rsquo;s ID. The request may have been &ldquo;completed&rdquo; that is the customer has made a payment.</p>
 
                       </div>
                       <div class="declaration">
@@ -582,6 +768,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the payment request to return.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -599,7 +804,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Delete a payment request</p>
 
                       </div>
                       <div class="declaration">
@@ -612,6 +817,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment request to delete</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -629,7 +853,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Refund a transaction to a customer</p>
 
                       </div>
                       <div class="declaration">
@@ -643,6 +867,37 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The transaction to refund.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>refundDetails</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The details of the refund.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -660,7 +915,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a merchant&rsquo;s preferences.</p>
 
                       </div>
                       <div class="declaration">
@@ -687,7 +942,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Update a merchant&rsquo;s preferences</p>
 
                       </div>
                       <div class="declaration">
@@ -700,6 +955,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preferences</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferences to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -717,7 +991,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve the list of currently usable schemas previously added for the merchant</p>
 
                       </div>
                       <div class="declaration">
@@ -744,7 +1018,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve details for a specific schema</p>
 
                       </div>
                       <div class="declaration">
@@ -757,6 +1031,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>schemaId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The schema to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -774,7 +1067,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Create a new schema for the merchant</p>
 
                       </div>
                       <div class="declaration">
@@ -787,6 +1080,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>schema</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The schema definition</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -804,7 +1116,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Create a new <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -817,6 +1129,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The details for the new session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -834,7 +1165,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -847,6 +1178,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the payment session to retrieve.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -864,7 +1214,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Update a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -878,6 +1228,37 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment session to update</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>session</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The details to update the session with</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -895,7 +1276,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Delete a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -909,6 +1290,25 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment session to delete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -920,7 +1320,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-03)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
