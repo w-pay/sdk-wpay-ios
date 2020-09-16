@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          VillageWalletSDK 3.0.0 Docs
+          VillageWalletSDK 3.3.0 Docs
         </a>
-         (2% documented)
+         (94% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -67,9 +67,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/CustomerVillage.html">CustomerVillage</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/IdmTokenDetails.html">IdmTokenDetails</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MerchantVillage.html">MerchantVillage</a>
@@ -186,9 +183,6 @@
                 <a class="nav-group-task-link" href="../Protocols/CustomerTransactionUsedPaymentInstrument.html">CustomerTransactionUsedPaymentInstrument</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerUpdatePaymentSessionRequest.html">CustomerUpdatePaymentSessionRequest</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +193,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/GiftCardStepUp.html">GiftCardStepUp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HasAccessToken.html">HasAccessToken</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/HealthCheck.html">HealthCheck</a>
@@ -216,9 +213,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchema.html">MerchantSchema</a>
               </li>
               <li class="nav-group-task">
@@ -228,9 +222,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchemaSummary.html">MerchantSchemaSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionDetails.html">MerchantTransactionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -238,9 +229,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionSummary.html">MerchantTransactionSummary</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantUpdatePaymentSessionRequest.html">MerchantUpdatePaymentSessionRequest</a>
@@ -332,7 +320,12 @@
 
                 </div>
               </div>
-            <p>Defines the low level API operations that the SDK can use to call the Customer Village API</p>
+            <p>Defines the API operations that the SDK can use to call the Customer Village API</p>
+
+<p>The SDK is technology agnostic with applications being able to choose an implementation that
+meets the needs and preexisting technology choices of the application.</p>
+
+<p>Implementations of the protocol may provide additional constraints on the user.</p>
 
           </div>
         </section>
@@ -354,7 +347,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a list of previously executed transactions for the customer.</p>
 
                       </div>
                       <div class="declaration">
@@ -372,6 +365,73 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, limits the list of transactions to those that relate to the payment request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page of results to return with 1 indicating the first page (defaults to 1).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of records to return for this page (current default is 25)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, transactions newer than this time will not be returned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, transactions older than this time will not be returned</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -388,7 +448,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve details about a specific transaction</p>
 
                       </div>
                       <div class="declaration">
@@ -401,6 +461,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The transaction id</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -418,7 +497,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code> by a QR code ID associated to the request</p>
 
                       </div>
                       <div class="declaration">
@@ -431,6 +510,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>qrCodeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The QR Code ID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -448,7 +546,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code> by its ID</p>
 
                       </div>
                       <div class="declaration">
@@ -461,6 +559,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -478,7 +595,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@param wallet When set to MERCHANT retrieves only from merchant wallet. EVERYDAY_PAY retrieves both merchant and everyday pay wallet instruments.</p>
+                        <p>Retrieve the customer&rsquo;s registered <code><a href="../Protocols/PaymentInstruments.html">PaymentInstruments</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -491,6 +608,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>wallet</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to return only instruments registered by the customer for the merchant, or for the merchant and Everyday Pay</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -508,7 +644,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Delete a <code><a href="../Protocols/PaymentInstrument.html">PaymentInstrument</a></code> from a <code><a href="../Enums/Wallet.html">Wallet</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -521,6 +657,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>instrument</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment instrument to delete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -538,7 +693,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Make a payment for a <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -556,6 +711,73 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code> to pay for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryInstrument</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The primary (or only) instrument to use to make the payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondaryInstruments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other payment instruments to use to split payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientReference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional client reference to be associated with the transaction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>challengeResponses</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Used when needing to complete challenge(s) to complete payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -572,7 +794,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Initiate the addition of a new <code><a href="../Protocols/PaymentInstrument.html">PaymentInstrument</a></code> for the customer.</p>
+
+<p>To complete the addition the customer will have to use the returned URL details to enter
+the instrument details.</p>
 
                       </div>
                       <div class="declaration">
@@ -602,7 +827,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a customer&rsquo;s preferences</p>
 
                       </div>
                       <div class="declaration">
@@ -629,7 +854,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Update the preferences for a customer</p>
 
                       </div>
                       <div class="declaration">
@@ -642,6 +867,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preferences</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferences of the customer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -659,7 +903,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code> by it&rsquo;s ID</p>
 
                       </div>
                       <div class="declaration">
@@ -672,6 +916,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment session ID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -689,7 +952,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code> by a QR code ID associated to the session.</p>
 
                       </div>
                       <div class="declaration">
@@ -702,6 +965,25 @@
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>qrCodeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The QR code ID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -719,7 +1001,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Update a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -734,6 +1016,187 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment session to update</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>session</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The updates to apply to the session</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK0A21CustomerApiRepositoryP20deletePaymentSession07paymentI2Id10completionySS_ys6ResultOyytAA0E5ErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/deletePaymentSession(paymentSessionId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK0A21CustomerApiRepositoryP20deletePaymentSession07paymentI2Id10completionySS_ys6ResultOyytAA0E5ErrorOGctF">deletePaymentSession(paymentSessionId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deletePaymentSession</span><span class="p">(</span>
+	<span class="nv">paymentSessionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment session to delete</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK0A21CustomerApiRepositoryP24preApprovePaymentSession07paymentJ2Id17primaryInstrument20secondaryInstruments15clientReference18challengeResponses10completionySS_AA0iN10Identifier_pSayAA09SecondaryiN0_pGSgSSSgSayAA17ChallengeResponse_pGSgys6ResultOyytAA0E5ErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/preApprovePaymentSession(paymentSessionId:primaryInstrument:secondaryInstruments:clientReference:challengeResponses:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK0A21CustomerApiRepositoryP24preApprovePaymentSession07paymentJ2Id17primaryInstrument20secondaryInstruments15clientReference18challengeResponses10completionySS_AA0iN10Identifier_pSayAA09SecondaryiN0_pGSgSSSgSayAA17ChallengeResponse_pGSgys6ResultOyytAA0E5ErrorOGctF">preApprovePaymentSession(paymentSessionId:<wbr>primaryInstrument:<wbr>secondaryInstruments:<wbr>clientReference:<wbr>challengeResponses:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pre-approve payment for a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">preApprovePaymentSession</span><span class="p">(</span>
+	<span class="nv">paymentSessionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+	<span class="nv">primaryInstrument</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PaymentInstrumentIdentifier.html">PaymentInstrumentIdentifier</a></span><span class="p">,</span>
+	<span class="nv">secondaryInstruments</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/SecondaryPaymentInstrument.html">SecondaryPaymentInstrument</a></span><span class="p">]?,</span>
+	<span class="nv">clientReference</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+	<span class="nv">challengeResponses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChallengeResponse.html">ChallengeResponse</a></span><span class="p">]?,</span>
+	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code> to pre-approve payment for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryInstrument</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The primary (or only) instrument to use to make the payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondaryInstruments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other payment instruments to use to split payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientReference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional client reference to be associated with the transaction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>challengeResponses</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Used when needing to complete challenge(s) to complete payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -745,7 +1208,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-03)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

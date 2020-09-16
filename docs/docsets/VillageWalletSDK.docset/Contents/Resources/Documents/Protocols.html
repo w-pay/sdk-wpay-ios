@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          VillageWalletSDK 3.0.0 Docs
+          VillageWalletSDK 3.3.0 Docs
         </a>
-         (2% documented)
+         (94% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -67,9 +67,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/CustomerVillage.html">CustomerVillage</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/IdmTokenDetails.html">IdmTokenDetails</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MerchantVillage.html">MerchantVillage</a>
@@ -186,9 +183,6 @@
                 <a class="nav-group-task-link" href="Protocols/CustomerTransactionUsedPaymentInstrument.html">CustomerTransactionUsedPaymentInstrument</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols.html#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/CustomerUpdatePaymentSessionRequest.html">CustomerUpdatePaymentSessionRequest</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +193,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/GiftCardStepUp.html">GiftCardStepUp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/HasAccessToken.html">HasAccessToken</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/HealthCheck.html">HealthCheck</a>
@@ -216,9 +213,6 @@
                 <a class="nav-group-task-link" href="Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols.html#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/MerchantSchema.html">MerchantSchema</a>
               </li>
               <li class="nav-group-task">
@@ -228,9 +222,6 @@
                 <a class="nav-group-task-link" href="Protocols/MerchantSchemaSummary.html">MerchantSchemaSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols.html#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/MerchantTransactionDetails.html">MerchantTransactionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -238,9 +229,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/MerchantTransactionSummary.html">MerchantTransactionSummary</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols.html#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/MerchantUpdatePaymentSessionRequest.html">MerchantUpdatePaymentSessionRequest</a>
@@ -375,7 +363,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Abstracts how the SDK stores credentials obtained after authenticating with the API</p>
 
                         <a href="Protocols/CredentialsStore.html" class="slightly-smaller">See more</a>
                       </div>
@@ -384,6 +372,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CredentialsStore</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK14HasAccessTokenP"></a>
+                    <a name="//apple_ref/swift/Protocol/HasAccessToken" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK14HasAccessTokenP">HasAccessToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates that a model has an access token that can be used to prove that SDK is authenticated</p>
+
+                        <a href="Protocols/HasAccessToken.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HasAccessToken</span></code></pre>
 
                         </div>
                       </div>
@@ -403,7 +419,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>What can be configured in the SDK post SDK initialisation.</p>
 
                         <a href="Protocols/Configurable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -431,7 +447,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Basket of items associated with a payment request.</p>
 
                         <a href="Protocols/Basket.html" class="slightly-smaller">See more</a>
                       </div>
@@ -459,7 +475,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An item in a <code><a href="Protocols/Basket.html">Basket</a></code></p>
 
                         <a href="Protocols/BasketItem.html" class="slightly-smaller">See more</a>
                       </div>
@@ -487,7 +503,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The response to a step up challenge</p>
 
                         <a href="Protocols/ChallengeResponse.html" class="slightly-smaller">See more</a>
                       </div>
@@ -515,7 +531,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The result from creating a new Payment Request.</p>
 
                         <a href="Protocols/CreatePaymentRequestResult.html" class="slightly-smaller">See more</a>
                       </div>
@@ -543,7 +559,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Request containing the details of the <code><a href="Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                         <a href="Protocols/CreatePaymentSessionRequest.html" class="slightly-smaller">See more</a>
                       </div>
@@ -571,7 +587,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The result of creating a <code><a href="Protocols/PaymentSession.html">PaymentSession</a></code></p>
 
                         <a href="Protocols/CreatePaymentSessionResult.html" class="slightly-smaller">See more</a>
                       </div>
@@ -599,7 +615,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Detailed information for a single Payment Request</p>
 
                         <a href="Protocols/CustomerPaymentRequest.html" class="slightly-smaller">See more</a>
                       </div>
@@ -608,33 +624,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CustomerPaymentRequest</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Payment.html">Payment</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16VillageWalletSDK20CustomerTransactionsP"></a>
-                    <a name="//apple_ref/swift/Protocol/CustomerTransactions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CustomerTransactions</span></code></pre>
 
                         </div>
                       </div>
@@ -654,7 +643,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An instrument used for a transaction</p>
 
                         <a href="Protocols/CustomerTransactionUsedPaymentInstrument.html" class="slightly-smaller">See more</a>
                       </div>
@@ -682,7 +671,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>List of customer transactions</p>
 
                         <a href="Protocols/CustomerTransactionSummaries.html" class="slightly-smaller">See more</a>
                       </div>
@@ -690,7 +679,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CustomerTransactionSummaries</span> <span class="p">:</span> <span class="kt"><a href="Protocols.html#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CustomerTransactionSummaries</span> <span class="p">:</span> <span class="kt">CustomerTransactions</span></code></pre>
 
                         </div>
                       </div>
@@ -710,7 +699,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Summary information of a transaction performed by a customer</p>
 
                         <a href="Protocols/CustomerTransactionSummary.html" class="slightly-smaller">See more</a>
                       </div>
@@ -738,7 +727,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Detailed information for a single transaction</p>
 
                         <a href="Protocols/CustomerTransactionDetails.html" class="slightly-smaller">See more</a>
                       </div>
@@ -794,7 +783,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A payload of key/value pairs that is can be validated by a schema.</p>
 
                         <a href="Protocols/DynamicPayload.html" class="slightly-smaller">See more</a>
                       </div>
@@ -822,7 +811,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Result of checking the health of the API server</p>
 
                         <a href="Protocols/HealthCheck.html" class="slightly-smaller">See more</a>
                       </div>
@@ -850,7 +839,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Payload provided by the merchant to support other types of messaging.</p>
 
                         <a href="Protocols/MerchantPayload.html" class="slightly-smaller">See more</a>
                       </div>
@@ -859,33 +848,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantPayload</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16VillageWalletSDK16MerchantPaymentsP"></a>
-                    <a name="//apple_ref/swift/Protocol/MerchantPayments" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantPayments</span></code></pre>
 
                         </div>
                       </div>
@@ -905,7 +867,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>List of payments made involving a merchant.</p>
 
                         <a href="Protocols/MerchantPaymentSummaries.html" class="slightly-smaller">See more</a>
                       </div>
@@ -913,7 +875,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantPaymentSummaries</span> <span class="p">:</span> <span class="kt"><a href="Protocols.html#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantPaymentSummaries</span> <span class="p">:</span> <span class="kt">MerchantPayments</span></code></pre>
 
                         </div>
                       </div>
@@ -933,7 +895,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Summary information for a single Payment Request</p>
 
                         <a href="Protocols/MerchantPaymentSummary.html" class="slightly-smaller">See more</a>
                       </div>
@@ -961,7 +923,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Detailed information for a single Payment Request</p>
 
                         <a href="Protocols/MerchantPaymentDetails.html" class="slightly-smaller">See more</a>
                       </div>
@@ -970,33 +932,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantPaymentDetails</span> <span class="p">:</span> <span class="kt"><a href="Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16VillageWalletSDK15MerchantSchemasP"></a>
-                    <a name="//apple_ref/swift/Protocol/MerchantSchemas" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantSchemas</span></code></pre>
 
                         </div>
                       </div>
@@ -1016,7 +951,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>List of merchant schemas</p>
 
                         <a href="Protocols/MerchantSchemaSummaries.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1024,7 +959,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantSchemaSummaries</span> <span class="p">:</span> <span class="kt"><a href="Protocols.html#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantSchemaSummaries</span> <span class="p">:</span> <span class="kt">MerchantSchemas</span></code></pre>
 
                         </div>
                       </div>
@@ -1044,7 +979,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Summary information about a <code><a href="Protocols/MerchantSchema.html">MerchantSchema</a></code></p>
 
                         <a href="Protocols/MerchantSchemaSummary.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1072,7 +1007,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Details about a particular schema</p>
 
                         <a href="Protocols/MerchantSchema.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1081,33 +1016,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantSchema</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16VillageWalletSDK20MerchantTransactionsP"></a>
-                    <a name="//apple_ref/swift/Protocol/MerchantTransactions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantTransactions</span></code></pre>
 
                         </div>
                       </div>
@@ -1127,7 +1035,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>List of merchant transactions.</p>
 
                         <a href="Protocols/MerchantTransactionSummaries.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1135,7 +1043,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantTransactionSummaries</span> <span class="p">:</span> <span class="kt"><a href="Protocols.html#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantTransactionSummaries</span> <span class="p">:</span> <span class="kt">MerchantTransactions</span></code></pre>
 
                         </div>
                       </div>
@@ -1183,7 +1091,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Detailed information for a single transaction</p>
 
                         <a href="Protocols/MerchantTransactionDetails.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1211,7 +1119,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Request to update a <code><a href="Protocols/PaymentSession.html">PaymentSession</a></code> for a merchant.</p>
 
                         <a href="Protocols/MerchantUpdatePaymentSessionRequest.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1239,7 +1147,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The details of the payment to be created.</p>
 
                         <a href="Protocols/NewPaymentRequest.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1267,7 +1175,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Request to create a new <code><a href="Protocols/QRCode.html">QRCode</a></code> for a Payment Request</p>
 
                         <a href="Protocols/NewPaymentRequestQRCode.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1295,7 +1203,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Properties common to all Payments and Payment Requests</p>
 
                         <a href="Protocols/Payment.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1323,7 +1231,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Initiate the addition of a new payment instrument for this customer.</p>
+
+<p>This API returns a URL to be used to access the DigiPay IFrame based interface to request the customer to enter a payment instrument details.</p>
 
                         <a href="Protocols/PaymentInstrumentAddition.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1351,7 +1261,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The result of trying to initiate the addition of a new <code><a href="Protocols/PaymentInstrument.html">PaymentInstrument</a></code></p>
 
                         <a href="Protocols/PaymentInstrumentAdditionResult.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1379,7 +1289,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>All the possible <code><a href="Protocols/PaymentInstrument.html">PaymentInstrument</a></code>s that a customer might have in a wallet.</p>
 
                         <a href="Protocols/AllPaymentInstruments.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1407,7 +1317,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>List of grouped payment instruments.</p>
 
                         <a href="Protocols/PaymentInstruments.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1435,7 +1345,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Used to identify a <code><a href="Protocols/PaymentInstrument.html">PaymentInstrument</a></code> to the API</p>
 
                         <a href="Protocols/PaymentInstrumentIdentifier.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1463,7 +1373,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Common properties to all <code><a href="Protocols/PaymentInstruments.html">PaymentInstruments</a></code></p>
 
                         <a href="Protocols/PaymentInstrument.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1491,7 +1401,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An added credit card</p>
 
                         <a href="Protocols/CreditCard.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1519,7 +1429,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An added gift card.</p>
 
                         <a href="Protocols/GiftCard.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1547,7 +1457,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Details of what step up is required to use a <code><a href="Protocols/CreditCard.html">CreditCard</a></code></p>
 
                         <a href="Protocols/CreditCardStepUp.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1575,7 +1485,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Details of what step up is required to use a <code><a href="Protocols/GiftCard.html">GiftCard</a></code></p>
 
                         <a href="Protocols/GiftCardStepUp.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1603,7 +1513,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Used to identify other <code><a href="Protocols/PaymentInstrument.html">PaymentInstrument</a></code>s to be used as part of a payment.</p>
 
                         <a href="Protocols/SecondaryPaymentInstrument.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1631,7 +1541,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A session between a customer and a merchant</p>
 
                         <a href="Protocols/PaymentSession.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1659,7 +1569,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Payload describing the specific POS system.</p>
 
                         <a href="Protocols/PosPayload.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1687,7 +1597,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Detail of a QR code</p>
 
                         <a href="Protocols/QRCode.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1715,7 +1625,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Request payload containing the refund reason and instructions</p>
 
                         <a href="Protocols/TransactionRefundDetails.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1743,7 +1653,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Summary information of a transaction</p>
 
                         <a href="Protocols/TransactionSummary.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1771,7 +1681,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Abstracts how HTTP headers are added to a Dictionary.</p>
 
                         <a href="Protocols/RequestHeaderFactory.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1799,7 +1709,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Creates a Dictionary of headers to be added to HTTP requests</p>
 
                         <a href="Protocols/RequestHeadersFactory.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1827,7 +1737,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Can be used to perform Administration functions on the API</p>
 
                         <a href="Protocols/VillageAdministrationApiRepository.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1855,7 +1765,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines the low level API operations that the SDK can use to call the Customer Village API</p>
+                        <p>Defines the API operations that the SDK can use to call the Customer Village API</p>
+
+<p>The SDK is technology agnostic with applications being able to choose an implementation that
+meets the needs and preexisting technology choices of the application.</p>
+
+<p>Implementations of the protocol may provide additional constraints on the user.</p>
 
                         <a href="Protocols/VillageCustomerApiRepository.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1883,7 +1798,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Defines the API operations that the SDK can use to call the Merchant Village API</p>
+
+<p>The SDK is technology agnostic with applications being able to choose an implementation that
+meets the needs and preexisting technology choices of the application.</p>
+
+<p>Implementations of the protocol may provide additional constraints on the user.</p>
 
                         <a href="Protocols/VillageMerchantApiRepository.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1906,7 +1826,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-03)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

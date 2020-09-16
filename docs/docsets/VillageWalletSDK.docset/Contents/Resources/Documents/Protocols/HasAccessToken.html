@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IdmTokenDetails Class Reference</title>
+    <title>HasAccessToken Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,16 +14,16 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/IdmTokenDetails" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/HasAccessToken" class="dashAnchor"></a>
 
-    <a title="IdmTokenDetails Class Reference"></a>
+    <a title="HasAccessToken Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          VillageWalletSDK 3.0.0 Docs
+          VillageWalletSDK 3.3.0 Docs
         </a>
-         (2% documented)
+         (94% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">VillageWalletSDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      IdmTokenDetails Class Reference
+      HasAccessToken Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -67,9 +67,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/CustomerVillage.html">CustomerVillage</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/IdmTokenDetails.html">IdmTokenDetails</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MerchantVillage.html">MerchantVillage</a>
@@ -186,9 +183,6 @@
                 <a class="nav-group-task-link" href="../Protocols/CustomerTransactionUsedPaymentInstrument.html">CustomerTransactionUsedPaymentInstrument</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerUpdatePaymentSessionRequest.html">CustomerUpdatePaymentSessionRequest</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +193,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/GiftCardStepUp.html">GiftCardStepUp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HasAccessToken.html">HasAccessToken</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/HealthCheck.html">HealthCheck</a>
@@ -216,9 +213,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchema.html">MerchantSchema</a>
               </li>
               <li class="nav-group-task">
@@ -228,9 +222,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchemaSummary.html">MerchantSchemaSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionDetails.html">MerchantTransactionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -238,9 +229,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionSummary.html">MerchantTransactionSummary</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantUpdatePaymentSessionRequest.html">MerchantUpdatePaymentSessionRequest</a>
@@ -324,15 +312,15 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>IdmTokenDetails</h1>
+            <h1>HasAccessToken</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">IdmTokenDetails</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HasAccessToken</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Indicates that a model has an access token that can be used to prove that SDK is authenticated</p>
 
           </div>
         </section>
@@ -344,9 +332,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16VillageWalletSDK15IdmTokenDetailsC06accessE00gE9ExpiresIn07refreshE00jehI014tokensIssuedAt07isGuestE011idmStatusOKACSS_SiSSSiSuS2btcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(accessToken:accessTokenExpiresIn:refreshToken:refreshTokenExpiresIn:tokensIssuedAt:isGuestToken:idmStatusOK:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK15IdmTokenDetailsC06accessE00gE9ExpiresIn07refreshE00jehI014tokensIssuedAt07isGuestE011idmStatusOKACSS_SiSSSiSuS2btcfc">init(accessToken:<wbr>accessTokenExpiresIn:<wbr>refreshToken:<wbr>refreshTokenExpiresIn:<wbr>tokensIssuedAt:<wbr>isGuestToken:<wbr>idmStatusOK:<wbr>)</a>
+                    <a name="/s:16VillageWalletSDK14HasAccessTokenP06accessF0SSvp"></a>
+                    <a name="//apple_ref/swift/Property/accessToken" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK14HasAccessTokenP06accessF0SSvp">accessToken</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -354,22 +342,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An access token obtained from an authentication result</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
-	<span class="nv">accessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-	<span class="nv">accessTokenExpiresIn</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-	<span class="nv">refreshToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-	<span class="nv">refreshTokenExpiresIn</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-	<span class="nv">tokensIssuedAt</span><span class="p">:</span> <span class="kt">CUnsignedLong</span><span class="p">,</span>
-	<span class="nv">isGuestToken</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-	<span class="nv">idmStatusOK</span><span class="p">:</span> <span class="kt">Bool</span>
-<span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -384,7 +364,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-03)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

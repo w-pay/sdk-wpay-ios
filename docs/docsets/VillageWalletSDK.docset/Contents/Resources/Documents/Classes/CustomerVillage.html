@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          VillageWalletSDK 3.0.0 Docs
+          VillageWalletSDK 3.3.0 Docs
         </a>
-         (2% documented)
+         (94% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -67,9 +67,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/CustomerVillage.html">CustomerVillage</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/IdmTokenDetails.html">IdmTokenDetails</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MerchantVillage.html">MerchantVillage</a>
@@ -186,9 +183,6 @@
                 <a class="nav-group-task-link" href="../Protocols/CustomerTransactionUsedPaymentInstrument.html">CustomerTransactionUsedPaymentInstrument</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20CustomerTransactionsP">CustomerTransactions</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerUpdatePaymentSessionRequest.html">CustomerUpdatePaymentSessionRequest</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +193,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/GiftCardStepUp.html">GiftCardStepUp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HasAccessToken.html">HasAccessToken</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/HealthCheck.html">HealthCheck</a>
@@ -216,9 +213,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK16MerchantPaymentsP">MerchantPayments</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchema.html">MerchantSchema</a>
               </li>
               <li class="nav-group-task">
@@ -228,9 +222,6 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchemaSummary.html">MerchantSchemaSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK15MerchantSchemasP">MerchantSchemas</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionDetails.html">MerchantTransactionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -238,9 +229,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionSummary.html">MerchantTransactionSummary</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols.html#/s:16VillageWalletSDK20MerchantTransactionsP">MerchantTransactions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantUpdatePaymentSessionRequest.html">MerchantUpdatePaymentSessionRequest</a>
@@ -332,8 +320,8 @@
 
                 </div>
               </div>
-            <p>Entry point into the SDK. It is responsible for managing the relationship between app
-concerns, and calling the API.</p>
+            <p>Entry point into the SDK for customers. It is responsible for managing the relationship between
+the app concerns, and calling the API.</p>
 
           </div>
         </section>
@@ -355,8 +343,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -365,6 +352,37 @@ concerns, and calling the API.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">api</span><span class="p">:</span> <span class="kt"><a href="../Protocols/VillageCustomerApiRepository.html">VillageCustomerApiRepository</a></span><span class="p">,</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/AnyApiAuthenticator.html">AnyApiAuthenticator</a></span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>api</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API repository to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/ApiAuthenticator.html">ApiAuthenticator</a></code> to use to obtain authorisation needed to access the API</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -382,7 +400,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Used to have the SDK authenticate with the API.</p>
 
                       </div>
                       <div class="declaration">
@@ -409,7 +427,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code> by the QR code ID associated to the request</p>
 
                       </div>
                       <div class="declaration">
@@ -422,6 +440,25 @@ concerns, and calling the API.</p>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>qrCodeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The QR code ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -439,7 +476,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve the customer&rsquo;s registered <code><a href="../Protocols/PaymentInstruments.html">PaymentInstruments</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -452,6 +489,25 @@ concerns, and calling the API.</p>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>wallet</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to return only instruments registered by the customer for the merchant, or for the merchant and Everyday Pay</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -469,7 +525,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Make a payment for a <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -487,6 +543,73 @@ concerns, and calling the API.</p>
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a></code> to pay for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>instrument</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The primary (or only) instrument to use to make the payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondaryInstruments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other payment instruments to use to split payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientReference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional client reference to be associated with the transaction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>challengeResponses</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Used when needing to complete challenge(s) to complete payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -503,7 +626,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code> by it&rsquo;s ID</p>
 
                       </div>
                       <div class="declaration">
@@ -516,6 +639,25 @@ concerns, and calling the API.</p>
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the session</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -533,7 +675,7 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieve a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code> by a QR code ID associated to the session</p>
 
                       </div>
                       <div class="declaration">
@@ -546,6 +688,276 @@ concerns, and calling the API.</p>
 <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>qrCodeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The QR code ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK08CustomerA0C20deletePaymentSession07paymentG2Id10completionySS_ys6ResultOyytAA8ApiErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/deletePaymentSession(paymentSessionId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK08CustomerA0C20deletePaymentSession07paymentG2Id10completionySS_ys6ResultOyytAA8ApiErrorOGctF">deletePaymentSession(paymentSessionId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deletePaymentSession</span><span class="p">(</span>
+	<span class="nv">paymentSessionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payment session ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK08CustomerA0C24preApprovePaymentSession07paymentH2Id17primaryInstrument20secondaryInstruments15clientReference18challengeResponses10completionySS_AA0gL10Identifier_pSayAA09SecondarygL0_pGSgSSSgSayAA17ChallengeResponse_pGSgys6ResultOyytAA8ApiErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/preApprovePaymentSession(paymentSessionId:primaryInstrument:secondaryInstruments:clientReference:challengeResponses:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK08CustomerA0C24preApprovePaymentSession07paymentH2Id17primaryInstrument20secondaryInstruments15clientReference18challengeResponses10completionySS_AA0gL10Identifier_pSayAA09SecondarygL0_pGSgSSSgSayAA17ChallengeResponse_pGSgys6ResultOyytAA8ApiErrorOGctF">preApprovePaymentSession(paymentSessionId:<wbr>primaryInstrument:<wbr>secondaryInstruments:<wbr>clientReference:<wbr>challengeResponses:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pre-approve payment for a <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">preApprovePaymentSession</span><span class="p">(</span>
+	<span class="nv">paymentSessionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+	<span class="nv">primaryInstrument</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PaymentInstrumentIdentifier.html">PaymentInstrumentIdentifier</a></span><span class="p">,</span>
+	<span class="nv">secondaryInstruments</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/SecondaryPaymentInstrument.html">SecondaryPaymentInstrument</a></span><span class="p">]?,</span>
+	<span class="nv">clientReference</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+	<span class="nv">challengeResponses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChallengeResponse.html">ChallengeResponse</a></span><span class="p">]?,</span>
+	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentSessionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/PaymentSession.html">PaymentSession</a></code> to pre-approve payment for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryInstrument</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The primary (or only) instrument to use to make the payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondaryInstruments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other payment instruments to use to split payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientReference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional client reference to be associated with the transaction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>challengeResponses</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Used when needing to complete challenge(s) to complete payment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK08CustomerA0C20retrieveTransactions16paymentRequestId4page0J4Size7endTime05startM010completionySSSg_SiSgAL10Foundation4DateVSgAPys6ResultOyAA0D20TransactionSummaries_pAA8ApiErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/retrieveTransactions(paymentRequestId:page:pageSize:endTime:startTime:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK08CustomerA0C20retrieveTransactions16paymentRequestId4page0J4Size7endTime05startM010completionySSSg_SiSgAL10Foundation4DateVSgAPys6ResultOyAA0D20TransactionSummaries_pAA8ApiErrorOGctF">retrieveTransactions(paymentRequestId:<wbr>page:<wbr>pageSize:<wbr>endTime:<wbr>startTime:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve a list of previously executed transactions for the customer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">retrieveTransactions</span><span class="p">(</span>
+	<span class="nv">paymentRequestId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+	<span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
+	<span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
+	<span class="nv">endTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?,</span>
+	<span class="nv">startTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?,</span>
+	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/CustomerTransactionSummaries.html">CustomerTransactionSummaries</a></span><span class="o">&gt;</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentRequestId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, limits the list of transactions to those that relate to the payment request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page of results to return with 1 indicating the first page (defaults to 1).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of records to return for this page (current default is 25)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, transactions newer than this time will not be returned.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If present, transactions older than this time will not be returned</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -563,7 +975,15 @@ concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Allows the application to change the host the SDK sends API requests too.</p>
+
+<p>This allows the application to read data from an outside source (eg: a QR code) and have
+the SDK use the same host.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="../Protocols/Configurable.html#/s:16VillageWalletSDK12ConfigurableP7setHost4hostySS_tF">Configurable.setHost(...)</a></code>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -585,7 +1005,7 @@ concerns, and calling the API.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-03)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-15)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
