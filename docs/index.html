@@ -20,7 +20,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          VillageWalletSDK 3.3.0 Docs
+          VillageWalletSDK 3.4.0 Docs
         </a>
          (94% documented)
       </p>
@@ -322,7 +322,7 @@
 <p>The SDK is has the following core design philosophies.</p>
 
 <ol>
-<li><p>Technology agnostic. Different applications may different technology
+<li><p>Technology agnostic. Different applications may have different technology
 choices and an SDK shouldn&rsquo;t force an application to depend on a different
 technology stack as this bloats the build and increases complexity.</p></li>
 <li><p>Swappable. Don&rsquo;t like a particular implementation of a part in the SDK, then
@@ -352,7 +352,7 @@ authenticate with the API or a gateway that protects the API. The
 the rest of the API protocol. Applications that have a preexisting
 authentication workflow can either update the relevant classes to implement the
 <code><a href="Protocols/ApiAuthenticator.html">ApiAuthenticator</a></code> protocol, or provide an <a href="https://en.wikipedia.org/wiki/Adapter_pattern#Java">Adapter</a>
-to make the existing authentication details available to the application.</p>
+to make the existing authentication details available to the SDK.</p>
 <h3 id='api-layer' class='heading'>API layer</h3>
 
 <p>The API layer is decoupled from the rest of the SDK via the
@@ -361,7 +361,7 @@ protocols. Consumers need to configure their <code>Village</code> instance with
 an implementation of the correct repository that conforms to needs and
 technology choices of the application.</p>
 
-<p>The SDK currently supports version 0.0.5 of the API spec.</p>
+<p>The SDK currently supports version 0.0.7 of the API spec.</p>
 <h4 id='open-api-implementation' class='heading'>Open API Implementation</h4>
 
 <p>For convenience, the <a href="https://github.com/woolworthslimited/paysdk2-openapi-ios">Woolworths Village SDK Open API Client</a>
@@ -378,14 +378,13 @@ or CocoaPods can be used. </p>
 As such if the API specification changes in a way that introduces breaking
 changes (eg: path change or data changes) the major version of the SDK
 will be increased.</p>
-
-<p>The SDK currently supports version 0.0.5 of the API spec.</p>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <p>The SDK was developed using Xcode 11.5, Swift 5.2 and is compatible with apps targeting iOS 9.0 or above.</p>
 <h2 id='getting-started' class='heading'>Getting started</h2>
 
-<p>TODO: SDK reference docs</p>
+<p>Read the <a href="/docs/index.html">📘 SDK reference docs</a> for more information on the different types
+in the SDK. </p>
 <h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
 <p>If using <a href="https://cocoapods.org/">CocoaPods</a> add the following to your Podfile</p>
@@ -404,7 +403,7 @@ can be used</p>
 <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createCustomerVillage</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CustomerVillage</span><span class="o">&lt;</span><span class="kt">IdmTokenDetails</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">VillageOptions</span><span class="p">(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="s">"&lt;your key here&gt;"</span><span class="p">)</span>
   <span class="k">let</span> <span class="nv">apiKeyRequestHeader</span> <span class="o">=</span> <span class="kt">ApiKeyRequestHeader</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
-  <span class="k">let</span> <span class="nv">bearerTokenRequestHeader</span> <span class="o">=</span> <span class="kt">BearerTokenRequestHeader</span><span class="p">()</span>
+  <span class="k">let</span> <span class="nv">bearerTokenRequestHeader</span> <span class="o">=</span> <span class="kt">BearerTokenRequestHeader</span><span class="o">&lt;</span><span class="kt">AuthDetails</span><span class="o">&gt;</span><span class="p">()</span>
   <span class="k">let</span> <span class="nv">api</span> <span class="o">=</span>
     <span class="kt">OpenApiVillageCustomerApiRepository</span><span class="p">(</span>
       <span class="nv">requestHeadersFactory</span><span class="p">:</span> <span class="kt">RequestHeaderChain</span><span class="p">(</span>
@@ -422,9 +421,12 @@ can be used</p>
    * Currently the creation of the `ApiAuthenticator` has to be in the consuming
    * application.
    */</span>
-  <span class="k">let</span> <span class="nv">authenticator</span> <span class="o">=</span> <span class="o">...</span>
+  <span class="k">let</span> <span class="nv">authenticator</span> <span class="o">=</span> <span class="nf">createAuthenticator</span><span class="p">()</span>
 
-  <span class="k">let</span> <span class="nv">authentication</span> <span class="o">=</span> <span class="kt">StoringApiAuthenticator</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="n">authenticator</span><span class="p">,</span> <span class="nv">store</span><span class="p">:</span> <span class="n">bearerTokenRequestHeader</span><span class="p">)</span>
+  <span class="k">let</span> <span class="nv">authentication</span> <span class="o">=</span> <span class="kt">StoringApiAuthenticator</span><span class="p">(</span>
+    <span class="nv">delegate</span><span class="p">:</span> <span class="n">authenticator</span><span class="p">,</span>
+    <span class="nv">store</span><span class="p">:</span> <span class="n">bearerTokenRequestHeader</span>
+  <span class="p">)</span>
 
   <span class="k">return</span> <span class="kt">CustomerVillage</span><span class="p">(</span><span class="nv">api</span><span class="p">:</span> <span class="n">api</span><span class="p">,</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="n">authentication</span><span class="p">)</span>
 <span class="p">}</span>
@@ -436,10 +438,14 @@ can be used</p>
 <p>The SDK reference docs are generated using <a href="https://github.com/realm/jazzy">Jazzy</a></p>
 <pre class="highlight plaintext"><code>$ jazzy --config .jazzy.yml
 </code></pre>
-<h1 id='todo' class='heading'>TODO:</h1>
+<h2 id='publishing' class='heading'>Publishing</h2>
+
+<p>Newer versions of the SDK are tagged in GitHub and thus can be used by either:</p>
 
 <ul>
-<li>Publishing</li>
+<li>Cloning the repo at the tagged version and integrating into XCode</li>
+<li>Downloading a ZIP of the repo at the tagged version and integrating into XCode</li>
+<li>Updating the tag in the Podfile</li>
 </ul>
 
           </div>
@@ -449,7 +455,7 @@ can be used</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-15)</p>
+      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
