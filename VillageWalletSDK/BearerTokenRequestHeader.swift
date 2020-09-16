@@ -1,6 +1,6 @@
 import UIKit
 
-public class BearerTokenRequestHeader: AnyCredentialsStore<HasAccessToken>, RequestHeaderFactory {
+public class BearerTokenRequestHeader<T: HasAccessToken>: AnyCredentialsStore<T>, RequestHeaderFactory {
 	private var token: String?
 
 	public override init() {
@@ -15,7 +15,7 @@ public class BearerTokenRequestHeader: AnyCredentialsStore<HasAccessToken>, Requ
 		headers["Authorization"] = "Bearer \(token)"
 	}
 
-	override public func storeCredentials(credentials: HasAccessToken) {
+	override public func storeCredentials(credentials: T) {
 		token = credentials.accessToken
 	}
 }
