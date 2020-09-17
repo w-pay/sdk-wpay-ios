@@ -30,7 +30,7 @@ public protocol TransactionSummary: Payment {
 	Allowed types of transactions
  */
 public enum TransactionSummaryPaymentType {
-	/** A payment by a customer to a merchant */
+		/** A payment by a customer to a merchant */
 	case PAYMENT
 
 	/** A payment by a merchant to a customer undoing a previously made customer payment */

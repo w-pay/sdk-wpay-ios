@@ -10,7 +10,7 @@ public protocol NewPaymentRequest {
 	/** The gross amount to be paid. Must be positive */
 	var grossAmount: Decimal { get }
 
-	/** Whether a QR code should be created and returned in the response */
+	/** Whether a `QRCode` should be created and returned in the response */
 	var generateQR: Bool { get }
 
 	/**

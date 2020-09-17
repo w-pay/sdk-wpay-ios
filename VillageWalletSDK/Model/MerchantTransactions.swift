@@ -15,6 +15,9 @@ public protocol MerchantTransactionSummaries: MerchantTransactions {
 	var transactions: [MerchantTransactionSummary] { get }
 }
 
+/**
+	Summary information of the resulting transaction
+ */
 public protocol MerchantTransactionSummary: TransactionSummary {
 	/** The ID of the wallet associated with this transaction */
 	var walletId: String { get }

@@ -1,7 +1,7 @@
 import UIKit
 
 /**
- Verification state for a `PaymentInstrument`
+	Verification state for a `PaymentInstrument`
  */
 public enum PaymentInstrumentStatus {
 	case UNVERIFIED_PERSISTENT
