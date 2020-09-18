@@ -100,7 +100,7 @@ can be used
 func createCustomerVillage() -> CustomerVillage<IdmTokenDetails> {
   let options = VillageOptions(apiKey: "<your key here>")
   let apiKeyRequestHeader = ApiKeyRequestHeader(options: options)
-  let bearerTokenRequestHeader = BearerTokenRequestHeader()
+  let bearerTokenRequestHeader = BearerTokenRequestHeader<AuthDetails>()
   let api =
     OpenApiVillageCustomerApiRepository(
       requestHeadersFactory: RequestHeaderChain(
@@ -120,7 +120,10 @@ func createCustomerVillage() -> CustomerVillage<IdmTokenDetails> {
    */
   let authenticator = createAuthenticator()
 
-  let authentication = StoringApiAuthenticator(delegate: authenticator, store: bearerTokenRequestHeader)
+  let authentication = StoringApiAuthenticator(
+    delegate: authenticator,
+    store: bearerTokenRequestHeader
+  )
 
   return CustomerVillage(api: api, authenticator: authentication)
 }

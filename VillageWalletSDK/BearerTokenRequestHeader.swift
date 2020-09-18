@@ -3,7 +3,7 @@ import UIKit
 /**
 	Adds a 'Bearer' token to the request.
  */
-public class BearerTokenRequestHeader: AnyCredentialsStore<HasAccessToken>, RequestHeaderFactory {
+public class BearerTokenRequestHeader<T: HasAccessToken>: AnyCredentialsStore<T>, RequestHeaderFactory {
 	private var token: String?
 
 	public override init() {
@@ -22,13 +22,13 @@ public class BearerTokenRequestHeader: AnyCredentialsStore<HasAccessToken>, Requ
 	}
 
 	/**
-	  Stores `IdmTokenDetails` to use tokens in API requests.
+	  Stores authentication details to use tokens in API requests.
 
 		- See: `CredentialsStore.storeCredentials(...)`
 
 	  - Parameter credentials: The result of authenticating with the API.
 	 */
-	override public func storeCredentials(credentials: HasAccessToken) {
+	override public func storeCredentials(credentials: T) {
 		token = credentials.accessToken
 	}
 }
