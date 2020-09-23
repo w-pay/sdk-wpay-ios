@@ -1,17 +1,17 @@
 import UIKit
 
 /**
- Dictionary of merchant preferences.
+	Dictionary of merchant preferences.
  */
 public typealias MerchantPreferences = [String: [String: String]]
 
 /**
- Defines the API operations that the SDK can use to call the Merchant Village API
+	Defines the API operations that the SDK can use to call the Merchant Village API
 
- The SDK is technology agnostic with applications being able to choose an implementation that
- meets the needs and preexisting technology choices of the application.
+	The SDK is technology agnostic with applications being able to choose an implementation that
+	meets the needs and preexisting technology choices of the application.
 
- Implementations of the protocol may provide additional constraints on the user.
+	Implementations of the protocol may provide additional constraints on the user.
  */
 public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository {
 	/**
@@ -127,7 +127,7 @@ public protocol VillageMerchantApiRepository: VillageAdministrationApiRepository
 	)
 
 	/**
-	 Retrieve a merchant's preferences.
+	  Retrieve a merchant's preferences.
 	 */
 	func retrievePreferences(completion: @escaping ApiCompletion<MerchantPreferences>)
 

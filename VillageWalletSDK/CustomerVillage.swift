@@ -3,6 +3,8 @@ import UIKit
 /**
  Entry point into the SDK for customers. It is responsible for managing the relationship between
  the app concerns, and calling the API.
+
+ - Parameter A: The type of authentication details
  */
 public class CustomerVillage<A>: Configurable {
 	private let api: VillageCustomerApiRepository

@@ -4,6 +4,7 @@ import UIKit
  Abstracts how the SDK stores credentials obtained after authenticating with the API
  */
 public protocol CredentialsStore {
+	/** The type of credentials being stored **/
 	associatedtype T
 
 	/**

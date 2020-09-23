@@ -29,27 +29,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Auth/ApiAuthenticator.swift",
-      "line": 9,
-      "symbol": "ApiAuthenticator",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Auth/ApiAuthenticator.swift",
-      "line": 10,
-      "symbol": "ApiAuthenticator.T",
-      "symbol_kind": "source.lang.swift.decl.associatedtype",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Auth/CredentialsStore.swift",
-      "line": 7,
-      "symbol": "CredentialsStore.T",
-      "symbol_kind": "source.lang.swift.decl.associatedtype",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/ChallengeResponse.swift",
       "line": 5,
       "symbol": "ChallengeResponseType.STEP_UP",
@@ -61,27 +40,6 @@
       "line": 6,
       "symbol": "ChallengeResponseType.PASSCODE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerUpdatePaymentSessionRequest.swift",
-      "line": 4,
-      "symbol": "CustomerUpdatePaymentSessionRequest",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/CustomerUpdatePaymentSessionRequest.swift",
-      "line": 5,
-      "symbol": "CustomerUpdatePaymentSessionRequest.customerInfo",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/MerchantTransactions.swift",
-      "line": 18,
-      "symbol": "MerchantTransactionSummary",
-      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {

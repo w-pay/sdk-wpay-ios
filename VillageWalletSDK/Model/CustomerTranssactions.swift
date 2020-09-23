@@ -11,7 +11,7 @@ public protocol CustomerTransactions {
 	An instrument used for a transaction
  */
 public protocol CustomerTransactionUsedPaymentInstrument {
-	/** The ID of the payment instrument */
+	/** The ID of the `PaymentInstrument` */
 	var paymentInstrumentId: String { get }
 
 	/** The amount charged against or refunded to this instrument */

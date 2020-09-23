@@ -4,7 +4,7 @@ import UIKit
 	Request to create a new `QRCode` for a Payment Request
  */
 public protocol NewPaymentRequestQRCode {
-	/** The ID of the payment request linked to this QR code */
+	/** The ID of the payment request linked to this `QRCode` */
 	var referenceId: String { get }
 
 	/** The type of ID held in `NewPaymentRequestQRCode.referenceId` */

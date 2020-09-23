@@ -1,7 +1,7 @@
 import Foundation
 
 /**
- Options to configure the SDK
+  Options to configure the SDK
  */
 public class VillageOptions {
 	/** The API key to identify the SDK to the API. */
