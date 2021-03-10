@@ -4,10 +4,11 @@ import UIKit
  Options unique to using the Customer API operations.
  */
 public class VillageCustomerOptions : VillageOptions {
-	public init(apiKey: String, walletId: String?) {
+	/** :nodoc **/
+	public init(apiKey: String, baseUrl: String, walletId: String?) {
 		self.walletId = walletId
 
-		super.init(apiKey: apiKey)
+		super.init(apiKey: apiKey, baseUrl: baseUrl)
 	}
 
 	/**

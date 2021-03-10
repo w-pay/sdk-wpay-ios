@@ -4,10 +4,11 @@ import UIKit
  Options unique to using the Merchant API operations.
  */
 public class VillageMerchantOptions : VillageOptions {
-	public init(apiKey: String, merchantId: String?) {
+	/** :nodoc */
+	public init(apiKey: String, baseUrl: String, merchantId: String?) {
 		self.merchantId = merchantId
 
-		super.init(apiKey: apiKey)
+		super.init(apiKey: apiKey, baseUrl: baseUrl)
 	}
 
 	/**
