@@ -4,15 +4,17 @@ import UIKit
 	Adds the Wallet ID to the request
  */
 public class WalletIdRequestHeader: RequestHeaderFactory {
-	/** :nodoc */
-	public init() {
+	private let walletId: String
 
+	/** :nodoc */
+	public init(walletId: String) {
+		self.walletId = walletId
 	}
 
 	/**
 		- See: `RequestHeaderFactory.addHeaders(...)`
    */
 	public func addHeaders(headers: inout [String: String]) -> Void {
-		headers[X_WALLET_ID] = "10006"
+		headers[X_WALLET_ID] = walletId
 	}
 }

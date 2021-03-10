@@ -30,7 +30,7 @@ public enum PaymentInstrumentStatus {
 /**
 	All the possible `PaymentInstrument`s that a customer might have in a wallet.
  */
-public protocol AllPaymentInstruments: PaymentInstruments {
+public protocol WalletContents: PaymentInstruments {
 	/**
 		A list of payment instruments stored in the customers EverydayPay wallet
 

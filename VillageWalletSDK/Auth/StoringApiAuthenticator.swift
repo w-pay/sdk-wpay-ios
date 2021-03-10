@@ -28,11 +28,4 @@ public class StoringApiAuthenticator<T>: AnyApiAuthenticator<T> {
 			completion(result)
 		})
 	}
-
-	/**
-		- See: `Configurable.setHost(...)`
-   */
-	override public func setHost(host: String) {
-		delegate.setHost(host: host)
-	}
 }
