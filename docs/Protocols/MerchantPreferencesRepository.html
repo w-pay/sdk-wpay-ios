@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MerchantVillage Class Reference</title>
+    <title>MerchantPreferencesRepository Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,16 +14,16 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/MerchantVillage" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/MerchantPreferencesRepository" class="dashAnchor"></a>
 
-    <a title="MerchantVillage Class Reference"></a>
+    <a title="MerchantPreferencesRepository Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          VillageWalletSDK 3.4.0 Docs
+          VillageWalletSDK 4.0.0-alpha Docs
         </a>
-         (96% documented)
+         (88% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">VillageWalletSDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      MerchantVillage Class Reference
+      MerchantPreferencesRepository Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -66,16 +66,22 @@
                 <a class="nav-group-task-link" href="../Classes/BearerTokenRequestHeader.html">BearerTokenRequestHeader</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/CustomerVillage.html">CustomerVillage</a>
+                <a class="nav-group-task-link" href="../Classes/EmptyTokenApiAuthenticator.html">EmptyTokenApiAuthenticator</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/MerchantVillage.html">MerchantVillage</a>
+                <a class="nav-group-task-link" href="../Classes/ProvidedTokenAuthenticator.html">ProvidedTokenAuthenticator</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/RequestHeaderChain.html">RequestHeaderChain</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/StoringApiAuthenticator.html">StoringApiAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VillageCustomerOptions.html">VillageCustomerOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VillageMerchantOptions.html">VillageMerchantOptions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/VillageOptions.html">VillageOptions</a>
@@ -92,6 +98,9 @@
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:16VillageWalletSDK9X_API_KEYSSvp">X_API_KEY</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Variables.html#/s:16VillageWalletSDK13X_MERCHANT_IDSSvp">X_MERCHANT_ID</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global%20Variables.html#/s:16VillageWalletSDK11X_WALLET_IDSSvp">X_WALLET_ID</a>
               </li>
             </ul>
@@ -104,6 +113,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/ApiError/HTTPErrorReason.html">– HTTPErrorReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ApiTokenType.html">ApiTokenType</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/ChallengeResponseType.html">ChallengeResponseType</a>
@@ -132,7 +144,7 @@
             <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/AllPaymentInstruments.html">AllPaymentInstruments</a>
+                <a class="nav-group-task-link" href="../Protocols/AdministrationApiRepository.html">AdministrationApiRepository</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ApiAuthenticator.html">ApiAuthenticator</a>
@@ -145,9 +157,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/ChallengeResponse.html">ChallengeResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/Configurable.html">Configurable</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CreatePaymentRequestResult.html">CreatePaymentRequestResult</a>
@@ -171,6 +180,15 @@
                 <a class="nav-group-task-link" href="../Protocols/CustomerPaymentRequest.html">CustomerPaymentRequest</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomerPaymentRequestsRepository.html">CustomerPaymentRequestsRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomerPaymentSessionsRepository.html">CustomerPaymentSessionsRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomerPreferencesRepository.html">CustomerPreferencesRepository</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerTransactionDetails.html">CustomerTransactionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -181,6 +199,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerTransactionUsedPaymentInstrument.html">CustomerTransactionUsedPaymentInstrument</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomerTransactionsRepository.html">CustomerTransactionsRepository</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/CustomerUpdatePaymentSessionRequest.html">CustomerUpdatePaymentSessionRequest</a>
@@ -207,10 +228,19 @@
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentDetails.html">MerchantPaymentDetails</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSessionsRepository.html">MerchantPaymentSessionsRepository</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSummaries.html">MerchantPaymentSummaries</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantPaymentSummary.html">MerchantPaymentSummary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MerchantPaymentsRepository.html">MerchantPaymentsRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MerchantPreferencesRepository.html">MerchantPreferencesRepository</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantSchema.html">MerchantSchema</a>
@@ -229,6 +259,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantTransactionSummary.html">MerchantTransactionSummary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MerchantTransactionsRepository.html">MerchantTransactionsRepository</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MerchantUpdatePaymentSessionRequest.html">MerchantUpdatePaymentSessionRequest</a>
@@ -258,6 +291,9 @@
                 <a class="nav-group-task-link" href="../Protocols/PaymentInstruments.html">PaymentInstruments</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PaymentInstrumentsRepository.html">PaymentInstrumentsRepository</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/PaymentSession.html">PaymentSession</a>
               </li>
               <li class="nav-group-task">
@@ -267,10 +303,16 @@
                 <a class="nav-group-task-link" href="../Protocols/QRCode.html">QRCode</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/QRCodeRepository.html">QRCodeRepository</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/RequestHeaderFactory.html">RequestHeaderFactory</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/RequestHeadersFactory.html">RequestHeadersFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SchemasRepository.html">SchemasRepository</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/SecondaryPaymentInstrument.html">SecondaryPaymentInstrument</a>
@@ -282,13 +324,13 @@
                 <a class="nav-group-task-link" href="../Protocols/TransactionSummary.html">TransactionSummary</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/VillageAdministrationApiRepository.html">VillageAdministrationApiRepository</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/VillageCustomerApiRepository.html">VillageCustomerApiRepository</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/VillageMerchantApiRepository.html">VillageMerchantApiRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/WalletContents.html">WalletContents</a>
               </li>
             </ul>
           </li>
@@ -312,16 +354,15 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>MerchantVillage</h1>
+            <h1>MerchantPreferencesRepository</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MerchantVillage</span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Configurable.html">Configurable</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantPreferencesRepository</span></code></pre>
 
                 </div>
               </div>
-            <p>Entry point into the SDK for merchants. It is responsible for managing the relationship between
-the app concerns, and calling the API.</p>
+            <p>Undocumented</p>
 
           </div>
         </section>
@@ -333,9 +374,9 @@ the app concerns, and calling the API.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16VillageWalletSDK08MerchantA0C3api13authenticatorACyxGAA0aD13ApiRepository_p_AA03AnyG13AuthenticatorCyxGtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(api:authenticator:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK08MerchantA0C3api13authenticatorACyxGAA0aD13ApiRepository_p_AA03AnyG13AuthenticatorCyxGtcfc">init(api:<wbr>authenticator:<wbr>)</a>
+                    <a name="/s:16VillageWalletSDK29MerchantPreferencesRepositoryP3get10completionyys6ResultOySDySSSDyS2SGGAA8ApiErrorOGc_tF"></a>
+                    <a name="//apple_ref/swift/Method/get(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK29MerchantPreferencesRepositoryP3get10completionyys6ResultOySDySSSDyS2SGGAA8ApiErrorOGc_tF">get(completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -343,13 +384,41 @@ the app concerns, and calling the API.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Retrieve a merchant&rsquo;s preferences.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">api</span><span class="p">:</span> <span class="kt"><a href="../Protocols/VillageMerchantApiRepository.html">VillageMerchantApiRepository</a></span><span class="p">,</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/AnyApiAuthenticator.html">AnyApiAuthenticator</a></span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK19MerchantPreferencesa">MerchantPreferences</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16VillageWalletSDK29MerchantPreferencesRepositoryP3set11preferences10completionySDySSSDyS2SGG_ys6ResultOyytAA8ApiErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/set(preferences:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK29MerchantPreferencesRepositoryP3set11preferences10completionySDySSSDyS2SGG_ys6ResultOyytAA8ApiErrorOGctF">set(preferences:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update a merchant&rsquo;s preferences</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">preferences</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK19MerchantPreferencesa">MerchantPreferences</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -360,64 +429,17 @@ the app concerns, and calling the API.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>api</em>
+                                <em>preferences</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The API repository to use</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>authenticator</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The <code><a href="../Protocols/ApiAuthenticator.html">ApiAuthenticator</a></code> to use to obtain authorisation needed to access the API</p>
+                                  <p>The preferences to use</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16VillageWalletSDK08MerchantA0C7setHost4hostySS_tF"></a>
-                    <a name="//apple_ref/swift/Method/setHost(host:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK08MerchantA0C7setHost4hostySS_tF">setHost(host:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Allows the application to change the host the SDK sends API requests too.</p>
-
-<p>This allows the application to read data from an outside source (eg: a QR code) and have
-the SDK use the same host.</p>
-<div class="aside aside-see">
-    <p class="aside-title">See</p>
-    <code><a href="../Protocols/Configurable.html#/s:16VillageWalletSDK12ConfigurableP7setHost4hostySS_tF">Configurable.setHost(...)</a></code>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setHost</span><span class="p">(</span><span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -430,7 +452,7 @@ the SDK use the same host.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2020-09-17)</p>
+      <p>&copy; 2021 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2021-03-11)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
