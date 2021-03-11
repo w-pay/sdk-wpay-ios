@@ -2,7 +2,8 @@
 
 This project contains a Framework that can facilitate iOS applications accessing the Village API.
 
-The SDK is currently in development. Therefore parts may change.
+| :memo: | The SDK is currently in development. Therefore parts may change. |
+|--------|:-----------------------------------------------------------------|
 
 ## Features
 
@@ -25,8 +26,8 @@ the protocols to allow particular technology choices (eg: choice of
 HTTP client library). This makes it very easy to use the SDK in an
 existing project, without necessarily introducing extra dependencies.
 
-The entry point for applications is the `CustomerVillage` class or
-`MerchantVillage` class depending on the goals of the application.
+The entry point for applications is the `createCustomerSDK` or
+`createCustomerSDK` functions depending on the goals of the application.
 
 ### Authentication layer
 
@@ -97,35 +98,19 @@ The examples use the Open API implementation, however any class conforming to th
 can be used
 
 ```swift
-func createCustomerVillage() -> CustomerVillage<IdmTokenDetails> {
-  let options = VillageOptions(apiKey: "<your key here>")
-  let apiKeyRequestHeader = ApiKeyRequestHeader(options: options)
-  let bearerTokenRequestHeader = BearerTokenRequestHeader<AuthDetails>()
-  let api =
-    OpenApiVillageCustomerApiRepository(
-      requestHeadersFactory: RequestHeaderChain(
-        factories: [
-          apiKeyRequestHeader,
-          bearerTokenRequestHeader,
-          WalletIdRequestHeader()
-        ]
-      ),
-      // TODO: This should be in a project property
-      contextRoot: "/wow/v1/dpwallet"
-    )
-
-  /*
-   * Currently the creation of the `ApiAuthenticator` has to be in the consuming
-   * application.
-   */
-  let authenticator = createAuthenticator()
-
-  let authentication = StoringApiAuthenticator(
-    delegate: authenticator,
-    store: bearerTokenRequestHeader
+func createCustomerVillage() -> VillageCustomerApiRepository {
+  let options = VillageCustomerOptions(
+    apiKey: "<your key here>",
+    baseUrl: "http://my.app.host.com/context/root"
   )
 
-  return CustomerVillage(api: api, authenticator: authentication)
+  return createCustomerSDK(
+    options: options,
+
+    // see the docs on how we can use different token types.
+    token: .stringToken(token: "abc123"),
+    repository: OpenApiCustomerApiRepositoryFactory
+  )
 }
 ```
 
