@@ -43,8 +43,8 @@ func createMerchantSDK(
 ) -> VillageMerchantApiRepository {
 	var (headers, authenticator) = createSDKComponents(options: options, token: token);
 
-	if (options.merchantId != nil) {
-		headers.append(MerchantIdRequestHeader(merchantId: options.merchantId!))
+	if let merchantId = options.merchantId {
+		headers.append(MerchantIdRequestHeader(merchantId: merchantId))
 	}
 
 	return repository(options, RequestHeaderChain(factories: headers), authenticator)

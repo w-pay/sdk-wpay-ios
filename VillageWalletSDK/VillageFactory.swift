@@ -20,8 +20,8 @@ func createSDKComponents(
 
 	let (authenticator, bearerTokenRequestHeader) = createAuthentication(token: token)
 
-	if (bearerTokenRequestHeader != nil) {
-		factories.append(bearerTokenRequestHeader!)
+	if let requestHeader = bearerTokenRequestHeader {
+		factories.append(requestHeader)
 	}
 
 	return (factories, authenticator)

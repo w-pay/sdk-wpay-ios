@@ -43,8 +43,8 @@ func createCustomerSDK(
 ) -> VillageCustomerApiRepository {
 	var (headers, authenticator) = createSDKComponents(options: options, token: token);
 
-	if (options.walletId != nil) {
-		headers.append(WalletIdRequestHeader(walletId: options.walletId!))
+	if let walletId = options.walletId {
+		headers.append(WalletIdRequestHeader(walletId: walletId))
 	}
 
 	return repository(options, RequestHeaderChain(factories: headers), authenticator)
