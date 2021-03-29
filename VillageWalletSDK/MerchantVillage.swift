@@ -29,23 +29,25 @@ typealias MerchantApiRepositoryFactory = (
 	_ authenticator: AnyApiAuthenticator<HasAccessToken>
 ) -> VillageMerchantApiRepository
 
-/**
- Entry point into the SDK for merchants.
+class MerchantVillage {
+	/**
+	 Entry point into the SDK for merchants.
 
- - Parameter options:
- - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
- - Parameter repository: A factory function to create a new API repository instance.
- */
-func createMerchantSDK(
-	options: VillageMerchantOptions,
-	token: ApiTokenType,
-	repository: MerchantApiRepositoryFactory
-) -> VillageMerchantApiRepository {
-	var (headers, authenticator) = createSDKComponents(options: options, token: token);
+	 - Parameter options:
+	 - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
+	 - Parameter repository: A factory function to create a new API repository instance.
+	 */
+	func createSDK(
+		options: VillageMerchantOptions,
+		token: ApiTokenType,
+		repository: MerchantApiRepositoryFactory
+	) -> VillageMerchantApiRepository {
+		var (headers, authenticator) = createSDKComponents(options: options, token: token);
 
-	if let merchantId = options.merchantId {
-		headers.append(MerchantIdRequestHeader(merchantId: merchantId))
+		if let merchantId = options.merchantId {
+			headers.append(MerchantIdRequestHeader(merchantId: merchantId))
+		}
+
+		return repository(options, RequestHeaderChain(factories: headers), authenticator)
 	}
-
-	return repository(options, RequestHeaderChain(factories: headers), authenticator)
 }

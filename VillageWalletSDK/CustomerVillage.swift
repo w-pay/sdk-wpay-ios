@@ -29,23 +29,25 @@ typealias CustomerApiRepositoryFactory = (
 	_ authenticator: AnyApiAuthenticator<HasAccessToken>
 ) -> VillageCustomerApiRepository
 
-/**
- Entry point into the SDK for customers.
+class CustomerVillage {
+	/**
+	 Entry point into the SDK for customers.
 
- - Parameter options:
- - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
- - Parameter repository: A factory function to create a new API repository instance.
- */
-func createCustomerSDK(
-	options: VillageCustomerOptions,
-	token: ApiTokenType,
-	repository: CustomerApiRepositoryFactory
-) -> VillageCustomerApiRepository {
-	var (headers, authenticator) = createSDKComponents(options: options, token: token);
+	 - Parameter options:
+	 - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
+	 - Parameter repository: A factory function to create a new API repository instance.
+	 */
+	static func createSDK(
+		options: VillageCustomerOptions,
+		token: ApiTokenType,
+		repository: CustomerApiRepositoryFactory
+	) -> VillageCustomerApiRepository {
+		var (headers, authenticator) = createSDKComponents(options: options, token: token);
 
-	if let walletId = options.walletId {
-		headers.append(WalletIdRequestHeader(walletId: walletId))
+		if let walletId = options.walletId {
+			headers.append(WalletIdRequestHeader(walletId: walletId))
+		}
+
+		return repository(options, RequestHeaderChain(factories: headers), authenticator)
 	}
-
-	return repository(options, RequestHeaderChain(factories: headers), authenticator)
 }
