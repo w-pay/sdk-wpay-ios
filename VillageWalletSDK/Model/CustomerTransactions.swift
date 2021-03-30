@@ -8,20 +8,6 @@ public protocol CustomerTransactions {
 }
 
 /**
-	An instrument used for a transaction
- */
-public protocol CustomerTransactionUsedPaymentInstrument {
-	/** The ID of the `PaymentInstrument` */
-	var paymentInstrumentId: String { get }
-
-	/** The amount charged against or refunded to this instrument */
-	var amount: Decimal { get }
-
-	/** The reference for the payment */
-	var paymentTransactionRef: String? { get }
-}
-
-/**
 	List of customer transactions
  */
 public protocol CustomerTransactionSummaries: CustomerTransactions {
@@ -35,9 +21,6 @@ public protocol CustomerTransactionSummaries: CustomerTransactions {
 public protocol CustomerTransactionSummary: TransactionSummary {
 	/** The ID of the merchant associated with this transaction */
 	var merchantId: String { get }
-
-	/** The instruments used to make the payment. For refunds and cash back amounts will be negative */
-	var instruments: [CustomerTransactionUsedPaymentInstrument] { get }
 }
 
 /**

@@ -19,18 +19,62 @@ public protocol TransactionSummary: Payment {
 	/** The current status of the transactions */
 	var status: TransactionSummaryPaymentStatus? { get }
 
-	/** The error detail returned by downstream processes when the payment is REJECTED */
-	var statusDetail: AnyObject? { get }
+	/** The rollback state of this transaction */
+	var rollback: TransactionSummarySummaryRollback? { get }
+
+	/** Array of transaction responses returned by downstream processes */
+	var subTransactions: [Any]? { get }
 
 	/** The reason provided for the refund. Only provided for REFUND transactions */
 	var refundReason: String? { get }
+
+	/** The instruments used to make the payment. For refunds and cash back amounts will be negative */
+	var instruments: [TransactionSummaryUsedPaymentInstrument] { get }
 }
+
+/**
+ An instrument used for a transaction
+ */
+public protocol TransactionSummaryUsedPaymentInstrument {
+	/** The ID of the `PaymentInstrument` */
+	var paymentInstrumentId: String { get }
+
+	/** The type of the payment instrument */
+	var instrumentType: String { get }
+
+	/** The list of transactions associated with the instrument." */
+	var transactions: [UsedPaymentInstrumentTransaction] { get }
+}
+
+/**
+ A subtransaction associated with a payment instrument
+ */
+public protocol UsedPaymentInstrumentTransaction {
+	/** The type of transaction. */
+	var type: TransactionSummaryPaymentType? { get }
+
+	/** Timestamp of when the transaction occurred */
+	var executionTime: Date? { get }
+
+	/** The reference for the payment. If a refund this is the reference to the transaction being refunded. */
+	var paymentTransactionRef: String? { get }
+
+	/** The reference for the refund. */
+	var refundTransactionRef: String? { get }
+
+	/** The current status of the transactions */
+	var status: TransactionSummaryPaymentStatus? { get }
+
+	/** The amount charged against or refunded to this instrument */
+	var amount: Decimal? { get }
+}
+
 
 /**
 	Allowed types of transactions
  */
-public enum TransactionSummaryPaymentType : String {
-		/** A payment by a customer to a merchant */
+public enum TransactionSummaryPaymentType: String {
+	/** A payment by a customer to a merchant */
 	case PAYMENT
 
 	/** A payment by a merchant to a customer undoing a previously made customer payment */
@@ -40,7 +84,7 @@ public enum TransactionSummaryPaymentType : String {
 /**
 	Allowed states that a transaction can be in
  */
-public enum TransactionSummaryPaymentStatus : String {
+public enum TransactionSummaryPaymentStatus: String {
 	/** The transaction is being processed */
 	case PROCESSING
 
@@ -49,4 +93,8 @@ public enum TransactionSummaryPaymentStatus : String {
 
 	/** The transaction was rejected */
 	case REJECTED
+}
+
+public enum TransactionSummarySummaryRollback: String {
+	case REQUIRED, NOT_REQUIRED, FAILED, SUCCESSFUL
 }

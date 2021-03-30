@@ -15,7 +15,7 @@ public protocol HealthCheck {
 /**
 	Possible health states that the API server can be in.
  */
-public enum HealthCheckStatus : String {
+public enum HealthCheckStatus: String {
 	/** The API server is healthy */
 	case SUCCESS
 }

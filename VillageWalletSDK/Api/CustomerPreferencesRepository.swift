@@ -1,10 +1,5 @@
 import UIKit
 
-/**
- Dictionary of customer preferences.
- */
-public typealias CustomerPreferences = [String: [String: String]]
-
 public protocol CustomerPreferencesRepository {
 	/**
 	 Retrieve a customer's preferences

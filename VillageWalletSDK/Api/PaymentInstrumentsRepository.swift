@@ -2,19 +2,29 @@ import UIKit
 
 public protocol PaymentInstrumentsRepository {
 	/**
-	 Retrieve the customer's registered `PaymentInstruments`
+	 Get the specified payment instrument of the customer.
 
-	 - Parameter wallet: Whether to return only instruments registered by the customer for the merchant, or for the merchant and Everyday Pay
+	 - Parameter paymentToken: The payment token of the payment instrument to fetch.
+	 - Parameter publicKey: A public key used to encrypt sensitive instrument data and include that encrypted data in the response sent back to the consumer.
 	 */
-	func list(wallet: Wallet, completion: @escaping ApiCompletion<WalletContents>)
+	func getByToken(
+		paymentToken: String,
+		publicKey: String?,
+		completion: @escaping ApiCompletion<IndividualPaymentInstrument>
+	)
 
 	/**
-	 Delete a `PaymentInstrument} from a {@link Wallet`
+	 Retrieve the customer's registered `PaymentInstruments`
+	 */
+	func list(completion: @escaping ApiCompletion<WalletContents>)
+
+	/**
+	 Delete a `PaymentInstrument` from a `Wallet`
 
 	 - Parameter instrument: The payment instrument to delete.
 	 */
 	func delete(
-		instrument: PaymentInstrumentIdentifier,
+		instrument: String,
 		completion: @escaping ApiCompletion<Void>
 	)
 
