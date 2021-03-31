@@ -6,7 +6,7 @@ import UIKit
 	If an application has an existing authentication/authorisation workflow then an Adapter class
 	can be used to integrate that workflow into the SDK to provide the necessary authentication
  */
-public protocol ApiAuthenticator: Configurable {
+public protocol ApiAuthenticator {
 	/** The type of authentication details */
 	associatedtype T
 
@@ -31,13 +31,6 @@ open class AnyApiAuthenticator<T>: ApiAuthenticator {
 		- See: `ApiAuthenticator.authenticate(...)`
    */
 	open func authenticate(completion: @escaping ApiCompletion<T>) {
-		fatalError("Must implement")
-	}
-
-	/**
-		- See: `Configurable.setHost(...)`
-   */
-	open func setHost(host: String) {
 		fatalError("Must implement")
 	}
 }

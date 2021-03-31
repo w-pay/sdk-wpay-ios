@@ -1,32 +1,53 @@
 import UIKit
 
 /**
- Entry point into the SDK for merchants. It is responsible for managing the relationship between
- the app concerns, and calling the API.
+ Options unique to using the Merchant API operations.
  */
-public class MerchantVillage<A>: Configurable {
-	private let api: VillageMerchantApiRepository
-	private let authenticator: AnyApiAuthenticator<A>
+public class VillageMerchantOptions : VillageOptions {
+	/** :nodoc */
+	public init(apiKey: String, baseUrl: String, merchantId: String?) {
+		self.merchantId = merchantId
 
-	/**
-		- Parameter api: The API repository to use
-		- Parameter authenticator: The `ApiAuthenticator` to use to obtain authorisation needed to access the API
-	 */
-	public init(api: VillageMerchantApiRepository, authenticator: AnyApiAuthenticator<A>) {
-		self.api = api
-		self.authenticator = authenticator
+		super.init(apiKey: apiKey, baseUrl: baseUrl)
 	}
 
 	/**
-		Allows the application to change the host the SDK sends API requests too.
+	 If given, the merchant ID will be added to the headers.
 
-		This allows the application to read data from an outside source (eg: a QR code) and have
-		the SDK use the same host.
-
-		- See: `Configurable.setHost(...)`
+	 Since the merchant ID identifies the merchant it can be overridden with another value by the
+	 API gateway which uses the authentication token to identify the merchant.
 	 */
-	public func setHost(host: String) {
-		authenticator.setHost(host: host)
-		api.setHost(host: host)
+	var merchantId: String?
+}
+
+/**
+ Factory function type to give to SDK factory functions to instantiate a new API repository instance.
+ */
+typealias MerchantApiRepositoryFactory = (
+	_ options: VillageMerchantOptions,
+	_ headers: RequestHeadersFactory,
+	_ authenticator: AnyApiAuthenticator<HasAccessToken>
+) -> VillageMerchantApiRepository
+
+class MerchantVillage {
+	/**
+	 Entry point into the SDK for merchants.
+
+	 - Parameter options:
+	 - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
+	 - Parameter repository: A factory function to create a new API repository instance.
+	 */
+	func createSDK(
+		options: VillageMerchantOptions,
+		token: ApiTokenType,
+		repository: MerchantApiRepositoryFactory
+	) -> VillageMerchantApiRepository {
+		var (headers, authenticator) = createSDKComponents(options: options, token: token);
+
+		if let merchantId = options.merchantId {
+			headers.append(MerchantIdRequestHeader(merchantId: merchantId))
+		}
+
+		return repository(options, RequestHeaderChain(factories: headers), authenticator)
 	}
 }
