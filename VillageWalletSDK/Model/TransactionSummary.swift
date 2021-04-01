@@ -29,31 +29,18 @@ public protocol TransactionSummary: Payment {
 /**
 	Allowed types of transactions
  */
-public enum TransactionSummaryPaymentType {
+public enum TransactionSummaryPaymentType : String {
 		/** A payment by a customer to a merchant */
 	case PAYMENT
 
 	/** A payment by a merchant to a customer undoing a previously made customer payment */
 	case REFUND
-
-	public static func valueOf(value: String) -> TransactionSummaryPaymentType? {
-		switch (value.uppercased()) {
-			case "PAYMENT":
-				return TransactionSummaryPaymentType.PAYMENT
-
-			case "REFUND":
-				return TransactionSummaryPaymentType.REFUND
-
-			default:
-				return nil
-		}
-	}
 }
 
 /**
 	Allowed states that a transaction can be in
  */
-public enum TransactionSummaryPaymentStatus {
+public enum TransactionSummaryPaymentStatus : String {
 	/** The transaction is being processed */
 	case PROCESSING
 
@@ -62,20 +49,4 @@ public enum TransactionSummaryPaymentStatus {
 
 	/** The transaction was rejected */
 	case REJECTED
-
-	public static func valueOf(value: String) -> TransactionSummaryPaymentStatus? {
-		switch (value.uppercased()) {
-			case "PROCESSING":
-				return TransactionSummaryPaymentStatus.PROCESSING
-
-			case "APPROVED":
-				return TransactionSummaryPaymentStatus.APPROVED
-
-			case "REJECTED":
-				return TransactionSummaryPaymentStatus.REJECTED
-
-			default:
-				return nil
-		}
-	}
 }

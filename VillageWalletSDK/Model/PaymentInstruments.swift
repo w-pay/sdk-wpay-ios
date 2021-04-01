@@ -3,28 +3,9 @@ import UIKit
 /**
 	Verification state for a `PaymentInstrument`
  */
-public enum PaymentInstrumentStatus {
+public enum PaymentInstrumentStatus : String {
 	case UNVERIFIED_PERSISTENT
 	case VERIFIED
-
-	/**
-		Convert a string to an instance of `PaymentInstrumentStatus`
-
-		- Parameter value: A string
-		- Returns: nil if `value` is not a valid representation of an enum value
-	 */
-	public static func valueOf(value: String) -> PaymentInstrumentStatus? {
-		switch(value.uppercased()) {
-		case "UNVERIFIED_PERSISTENT":
-			return PaymentInstrumentStatus.UNVERIFIED_PERSISTENT
-
-		case "VERIFIED":
-			return PaymentInstrumentStatus.VERIFIED
-
-		default:
-			return nil
-		}
-	}
 }
 
 /**
