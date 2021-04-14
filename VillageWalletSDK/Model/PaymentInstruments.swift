@@ -3,28 +3,9 @@ import UIKit
 /**
 	Verification state for a `PaymentInstrument`
  */
-public enum PaymentInstrumentStatus {
+public enum PaymentInstrumentStatus: String {
 	case UNVERIFIED_PERSISTENT
 	case VERIFIED
-
-	/**
-		Convert a string to an instance of `PaymentInstrumentStatus`
-
-		- Parameter value: A string
-		- Returns: nil if `value` is not a valid representation of an enum value
-	 */
-	public static func valueOf(value: String) -> PaymentInstrumentStatus? {
-		switch(value.uppercased()) {
-		case "UNVERIFIED_PERSISTENT":
-			return PaymentInstrumentStatus.UNVERIFIED_PERSISTENT
-
-		case "VERIFIED":
-			return PaymentInstrumentStatus.VERIFIED
-
-		default:
-			return nil
-		}
-	}
 }
 
 /**
@@ -51,25 +32,14 @@ public protocol PaymentInstruments {
 }
 
 /**
-	Used to identify a `PaymentInstrument` to the API
+	Common properties to all `PaymentInstruments`
  */
-public protocol PaymentInstrumentIdentifier {
+public protocol PaymentInstrument {
 	/** The payment instrument id. */
 	var paymentInstrumentId: String { get }
 
-	/** Which Wallet the instrument is in. */
-	var wallet: Wallet { get }
-}
-
-/**
-	Common properties to all `PaymentInstruments`
- */
-public protocol PaymentInstrument: PaymentInstrumentIdentifier {
 	/** Indicates if the merchant profile in the container allows the use of this payment instrument. */
 	var allowed: Bool { get }
-
-	/** The suffix (last 4 digits) of the card number. */
-	var cardSuffix: String { get }
 
 	/** The timestamp the payment instrument was last updated in the container. */
 	var lastUpdated: Date { get }
@@ -87,10 +57,15 @@ public protocol PaymentInstrument: PaymentInstrumentIdentifier {
 	var status: PaymentInstrumentStatus? { get }
 }
 
+public protocol CardPaymentInstrument: PaymentInstrument {
+	/** The suffix (last 4 digits) of the card number. */
+	var cardSuffix: String { get }
+}
+
 /**
 	An added credit card
  */
-public protocol CreditCard: PaymentInstrument {
+public protocol CreditCard: CardPaymentInstrument {
 	/** The nickname of the credit card instrument in the container. */
 	var cardName: String { get }
 
@@ -122,7 +97,7 @@ public protocol CreditCard: PaymentInstrument {
 /**
 	An added gift card.
  */
-public protocol GiftCard: PaymentInstrument {
+public protocol GiftCard: CardPaymentInstrument {
 	/** The gift card program name. */
 	var programName: String { get }
 
@@ -164,4 +139,22 @@ public protocol SecondaryPaymentInstrument {
 
 	/** The amount of the payment to be paid using this instrument. */
 	var amount: Decimal { get }
+}
+
+public protocol IndividualPaymentInstrument: PaymentInstrument {
+	/** The type of the payment instrument. */
+	var paymentInstrumentType: String { get }
+
+	var paymentInstrumentDetail: IndividualPaymentInstrumentDetail { get }
+
+	/** An encrypted JSON object containing sensitive data */
+	var cipherText: String? { get }
+}
+
+public protocol IndividualPaymentInstrumentDetail {
+	/** The gift card program name. */
+	var programName: String { get }
+
+	/** What [ChallengeResponse] is required to make a payment with this instrument */
+	var stepUp: GiftCardStepUp { get }
 }

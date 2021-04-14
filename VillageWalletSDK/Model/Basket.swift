@@ -16,7 +16,7 @@ public protocol BasketItem {
 	var label: String { get }
 
 	/** Longer description of the basket item. */
-	var description: String?{ get }
+	var description: String? { get }
 
 	/** The number of units of the item in the basket if multiple is possible. */
 	var quantity: Int? { get }

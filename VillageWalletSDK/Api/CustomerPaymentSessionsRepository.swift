@@ -38,16 +38,18 @@ public protocol CustomerPaymentSessionsRepository {
 	 Pre-approve payment for a `PaymentSession`
 
 	 - Parameter paymentSessionId: The `PaymentSession` to pre-approve payment for.
-	 - Parameter primaryInstrument: The primary (or only) instrument to use to make the payment.
+	 - Parameter primaryInstrument: The primary (or only) instrument to use to make the payment. If not present then the primary instrument from the customer preferences will be used.
 	 - Parameter secondaryInstruments: Other payment instruments to use to split payment.
 	 - Parameter clientReference: An optional client reference to be associated with the transaction.
+	 - Parameter preferences: Optional payment preferences.
 	 - Parameter challengeResponses: Used when needing to complete challenge(s) to complete payment.
 	 */
 	func preApprove(
 		paymentSessionId: String,
-		primaryInstrument: PaymentInstrumentIdentifier,
+		primaryInstrument: String?,
 		secondaryInstruments: [SecondaryPaymentInstrument]?,
 		clientReference: String?,
+		preferences: PaymentPreferences?,
 		challengeResponses: [ChallengeResponse]?,
 		completion: @escaping ApiCompletion<Void>
 	)
