@@ -25,7 +25,7 @@ public class BearerTokenRequestHeader: AnyCredentialsStore<HasAccessToken>, Requ
 			fatalError("Must set bearer token before calling API")
 		}
 
-		headers["Authorization"] = "Bearer \(token)"
+		headers[AUTHORISATION] = "Bearer \(token)"
 	}
 
 	/**
