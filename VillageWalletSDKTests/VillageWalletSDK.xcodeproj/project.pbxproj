@@ -10,6 +10,7 @@
 		B5BADF070E197297D450498C /* Pods_VillageWalletSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E0DF0FC6DFCD25A80B11E0 /* Pods_VillageWalletSDK_Tests.framework */; };
 		BC8DC0BB2FF2D43968E90FE3 /* StubApiAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DC091C119AE3B47110593 /* StubApiAuthenticator.swift */; };
 		BC8DC225B8377FB1F746B7AC /* StoringApiAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DC1BBD3C2C9E8577E12E8 /* StoringApiAuthenticatorTests.swift */; };
+		BC8DC28EA5B13D3B806275A3 /* EverydayPayWalletHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DC5418E646EA2D402066A /* EverydayPayWalletHeaderTests.swift */; };
 		BC8DCFBA3CF0CF3673E046BF /* StubCredentialsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DC4EF174EDAE4B4242006 /* StubCredentialsStore.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		BC8DC091C119AE3B47110593 /* StubApiAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubApiAuthenticator.swift; sourceTree = "<group>"; };
 		BC8DC1BBD3C2C9E8577E12E8 /* StoringApiAuthenticatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoringApiAuthenticatorTests.swift; sourceTree = "<group>"; };
 		BC8DC4EF174EDAE4B4242006 /* StubCredentialsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubCredentialsStore.swift; sourceTree = "<group>"; };
+		BC8DC5418E646EA2D402066A /* EverydayPayWalletHeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EverydayPayWalletHeaderTests.swift; sourceTree = "<group>"; };
 		C212E8CF06B3074FC9786CE1 /* Pods-VillageWalletSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageWalletSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-VillageWalletSDK_Tests/Pods-VillageWalletSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				BC8DC1BBD3C2C9E8577E12E8 /* StoringApiAuthenticatorTests.swift */,
 				BC8DCA1EB3FEB9D533B39E55 /* Stubs */,
+				BC8DC5418E646EA2D402066A /* EverydayPayWalletHeaderTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				BC8DC225B8377FB1F746B7AC /* StoringApiAuthenticatorTests.swift in Sources */,
 				BC8DC0BB2FF2D43968E90FE3 /* StubApiAuthenticator.swift in Sources */,
 				BC8DCFBA3CF0CF3673E046BF /* StubCredentialsStore.swift in Sources */,
+				BC8DC28EA5B13D3B806275A3 /* EverydayPayWalletHeaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
