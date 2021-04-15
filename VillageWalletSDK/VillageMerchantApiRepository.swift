@@ -10,7 +10,9 @@ import UIKit
  */
 public protocol VillageMerchantApiRepository {
 	var admin: AdministrationApiRepository { get }
+	var dp: DigitalPayRepository { get }
 	var payments: MerchantPaymentsRepository { get }
+	var paymentAgreements: MerchantPaymentAgreementsRepository { get }
 	var paymentSession: MerchantPaymentSessionsRepository { get }
 	var preferences: MerchantPreferencesRepository { get }
 	var qr: QRCodeRepository { get }

@@ -10,10 +10,13 @@ import UIKit
  */
 public protocol VillageCustomerApiRepository {
 	var admin: AdministrationApiRepository { get }
+	var dp: DigitalPayRepository { get }
 	var instruments: PaymentInstrumentsRepository { get }
+	var paymentAgreements: CustomerPaymentAgreementsApiRepository { get }
 	var paymentRequests: CustomerPaymentRequestsRepository { get }
 	var paymentSessions: CustomerPaymentSessionsRepository { get }
 	var preferences: CustomerPreferencesRepository { get }
+	var termsAndConditions: CustomerTermsAndConditionsApiRepository { get }
 	var transactions: CustomerTransactionsRepository { get }
 
 	/**
