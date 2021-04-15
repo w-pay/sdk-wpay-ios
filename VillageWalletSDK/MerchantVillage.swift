@@ -5,10 +5,32 @@ import UIKit
  */
 public class VillageMerchantOptions : VillageOptions {
 	/** :nodoc */
-	public init(apiKey: String, baseUrl: String, merchantId: String?) {
+	public init(
+		apiKey: String,
+		baseUrl: String,
+		wallet: Wallet?,
+		merchantId: String?
+	) {
 		self.merchantId = merchantId
 
-		super.init(apiKey: apiKey, baseUrl: baseUrl)
+		super.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet)
+	}
+
+	/** :nodoc */
+	public convenience override init(
+		apiKey: String,
+		baseUrl: String,
+		wallet: Wallet?
+	) {
+		self.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet, merchantId: nil)
+	}
+
+	/** :nodoc */
+	public convenience init(
+		apiKey: String,
+		baseUrl: String
+	) {
+		self.init(apiKey: apiKey, baseUrl: baseUrl, wallet: nil, merchantId: nil)
 	}
 
 	/**
