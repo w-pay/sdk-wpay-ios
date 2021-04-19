@@ -13,6 +13,6 @@ public protocol CustomerPreferencesRepository {
 	 */
 	func set(
 		preferences: CustomerPreferences,
-		completion: @escaping ApiCompletion<CustomerPreferences>
+		completion: @escaping ApiCompletion<Void>
 	)
 }
