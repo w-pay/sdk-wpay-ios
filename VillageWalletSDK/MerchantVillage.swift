@@ -4,6 +4,14 @@ import UIKit
  Options unique to using the Merchant API operations.
  */
 public class VillageMerchantOptions : VillageOptions {
+	/**
+	 If given, the merchant ID will be added to the headers.
+
+	 Since the merchant ID identifies the merchant it can be overridden with another value by the
+	 API gateway which uses the authentication token to identify the merchant.
+	*/
+	public let merchantId: String?
+
 	/** :nodoc */
 	public init(
 		apiKey: String,
@@ -15,14 +23,6 @@ public class VillageMerchantOptions : VillageOptions {
 
 		super.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet)
 	}
-
-	/**
-	 If given, the merchant ID will be added to the headers.
-
-	 Since the merchant ID identifies the merchant it can be overridden with another value by the
-	 API gateway which uses the authentication token to identify the merchant.
-	 */
-	var merchantId: String?
 }
 
 /**
