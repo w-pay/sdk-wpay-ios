@@ -8,29 +8,12 @@ public class VillageCustomerOptions : VillageOptions {
 	public init(
 		apiKey: String,
 		baseUrl: String,
-		wallet: Wallet?,
-		walletId: String?
+		wallet: Wallet? = nil,
+		walletId: String? = nil
 	) {
 		self.walletId = walletId
 
 		super.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet)
-	}
-
-	/** :nodoc **/
-	public convenience override init(
-		apiKey: String,
-		baseUrl: String,
-		wallet: Wallet?
-	) {
-		self.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet, walletId: nil)
-	}
-
-	/** :nodoc **/
-	public convenience init(
-		apiKey: String,
-		baseUrl: String
-	) {
-		self.init(apiKey: apiKey, baseUrl: baseUrl, wallet: nil, walletId: nil)
 	}
 
 	/**

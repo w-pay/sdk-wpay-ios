@@ -22,13 +22,13 @@ public class VillageOptions {
 	let wallet: Wallet?
 
 	/** :nodoc **/
-	public init(apiKey: String, baseUrl: String, wallet: Wallet?) {
+	public init(
+		apiKey: String,
+		baseUrl: String,
+		wallet: Wallet? = nil
+	) {
 		self.apiKey = apiKey
 		self.baseUrl = baseUrl
 		self.wallet = wallet
-	}
-
-	public convenience init(apiKey: String, baseUrl: String) {
-		self.init(apiKey: apiKey, baseUrl: baseUrl, wallet: nil)
 	}
 }
