@@ -4,6 +4,14 @@ import UIKit
  Options unique to using the Customer API operations.
  */
 public class VillageCustomerOptions : VillageOptions {
+	/**
+	 If given, the wallet ID will be added to the headers.
+
+	 Since the wallet ID identifies the customer it can be overridden with another value by the
+	 API gateway which uses the authentication token to identify the customer.
+	*/
+	public let walletId: String?
+
 	/** :nodoc **/
 	public init(
 		apiKey: String,
@@ -15,14 +23,6 @@ public class VillageCustomerOptions : VillageOptions {
 
 		super.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet)
 	}
-
-	/**
-	 If given, the wallet ID will be added to the headers.
-
-	 Since the wallet ID identifies the customer it can be overridden with another value by the
-	 API gateway which uses the authentication token to identify the customer.
-	 */
-	let walletId: String?
 }
 
 /**
