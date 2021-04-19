@@ -16,7 +16,10 @@ func createSDKComponents(
 	options: VillageOptions,
 	token: ApiTokenType
 ) -> ([RequestHeaderFactory], AnyApiAuthenticator<HasAccessToken>) {
-	var factories: [RequestHeaderFactory] = [ ApiKeyRequestHeader(options: options) ]
+	var factories: [RequestHeaderFactory] = [
+		ApiKeyRequestHeader(options: options),
+		EverydayPayWalletHeader(options: options)
+	]
 
 	let (authenticator, bearerTokenRequestHeader) = createAuthentication(token: token)
 

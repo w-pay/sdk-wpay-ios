@@ -5,10 +5,15 @@ import UIKit
  */
 public class VillageCustomerOptions : VillageOptions {
 	/** :nodoc **/
-	public init(apiKey: String, baseUrl: String, walletId: String?) {
+	public init(
+		apiKey: String,
+		baseUrl: String,
+		wallet: Wallet? = nil,
+		walletId: String? = nil
+	) {
 		self.walletId = walletId
 
-		super.init(apiKey: apiKey, baseUrl: baseUrl)
+		super.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet)
 	}
 
 	/**
@@ -17,7 +22,7 @@ public class VillageCustomerOptions : VillageOptions {
 	 Since the wallet ID identifies the customer it can be overridden with another value by the
 	 API gateway which uses the authentication token to identify the customer.
 	 */
-	var walletId: String?
+	let walletId: String?
 }
 
 /**

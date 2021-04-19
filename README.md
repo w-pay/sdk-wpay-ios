@@ -47,7 +47,7 @@ protocols. Consumers need to configure their `Village` instance with
 an implementation of the correct repository that conforms to needs and
 technology choices of the application.
 
-The SDK currently supports version 0.0.7 of the API spec.
+The SDK currently supports version 1.0.3 of the API spec.
 
 #### Open API Implementation
 
@@ -99,6 +99,7 @@ can be used
 
 ```swift
 func createCustomerVillage() -> VillageCustomerApiRepository {
+  // read the docs on all the options available
   let options = VillageCustomerOptions(
     apiKey: "<your key here>",
     baseUrl: "http://my.app.host.com/context/root"

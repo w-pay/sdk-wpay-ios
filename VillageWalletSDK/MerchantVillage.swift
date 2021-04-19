@@ -5,10 +5,15 @@ import UIKit
  */
 public class VillageMerchantOptions : VillageOptions {
 	/** :nodoc */
-	public init(apiKey: String, baseUrl: String, merchantId: String?) {
+	public init(
+		apiKey: String,
+		baseUrl: String,
+		wallet: Wallet? = nil,
+		merchantId: String? = nil
+	) {
 		self.merchantId = merchantId
 
-		super.init(apiKey: apiKey, baseUrl: baseUrl)
+		super.init(apiKey: apiKey, baseUrl: baseUrl, wallet: wallet)
 	}
 
 	/**

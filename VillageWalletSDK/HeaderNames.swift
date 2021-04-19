@@ -12,3 +12,8 @@ public let X_API_KEY = "X-Api-Key"
 
 /** Header name to specify merchant ID */
 public let X_MERCHANT_ID = "X-Merchant-ID";
+
+/** Header name to specify the use of the Everyday Pay Wallet */
+public let X_EVERYDAY_PAY_WALLET = "X-Everyday-Pay-Wallet"
+
+public let AUTHORISATION = "Authorization"
