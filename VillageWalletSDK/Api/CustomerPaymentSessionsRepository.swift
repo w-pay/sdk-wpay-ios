@@ -24,7 +24,7 @@ public protocol CustomerPaymentSessionsRepository {
 	func update(
 		paymentSessionId: String,
 		session: CustomerUpdatePaymentSessionRequest,
-		completion: @escaping ApiCompletion<PaymentSession>
+		completion: @escaping ApiCompletion<Void>
 	)
 
 	/**
