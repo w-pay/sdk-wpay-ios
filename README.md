@@ -105,7 +105,7 @@ func createCustomerVillage() -> VillageCustomerApiRepository {
     baseUrl: "http://my.app.host.com/context/root"
   )
 
-  return createCustomerSDK(
+  return CustomerVillage.createSDK(
     options: options,
 
     // see the docs on how we can use different token types.
