@@ -28,13 +28,13 @@ public class VillageCustomerOptions : VillageOptions {
 /**
  Factory function type to give to SDK factory functions to instantiate a new API repository instance.
  */
-typealias CustomerApiRepositoryFactory = (
+public typealias CustomerApiRepositoryFactory = (
 	_ options: VillageCustomerOptions,
 	_ headers: RequestHeadersFactory,
 	_ authenticator: AnyApiAuthenticator<HasAccessToken>
 ) -> VillageCustomerApiRepository
 
-class CustomerVillage {
+public class CustomerVillage {
 	/**
 	 Entry point into the SDK for customers.
 
@@ -42,7 +42,7 @@ class CustomerVillage {
 	 - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
 	 - Parameter repository: A factory function to create a new API repository instance.
 	 */
-	static func createSDK(
+	public static func createSDK(
 		options: VillageCustomerOptions,
 		token: ApiTokenType,
 		repository: CustomerApiRepositoryFactory

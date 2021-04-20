@@ -28,13 +28,13 @@ public class VillageMerchantOptions : VillageOptions {
 /**
  Factory function type to give to SDK factory functions to instantiate a new API repository instance.
  */
-typealias MerchantApiRepositoryFactory = (
+public typealias MerchantApiRepositoryFactory = (
 	_ options: VillageMerchantOptions,
 	_ headers: RequestHeadersFactory,
 	_ authenticator: AnyApiAuthenticator<HasAccessToken>
 ) -> VillageMerchantApiRepository
 
-class MerchantVillage {
+public class MerchantVillage {
 	/**
 	 Entry point into the SDK for merchants.
 
@@ -42,7 +42,7 @@ class MerchantVillage {
 	 - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
 	 - Parameter repository: A factory function to create a new API repository instance.
 	 */
-	func createSDK(
+	public func createSDK(
 		options: VillageMerchantOptions,
 		token: ApiTokenType,
 		repository: MerchantApiRepositoryFactory
