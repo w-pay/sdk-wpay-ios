@@ -42,7 +42,7 @@ public class MerchantVillage {
 	 - Parameter token: An access token or ApiAuthenticator instance for obtaining an access token, or nothing.
 	 - Parameter repository: A factory function to create a new API repository instance.
 	 */
-	public func createSDK(
+	public static func createSDK(
 		options: VillageMerchantOptions,
 		token: ApiTokenType,
 		repository: MerchantApiRepositoryFactory
