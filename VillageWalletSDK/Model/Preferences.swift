@@ -27,7 +27,7 @@ public protocol PaymentPreferences {
 
 	 Secondary instruments are used in order until the full amount of the payment has been paid.
 	 */
-	var secondaryInstruments: SecondaryInstrumentPreferences { get }
+	var secondaryInstruments: SecondaryInstrumentPreferences? { get }
 }
 
 public protocol SecondaryInstrumentPreferences {
@@ -36,7 +36,7 @@ public protocol SecondaryInstrumentPreferences {
 
 	 If not present defaults to enabled. Used to specifically disable secondary instruments without losing customer configure preferences.
 	 */
-	var enableSecondaryInstruments: Bool { get }
+	var enableSecondaryInstruments: Bool? { get }
 
 	/** The order that the secondary instruments will be used for a specific payment. */
 	var order: SecondaryInstrumentOrder? { get }
