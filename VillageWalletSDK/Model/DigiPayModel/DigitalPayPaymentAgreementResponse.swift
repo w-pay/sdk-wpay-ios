@@ -25,7 +25,7 @@ public protocol DigitalPayPaymentAgreementResponse {
 	var fraudResponse: DigitalPayFraudResponse? { get }
 
 	/** Extended transaction data object */
-	var extendedTransactionData: DigitalPayExtendedTransactionData? { get }
+	var extendedTransactionData: [DigitalPayExtendedTransactionData]? { get }
 
 	/**
 	 The external service code (from eg. Webpay).

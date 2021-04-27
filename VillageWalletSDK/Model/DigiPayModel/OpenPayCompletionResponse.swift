@@ -48,5 +48,5 @@ public protocol OpenPayTransactionCompletionResponse {
 	var externalServiceMessage: String { get }
 
 	/** This array is only included in the response if it is enabled in the consumers API configuration. */
-	var extendedTransactionData: OpenPayExtendedTransactionData? { get }
+	var extendedTransactionData: [OpenPayExtendedTransactionData]? { get }
 }
