@@ -29,7 +29,7 @@ public protocol ChargePaymentAgreementRequest {
 	/**
 	 Transaction type containers to use for all instruments.
 	 */
-	var transactionType: DigitalPayTransactionType { get }
+	var transactionType: TransactionType { get }
 
 	/**
 	 A merchant application specific reference number for the customer.
