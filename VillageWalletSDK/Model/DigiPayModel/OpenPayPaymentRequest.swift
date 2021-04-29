@@ -1,7 +1,7 @@
 import UIKit
 
-public protocol TransactionType {
-	var openPay: OpenPay { get }
+public protocol OpenPayPaymentRequestTransactionType {
+	var openPay: OpenPayTransactionType { get }
 }
 
 /**
@@ -9,7 +9,7 @@ public protocol TransactionType {
  */
 public protocol OpenPayPaymentRequest {
 	/** The container transaction type to use for openpay instruments */
-	var transactionType: TransactionType { get }
+	var transactionType: OpenPayPaymentRequestTransactionType { get }
 
 	/**
 	 A merchant application specific reference number.
@@ -44,7 +44,7 @@ public protocol OpenPayPaymentRequest {
 	var storeData: OpenPayStoreData { get }
 }
 
-public enum OpenPay: String {
+public enum OpenPayTransactionType: String {
 	case PREAUTH, PURCHASE
 }
 
