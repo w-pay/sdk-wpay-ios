@@ -701,6 +701,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayUpdatePaymentAgreementRequest.swift",
+      "line": 31,
+      "symbol": "DigitalPayPaymentAgreementUpdate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayVoidRequest.swift",
       "line": 17,
       "symbol": "DigitalPayVoid",

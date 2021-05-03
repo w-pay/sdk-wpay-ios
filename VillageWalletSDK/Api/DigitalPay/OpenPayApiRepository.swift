@@ -8,7 +8,7 @@ public protocol OpenPayApiRepository {
 	 */
 	func pay(
 		paymentRequest: OpenPayPaymentRequest,
-		completion: @escaping ApiCompletion<OpenPayPaymentResponse>
+		completion: @escaping ApiCompletion<OpenPayPaymentTransactionResponse>
 	)
 
 	/**

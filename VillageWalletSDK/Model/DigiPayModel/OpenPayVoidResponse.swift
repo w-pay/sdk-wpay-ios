@@ -22,7 +22,7 @@ public protocol OpenPayVoidTransactionResponse {
 	var amount: Decimal { get }
 
 	/** This array is only included in the response if it is enabled in the consumers API configuration. */
-	var extendedTransactionData: OpenPayExtendedTransactionData? { get }
+	var extendedTransactionData: [OpenPayExtendedTransactionData]? { get }
 
 	/**
 	 * The external service code (from eg. Openpay).
