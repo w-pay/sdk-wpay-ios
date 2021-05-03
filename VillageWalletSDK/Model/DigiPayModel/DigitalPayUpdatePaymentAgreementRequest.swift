@@ -18,13 +18,6 @@ public protocol DigitalPayUpdatePaymentAgreementRequest {
 	 */
 	var customerRef: String? { get }
 
-	/**
-	 The merchant order number of the transaction.
-
-	 This property is only required if the 'immediateCharge' property is true.
-	 */
-	var orderNumber: String? { get }
-
 	/** Customer billing address for this payment agreement */
 	var billingAddress: DigitalPayAddress? { get }
 
