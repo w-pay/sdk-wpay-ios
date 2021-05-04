@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name = "VillageWalletSDK"
-  spec.version = "4.0.0-alpha12"
+  spec.version = "4.0.0-alpha13"
   spec.summary = "Client SDK for Village Wallet"
 
   # This description is used to generate tags and improve search results.

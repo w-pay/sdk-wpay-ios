@@ -25,7 +25,7 @@ public protocol DigitalPayUpdatePaymentAgreementRequest {
 	var paymentAgreement: DigitalPayPaymentAgreementUpdate? { get }
 
 	/** Digital pay fraud payload */
-	var fraudPayload: DigitalPayFraudResponse? { get }
+	var fraudPayload: DigitalPayFraudPayload? { get }
 }
 
 public protocol DigitalPayPaymentAgreementUpdate {
