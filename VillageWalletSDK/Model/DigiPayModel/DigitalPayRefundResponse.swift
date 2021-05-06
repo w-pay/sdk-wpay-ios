@@ -15,7 +15,7 @@ public protocol DigitalPayRefundResponse {
 	var partialSuccess: Bool? { get }
 
 	/** List of refund response */
-	var refundResponses: DigitalPayRefundTransactionResponse { get }
+	var refundResponses: [DigitalPayRefundTransactionResponse] { get }
 }
 
 public protocol DigitalPayRefundTransactionResponse {
