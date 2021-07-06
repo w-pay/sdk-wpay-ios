@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
                     Client SDK for Village Wallet
                    DESC
 
-  spec.homepage = "https://github.com/woolworthslimited/paysdk2-ios"
+  spec.homepage = "https://github.com/w-pay/sdk-wpay-ios"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :git => "https://github.com/woolworthslimited/paysdk2-ios.git", :branch => "master" }
+  spec.source = { :git => "https://github.com/w-pay/sdk-wpay-ios.git", :branch => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
