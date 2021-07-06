@@ -51,13 +51,13 @@ The SDK currently supports version 1.0.3 of the API spec.
 
 #### Open API Implementation
 
-For convenience, the [Woolworths Village SDK Open API Client](https://github.com/woolworthslimited/paysdk2-openapi-ios)
+For convenience, the [Woolworths Village SDK Open API Client](https://github.com/w-pay/sdk-wpay-openapi-ios)
 project provides an implementation of the API Repository protocols
 that wraps an API Client created with the Open API generator.
 
 #### Reference Application
 
-A [Reference Application](https://github.com/woolworthslimited/paysdk2-reference-ios) is available
+A [Reference Application](https://github.com/w-pay/reference-wpay-ios) is available
 to demonstrate the use of the SDK. The Framework can be imported directly into a XCode project
 or CocoaPods can be used. 
 
@@ -83,7 +83,7 @@ If using [CocoaPods](https://cocoapods.org/) add the following to your Podfile
 
 ```
 # substitute the tag for the version desired.
-pod "VillageWalletSDK", :git => "git@github.com:woolworthslimited/paysdk2-ios.git", :tag => "v1.0.0"
+pod "VillageWalletSDK", :git => "git@github.com:w-pay/sdk-wpay-ios.git", :tag => "v1.0.0"
 
 # don't forget to include an implementation framework of the API repositories.
 ```
