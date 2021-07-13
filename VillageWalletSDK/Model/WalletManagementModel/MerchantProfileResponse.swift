@@ -86,17 +86,17 @@ public protocol MerchantProfileResponse {
 
 public protocol AllowedPaymentMethods {
 	/** The presence of this object in the response indicates that a gift card is an allowed payment method and instrument in the container for the relevant merchant. */
-	var giftCard: AllowedPaymentMethodsGiftCard { get }
+	var giftCard: AllowedPaymentMethodsGiftCard? { get }
 
 	/** The presence of this object in the response indicates that a credit card is an allowed payment method and instrument in the container for the relevant merchant. */
-	var creditCard: AllowedPaymentMethodsCreditCard { get }
+	var creditCard: AllowedPaymentMethodsCreditCard? { get }
 
 	/** The presence of this object in the response indicates that paypal is an allowed payment method and instrument in the container for the relevant merchant. */
-	var paypal: AllowedPaymentMethodsPaypal { get }
+	var paypal: AllowedPaymentMethodsPaypal? { get }
 
 	/* The presence of this object in the response indicates that google pay is an allowed payment method and instrument in the container for the relevant merchant. */
-	var googlePay: AllowedPaymentMethodsGooglePay { get }
+	var googlePay: AllowedPaymentMethodsGooglePay? { get }
 
 	/* The presence of this object in the response indicates that apple pay is an allowed payment method and instrument in the container for the relevant merchant. */
-	var applePay: AllowedPaymentMethodsApplePay { get }
+	var applePay: AllowedPaymentMethodsApplePay? { get }
 }
