@@ -6,10 +6,12 @@ public protocol MerchantPaymentAgreementsRepository {
 
 	 - Parameter paymentToken: The ID.
 	 - Parameter chargePaymentAgreementRequest: details of charge to make against the payment agreement
+	 - Parameter fraudPayload Used to complete the fraud check
 	 */
 	func charge(
 		paymentToken: String,
 		chargePaymentAgreementRequest: ChargePaymentAgreementRequest,
+		fraudPayload: FraudPayload,
 		completion: @escaping ApiCompletion<DigitalPayPaymentAgreementResponse>
 	)
 
