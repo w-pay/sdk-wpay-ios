@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          VillageWalletSDK 4.0.1 Docs
+          VillageWalletSDK 4.1.0 Docs
         </a>
          (60% documented)
       </p>
@@ -151,10 +151,10 @@
                 <a class="nav-group-task-link" href="../Enums/DigitalPayInstructionCode.html">DigitalPayInstructionCode</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/HealthCheckStatus.html">HealthCheckStatus</a>
+                <a class="nav-group-task-link" href="../Enums/FraudPayloadFormat.html">FraudPayloadFormat</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/MessageFormat.html">MessageFormat</a>
+                <a class="nav-group-task-link" href="../Enums/HealthCheckStatus.html">HealthCheckStatus</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/OpenPayExtendedTransactionDataFieldName.html">OpenPayExtendedTransactionDataFieldName</a>
@@ -1000,9 +1000,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16VillageWalletSDK33CustomerPaymentRequestsRepositoryP04makeE016paymentRequestId17primaryInstrument20secondaryInstruments15clientReference11preferences18challengeResponses10completionySS_SSSgSayAA09SecondaryeM0_pGSgAlA0E11Preferences_pSgSayAA17ChallengeResponse_pGSgys6ResultOyAA0D18TransactionSummary_pAA8ApiErrorOGctF"></a>
-                    <a name="//apple_ref/swift/Method/makePayment(paymentRequestId:primaryInstrument:secondaryInstruments:clientReference:preferences:challengeResponses:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16VillageWalletSDK33CustomerPaymentRequestsRepositoryP04makeE016paymentRequestId17primaryInstrument20secondaryInstruments15clientReference11preferences18challengeResponses10completionySS_SSSgSayAA09SecondaryeM0_pGSgAlA0E11Preferences_pSgSayAA17ChallengeResponse_pGSgys6ResultOyAA0D18TransactionSummary_pAA8ApiErrorOGctF">makePayment(paymentRequestId:<wbr>primaryInstrument:<wbr>secondaryInstruments:<wbr>clientReference:<wbr>preferences:<wbr>challengeResponses:<wbr>completion:<wbr>)</a>
+                    <a name="/s:16VillageWalletSDK33CustomerPaymentRequestsRepositoryP04makeE016paymentRequestId17primaryInstrument20secondaryInstruments15clientReference11preferences18challengeResponses12fraudPayload10completionySS_SSSgSayAA09SecondaryeM0_pGSgAmA0E11Preferences_pSgSayAA17ChallengeResponse_pGSgAA05FraudV0_pSgys6ResultOyAA0D18TransactionSummary_pAA8ApiErrorOGctF"></a>
+                    <a name="//apple_ref/swift/Method/makePayment(paymentRequestId:primaryInstrument:secondaryInstruments:clientReference:preferences:challengeResponses:fraudPayload:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16VillageWalletSDK33CustomerPaymentRequestsRepositoryP04makeE016paymentRequestId17primaryInstrument20secondaryInstruments15clientReference11preferences18challengeResponses12fraudPayload10completionySS_SSSgSayAA09SecondaryeM0_pGSgAmA0E11Preferences_pSgSayAA17ChallengeResponse_pGSgAA05FraudV0_pSgys6ResultOyAA0D18TransactionSummary_pAA8ApiErrorOGctF">makePayment(paymentRequestId:<wbr>primaryInstrument:<wbr>secondaryInstruments:<wbr>clientReference:<wbr>preferences:<wbr>challengeResponses:<wbr>fraudPayload:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1024,6 +1024,7 @@
 	<span class="nv">clientReference</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
 	<span class="nv">preferences</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PaymentPreferences.html">PaymentPreferences</a></span><span class="p">?,</span>
 	<span class="nv">challengeResponses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChallengeResponse.html">ChallengeResponse</a></span><span class="p">]?,</span>
+	<span class="nv">fraudPayload</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FraudPayload.html">FraudPayload</a></span><span class="p">?,</span>
 	<span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16VillageWalletSDK13ApiCompletiona">ApiCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/CustomerTransactionSummary.html">CustomerTransactionSummary</a></span><span class="o">&gt;</span>
 <span class="p">)</span></code></pre>
 
@@ -1119,7 +1120,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2021-07-13)</p>
+      <p>&copy; 2021 <a class="link" href="https://www.woolworths.com.au/" target="_blank" rel="external">Woolworths</a>. All rights reserved. (Last updated: 2021-07-14)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
