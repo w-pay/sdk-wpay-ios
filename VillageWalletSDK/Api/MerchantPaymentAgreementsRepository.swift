@@ -11,7 +11,7 @@ public protocol MerchantPaymentAgreementsRepository {
 	func charge(
 		paymentToken: String,
 		chargePaymentAgreementRequest: ChargePaymentAgreementRequest,
-		fraudPayload: FraudPayload,
+		fraudPayload: FraudPayload?,
 		completion: @escaping ApiCompletion<DigitalPayPaymentAgreementResponse>
 	)
 
