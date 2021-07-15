@@ -23,7 +23,7 @@ public protocol CustomerPaymentAgreementsApiRepository {
 	func create(
 		paymentAgreement: CreatePaymentAgreementRequest,
 		challengeResponses: [ChallengeResponse]?,
-		fraudPayload: FraudPayload,
+		fraudPayload: FraudPayload?,
 		completion: @escaping ApiCompletion<PaymentAgreement>
 	)
 
@@ -39,7 +39,7 @@ public protocol CustomerPaymentAgreementsApiRepository {
 		paymentToken: String,
 		paymentAgreement: UpdatePaymentAgreementRequest,
 		challengeResponses: [ChallengeResponse]?,
-		fraudPayload: FraudPayload,
+		fraudPayload: FraudPayload?,
 		completion: @escaping ApiCompletion<PaymentAgreement>
 	)
 }
