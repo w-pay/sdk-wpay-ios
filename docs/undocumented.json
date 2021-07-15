@@ -3132,78 +3132,15 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
       "line": 17,
-      "symbol": "FraudPayload",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 19,
-      "symbol": "FraudPayload.provider",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 22,
-      "symbol": "FraudPayload.version",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 25,
-      "symbol": "FraudPayload.format",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 28,
-      "symbol": "FraudPayload.responseFormat",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 31,
-      "symbol": "FraudPayload.message",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 34,
       "symbol": "VerifyPaymentInstrumentsRequestInstrument",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 36,
+      "line": 19,
       "symbol": "VerifyPaymentInstrumentsRequestInstrument.paymentToken",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 48,
-      "symbol": "MessageFormat",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 49,
-      "symbol": "MessageFormat.XML",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/WalletManagementModel/VerifyPaymentInstrumentsRequest.swift",
-      "line": 49,
-      "symbol": "MessageFormat.ZIP_BASE_64_ENCODED",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {

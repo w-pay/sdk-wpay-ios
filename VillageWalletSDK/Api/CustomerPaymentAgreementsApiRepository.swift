@@ -17,9 +17,13 @@ public protocol CustomerPaymentAgreementsApiRepository {
 	 Create a [PaymentAgreement]
 
 	 - Parameter paymentAgreement: The details for the new payment agreement
+	 - Parameter challengeResponses Used when needing to complete challenge(s) to complete payment.
+	 - Parameter fraudPayload Used to complete the fraud check
 	 */
 	func create(
 		paymentAgreement: CreatePaymentAgreementRequest,
+		challengeResponses: [ChallengeResponse]?,
+		fraudPayload: FraudPayload,
 		completion: @escaping ApiCompletion<PaymentAgreement>
 	)
 
@@ -28,10 +32,14 @@ public protocol CustomerPaymentAgreementsApiRepository {
 
 	 - Parameter paymentToken: The payment token to update
 	 - Parameter paymentAgreement: The updates to apply to the payment agreement
+	 - Parameter challengeResponses Used when needing to complete challenge(s) to complete payment.
+	 - Parameter fraudPayload Used to complete the fraud check
 	 */
 	func update(
 		paymentToken: String,
 		paymentAgreement: UpdatePaymentAgreementRequest,
+		challengeResponses: [ChallengeResponse]?,
+		fraudPayload: FraudPayload,
 		completion: @escaping ApiCompletion<PaymentAgreement>
 	)
 }

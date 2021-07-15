@@ -14,23 +14,6 @@ public protocol VerifyPaymentInstrumentsRequest {
 	var fraudPayload: FraudPayload? { get }
 }
 
-public protocol FraudPayload {
-	/* The fraud check provider. */
-	var provider: String { get }
-
-	/* The fraud check version. */
-	var version: String { get }
-
-	/* The fraud check message format. */
-	var format: MessageFormat { get }
-
-	/* The fraud check message format. */
-	var responseFormat: MessageFormat { get }
-
-	/* The fraud check message. */
-	var message: String { get }
-}
-
 public protocol VerifyPaymentInstrumentsRequestInstrument {
 	/* The payment token. */
 	var paymentToken: String { get }
@@ -43,8 +26,4 @@ public protocol VerifyPaymentInstrumentsRequestInstrument {
 	 * This property is currently only required for credit card instruments and only if specific credit card information (eg. CVV and expiry) is required during payment.
 	 */
 	var stepUpToken: String { get }
-}
-
-public enum MessageFormat: String {
-	case ZIP_BASE_64_ENCODED, XML
 }

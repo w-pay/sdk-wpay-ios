@@ -30,6 +30,7 @@ public protocol CustomerPaymentRequestsRepository {
 	 - Parameter clientReference: An optional client reference to be associated with the transaction.
 	 - Parameter preferences: Optional payment preferences.
 	 - Parameter challengeResponses: Used when needing to complete challenge(s) to complete payment.
+	 - Parameter fraudPayload Used to complete the fraud check
 	*/
 	func makePayment(
 		paymentRequestId: String,
@@ -38,6 +39,7 @@ public protocol CustomerPaymentRequestsRepository {
 		clientReference: String?,
 		preferences: PaymentPreferences?,
 		challengeResponses: [ChallengeResponse]?,
+		fraudPayload: FraudPayload?,
 		completion: @escaping ApiCompletion<CustomerTransactionSummary>
 	)
 }
