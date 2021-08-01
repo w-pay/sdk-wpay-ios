@@ -25,7 +25,7 @@ public protocol VillageCustomerApiRepository {
 	var options: VillageCustomerOptions { get }
 
 	/*
-    An `ApiAuthenticator` that can be used to update the access token the SDK uses
-   */
+	 An `ApiAuthenticator` that can be used to update the access token the SDK uses
+	 */
 	var authenticator: AnyApiAuthenticator<HasAccessToken> { get }
 }
