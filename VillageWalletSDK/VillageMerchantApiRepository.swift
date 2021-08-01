@@ -23,4 +23,9 @@ public protocol VillageMerchantApiRepository {
 	 Options that were given at SDK initialisation
 	 */
 	var options: VillageMerchantOptions { get }
+
+	/*
+	 An `ApiAuthenticator` that can be used to update the access token the SDK uses
+	 */
+	var authenticator: AnyApiAuthenticator<HasAccessToken> { get }
 }

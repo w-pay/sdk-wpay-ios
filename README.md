@@ -110,7 +110,7 @@ func createCustomerVillage() -> VillageCustomerApiRepository {
 
     // see the docs on how we can use different token types.
     token: .stringToken(token: "abc123"),
-    repository: OpenApiCustomerApiRepositoryFactory
+    repository: OpenApiVillageCustomerApiRepository.factory
   )
 }
 ```
