@@ -3312,6 +3312,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageCustomerApiRepository.swift",
+      "line": 30,
+      "symbol": "VillageCustomerApiRepository.authenticator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageFactory.swift",
       "line": 3,
       "symbol": "ApiTokenType",
@@ -3399,6 +3406,13 @@
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
       "line": 20,
       "symbol": "VillageMerchantApiRepository.transactions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/VillageMerchantApiRepository.swift",
+      "line": 30,
+      "symbol": "VillageMerchantApiRepository.authenticator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
