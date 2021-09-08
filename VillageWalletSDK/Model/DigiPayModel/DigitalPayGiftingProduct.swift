@@ -27,7 +27,7 @@ public protocol DigitalPayGiftingProduct {
 	var discountOffered: GiftingProductDiscount? { get }
 }
 
-public enum GiftingProductDesignDesignType {
+public enum GiftingProductDesignDesignType: String {
 	case DIGITAL, PHYSICAL
 }
 
