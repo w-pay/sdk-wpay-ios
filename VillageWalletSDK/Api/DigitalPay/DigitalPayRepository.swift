@@ -5,6 +5,7 @@ public protocol DigitalPayRepository {
 	var applePay: ApplePayApiRepository { get }
 	var cards: CardsApiRepository { get }
 	var giftcards: GiftcardsApiRepository { get }
+	var gifting: GiftingRepository { get }
 	var googlePay: GooglePayApiRepository { get }
 	var instruments: InstrumentsApiRepository { get }
 	var merchants: MerchantsApiRepository { get }
