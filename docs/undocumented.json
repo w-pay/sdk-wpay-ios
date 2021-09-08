@@ -80,64 +80,78 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 8,
-      "symbol": "DigitalPayRepository.googlePay",
+      "symbol": "DigitalPayRepository.gifting",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 9,
-      "symbol": "DigitalPayRepository.instruments",
+      "symbol": "DigitalPayRepository.googlePay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 10,
-      "symbol": "DigitalPayRepository.merchants",
+      "symbol": "DigitalPayRepository.instruments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 11,
-      "symbol": "DigitalPayRepository.openPay",
+      "symbol": "DigitalPayRepository.merchants",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 12,
-      "symbol": "DigitalPayRepository.paymentAgreements",
+      "symbol": "DigitalPayRepository.openPay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 13,
-      "symbol": "DigitalPayRepository.payments",
+      "symbol": "DigitalPayRepository.paymentAgreements",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 14,
-      "symbol": "DigitalPayRepository.paypal",
+      "symbol": "DigitalPayRepository.payments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 15,
-      "symbol": "DigitalPayRepository.transactions",
+      "symbol": "DigitalPayRepository.paypal",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
       "line": 16,
+      "symbol": "DigitalPayRepository.transactions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/DigitalPayRepository.swift",
+      "line": 17,
       "symbol": "DigitalPayRepository.wallet",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Api/DigitalPay/GiftingRepository.swift",
+      "line": 3,
+      "symbol": "GiftingRepository",
+      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
@@ -456,6 +470,132 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingOrderRequest.swift",
+      "line": 32,
+      "symbol": "GiftingBillingContact",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 3,
+      "symbol": "DigitalPayGiftingProductBarCodeType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 4,
+      "symbol": "DigitalPayGiftingProductBarCodeType.GTIN",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 4,
+      "symbol": "DigitalPayGiftingProductBarCodeType.PAN",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 30,
+      "symbol": "GiftingProductDesignDesignType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 31,
+      "symbol": "GiftingProductDesignDesignType.DIGITAL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 31,
+      "symbol": "GiftingProductDesignDesignType.PHYSICAL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 34,
+      "symbol": "GiftingProductDesign",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProduct.swift",
+      "line": 45,
+      "symbol": "GiftingProductDiscount",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 3,
+      "symbol": "DigitalPayGiftingProductDetailRedemptionType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 4,
+      "symbol": "DigitalPayGiftingProductDetailRedemptionType.BOTH",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 4,
+      "symbol": "DigitalPayGiftingProductDetailRedemptionType.INSTORE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 4,
+      "symbol": "DigitalPayGiftingProductDetailRedemptionType.ONLINE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 7,
+      "symbol": "DigitalPayGiftingProductDetailAvailability",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 8,
+      "symbol": "DigitalPayGiftingProductDetailAvailability.BOTH",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 8,
+      "symbol": "DigitalPayGiftingProductDetailAvailability.DIGITAL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingProductDetail.swift",
+      "line": 8,
+      "symbol": "DigitalPayGiftingProductDetailAvailability.PHYSICAL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayGiftingQuoteResponse.swift",
+      "line": 23,
+      "symbol": "GiftingProductQuoteResponseItem",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentAgreementResponse.swift",
       "line": 45,
       "symbol": "DigitalPayResponsePaymentAgreement",
@@ -718,6 +858,20 @@
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayVoidResponse.swift",
       "line": 17,
       "symbol": "DigitalPayVoidTransactionResponse",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/GiftingProductOrderItem.swift",
+      "line": 3,
+      "symbol": "GiftingProductOrderItem",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/GiftingProductOrderItem.swift",
+      "line": 20,
+      "symbol": "RecipientDetail",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
