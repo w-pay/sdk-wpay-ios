@@ -48,12 +48,36 @@ public protocol MerchantPaymentsRepository {
 	/**
 	 Refund a transaction to a customer
 
-	 - Parameter transactionId: The transaction to refund.
+	 - Parameter transactionId: The transaction to be refunded.
 	 - Parameter refundDetails: The details of the refund.
 	 */
 	func refundTransaction(
 		transactionId: String,
 		refundDetails: TransactionRefundDetails,
+		completion: @escaping ApiCompletion<MerchantTransactionSummary>
+	)
+
+	/**
+	 Complete a pre-authorised transaction
+
+	 - Parameter transactionId The transaction to be completed.
+	 - Parameter completionDetails The details of the completions.
+	*/
+	func completeTransaction(
+		transactionId: String,
+		completionDetails: TransactionCompletionDetails,
+		completion: @escaping ApiCompletion<MerchantTransactionSummary>
+	)
+
+	/**
+	 Void a pre-authorised transaction
+
+	 - Parameter transactionId The transaction to be voided.
+	 - Parameter voidDetails The details of the voids.
+	 */
+	func voidTransaction(
+		transactionId: String,
+		voidDetails: TransactionVoidDetails,
 		completion: @escaping ApiCompletion<MerchantTransactionSummary>
 	)
 }

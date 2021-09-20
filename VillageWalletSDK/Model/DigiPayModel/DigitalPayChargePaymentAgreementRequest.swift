@@ -5,7 +5,7 @@ import UIKit
  */
 public protocol DigitalPayChargePaymentAgreementRequest {
 	/** Transaction type containers to use for all instruments. */
-	var transactionType: DigitalPayTransactionType { get }
+	var transactionType: PaymentTransactionType { get }
 
 	/**
 	 A merchant application specific reference number.

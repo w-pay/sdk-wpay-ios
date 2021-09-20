@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol DigitalPayTransactionType {
+public protocol PaymentTransactionType {
 	/** The container transaction type to use for credit card instruments. */
 	var creditCard: PreauthPurchase? { get }
 

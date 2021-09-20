@@ -79,6 +79,15 @@ public enum TransactionSummaryPaymentType: String {
 
 	/** A payment by a merchant to a customer undoing a previously made customer payment */
 	case REFUND
+
+	/** A preauthorised amount is reserved but will not be taken from a customer's account until a completion is performed */
+	case PREAUTH
+
+	/** Complete a preauthorised transaction and take the amount from the customer's account */
+	case COMPLETION
+
+	/** Void a preauthorised transaction so that the money will not be taken from the customer's account */
+	case VOID
 }
 
 /**
