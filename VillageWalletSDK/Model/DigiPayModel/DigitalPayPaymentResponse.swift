@@ -83,7 +83,7 @@ public protocol DigitalPayCreditCard: DigitalPayPaymentInstrument {
 	var stepUp: CreditCardStepUp? { get }
 
 	/** This object is only included in the response if it is enabled in the consumers API configuration. */
-	var receiptData: DigitalPayRecieptData? { get }
+	var receiptData: DigitalPayReceiptData? { get }
 
 	/** This array is only included in the response if it is enabled in the consumers API configuration. */
 	var extendedTransactionData: [DigitalPayExtendedTransactionData]? { get }
@@ -108,6 +108,9 @@ public protocol DigitalPayCreditCard: DigitalPayPaymentInstrument {
 	 Only present if no error occurred during payment.
 	 */
 	var handlingInstructions: DigitalPayHandlingInstructions? { get }
+
+	/** This object is only present if the payments response contains 3DS data from Digital Pay. */
+	var threeDS: DigitalPayThreeDSResponse? { get }
 }
 
 public protocol DigitalPayHandlingInstructions {
@@ -123,7 +126,7 @@ public protocol DigitalPayGiftCard: DigitalPayPaymentInstrument {
 	var stepUp: CreditCardStepUp? { get }
 
 	/** This object is only included in the response if it is enabled in the consumers API configuration. */
-	var receiptData: DigitalPayRecieptData? { get }
+	var receiptData: DigitalPayReceiptData? { get }
 
 	/**
 	 The external service code (from eg. Webpay).
@@ -142,7 +145,7 @@ public protocol DigitalPayGiftCard: DigitalPayPaymentInstrument {
 
 public protocol DigitalPayPayPal: DigitalPayPaymentInstrument {
 	/** This object is only included in the response if it is enabled in the consumers API configuration. */
-	var receiptData: DigitalPayRecieptData? { get }
+	var receiptData: DigitalPayReceiptData? { get }
 
 	/**
 	 The external service code (from eg. Webpay).
@@ -186,7 +189,7 @@ public protocol DigitalPayApplePay: DigitalPayPaymentInstrument {
 	var stepUp: CreditCardStepUp? { get }
 }
 
-public protocol DigitalPayRecieptData {
+public protocol DigitalPayReceiptData {
 	/** The suffix (last 4 digits) of the credit card number used in the WebPay transaction. */
 	var cardSuffix: String { get }
 
@@ -211,6 +214,18 @@ public protocol DigitalPayExtendedTransactionData {
 	/** The value of the extended transaction data field. */
 	var value: String { get }
 }
+
+public protocol DigitalPayThreeDSResponse {
+	/** Received in response to a Visa authenticated Purchase and PreAuth. Only present for Visa. */
+	var car: String? { get }
+
+	/** The Directory Server (DS) authentication identification code. A universally unique transaction identifier assigned by the DS to identify a single transaction. The format of the value is defined in IETF RFC 4122. It may utilise any of the specified versions if the output meets specific requirements. */
+	var dsTransID: String { get }
+
+	/** The SLI from the the schemes. */
+	var sli: String { get }
+}
+
 
 public enum DigitalPayExtendedTransactionDataFieldName: String {
 	case BIN, STAN, RRN, TOKEN, MID, TERMINA_ID
