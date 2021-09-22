@@ -99,9 +99,13 @@ public protocol DigitalPayStoreData {
 	var transactionTimestamp: Decimal { get }
 }
 
+public enum DigitalPayExtendedMerchantDataField: String {
+	case CORRELATION_ID = "correlationId"
+}
+
 public protocol ExtendedMerchantData {
 	/** The name of the extended merchant data field. */
-	var field: String { get }
+	var field: DigitalPayExtendedMerchantDataField { get }
 
 	/** The value of the extended merchant data field. */
 	var value: String { get }
