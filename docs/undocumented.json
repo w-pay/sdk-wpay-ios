@@ -619,195 +619,209 @@
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
       "line": 102,
+      "symbol": "DigitalPayExtendedMerchantDataField",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
+      "line": 103,
+      "symbol": "DigitalPayExtendedMerchantDataField.CORRELATION_ID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
+      "line": 106,
       "symbol": "ExtendedMerchantData",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 110,
+      "line": 114,
       "symbol": "DigitalPayControlDataTokenType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 111,
+      "line": 115,
       "symbol": "DigitalPayControlDataTokenType.PAN",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 111,
+      "line": 115,
       "symbol": "DigitalPayControlDataTokenType.SCDR",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 111,
+      "line": 115,
       "symbol": "DigitalPayControlDataTokenType.SCHEME_TOKEN",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 114,
+      "line": 118,
       "symbol": "DigitalPayControlData",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 119,
+      "line": 123,
       "symbol": "DigitalPayThreeDSAresStatus",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 120,
+      "line": 124,
       "symbol": "DigitalPayThreeDSAresStatus.AUTHENTICATED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 121,
+      "line": 125,
       "symbol": "DigitalPayThreeDSAresStatus.FAILED_OR_CANCELLED_AUTHENTICATION",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 122,
+      "line": 126,
       "symbol": "DigitalPayThreeDSAresStatus.CARD_CHALLENGED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 123,
+      "line": 127,
       "symbol": "DigitalPayThreeDSAresStatus.AUTHENTICATION_REJECTED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 124,
+      "line": 128,
       "symbol": "DigitalPayThreeDSAresStatus.PROOF_OF_AUTHENTICATION_GENERATED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 125,
+      "line": 129,
       "symbol": "DigitalPayThreeDSAresStatus.AUTHENTICATION_NOT_COMPLETE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 128,
+      "line": 132,
       "symbol": "DigitalPayThreeDSVeresEnrolled",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 129,
+      "line": 133,
       "symbol": "DigitalPayThreeDSVeresEnrolled.ENROLLED_MUST_AUTHENTICATE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 130,
+      "line": 134,
       "symbol": "DigitalPayThreeDSVeresEnrolled.NOT_ENROLLED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 131,
+      "line": 135,
       "symbol": "DigitalPayThreeDSVeresEnrolled.UNABLE_TO_AUTHENTICATE",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 132,
+      "line": 136,
       "symbol": "DigitalPayThreeDSVeresEnrolled.AUTHENTICATION_BYPASSED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 135,
+      "line": 139,
       "symbol": "DigitalPayThreeDSTransStatus",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 136,
+      "line": 140,
       "symbol": "DigitalPayThreeDSTransStatus.AUTHENTICATION_SUCCESSFUL",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 137,
+      "line": 141,
       "symbol": "DigitalPayThreeDSTransStatus.NOT_AUTHENTICATED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 138,
+      "line": 142,
       "symbol": "DigitalPayThreeDSTransStatus.AUTHENTICATION_NOT_PERFORMED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 139,
+      "line": 143,
       "symbol": "DigitalPayThreeDSTransStatus.ATTEMPTS_PROCESSING_PERFORMED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 140,
+      "line": 144,
       "symbol": "DigitalPayThreeDSTransStatus.ADDITIONAL_AUTHENTICATION_REQUIRED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 141,
+      "line": 145,
       "symbol": "DigitalPayThreeDSTransStatus.DECOUPLED_AUTHENTICATION_PERFORMED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 142,
+      "line": 146,
       "symbol": "DigitalPayThreeDSTransStatus.AUTHENTICATION_REJECTED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 143,
+      "line": 147,
       "symbol": "DigitalPayThreeDSTransStatus.INFORMATIONAL_ONLY",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kieran/Projects/opt/red-crew/woolies/sdks/village-wallet/ios/sdk/VillageWalletSDK/VillageWalletSDK/Model/DigiPayModel/DigitalPayPaymentRequest.swift",
-      "line": 146,
+      "line": 150,
       "symbol": "DigitalPayThreeDS",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
