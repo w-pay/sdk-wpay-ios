@@ -1,6 +1,6 @@
 PODS:
   - SwiftHamcrest (2.2.1)
-  - VillageWalletSDK (4.4.1)
+  - VillageWalletSDK (4.4.2)
 
 DEPENDENCIES:
   - SwiftHamcrest (~> 2.2.1)
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SwiftHamcrest: 67454f9c4c7fae8d7a0f82dfd42f8a54a79095b1
-  VillageWalletSDK: c248cb4fa3b75b04e75c15b4ff5a9bdc13b4bac6
+  VillageWalletSDK: 93546596e4ab1bebdcd84384faf48a0f58c964fa
 
 PODFILE CHECKSUM: aa0efc044c3ab062130326c8b12b1d63e17a9227
 
