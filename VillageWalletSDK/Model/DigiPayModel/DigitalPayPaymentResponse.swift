@@ -83,7 +83,7 @@ public protocol DigitalPayCreditCard: DigitalPayPaymentInstrument {
 	var stepUp: CreditCardStepUp? { get }
 
 	/** This object is only included in the response if it is enabled in the consumers API configuration. */
-	var receiptData: DigitalPayReceiptData? { get }
+	var receiptData: DigitalPayCreditCardReceiptData? { get }
 
 	/** This array is only included in the response if it is enabled in the consumers API configuration. */
 	var extendedTransactionData: [DigitalPayExtendedTransactionData]? { get }
@@ -126,7 +126,7 @@ public protocol DigitalPayGiftCard: DigitalPayPaymentInstrument {
 	var stepUp: CreditCardStepUp? { get }
 
 	/** This object is only included in the response if it is enabled in the consumers API configuration. */
-	var receiptData: DigitalPayReceiptData? { get }
+	var receiptData: DigitalPayGiftCardReceiptData? { get }
 
 	/**
 	 The external service code (from eg. Webpay).
@@ -145,7 +145,7 @@ public protocol DigitalPayGiftCard: DigitalPayPaymentInstrument {
 
 public protocol DigitalPayPayPal: DigitalPayPaymentInstrument {
 	/** This object is only included in the response if it is enabled in the consumers API configuration. */
-	var receiptData: DigitalPayReceiptData? { get }
+	var receiptData: DigitalPayPayPalReceiptData? { get }
 
 	/**
 	 The external service code (from eg. Webpay).
@@ -189,7 +189,7 @@ public protocol DigitalPayApplePay: DigitalPayPaymentInstrument {
 	var stepUp: CreditCardStepUp? { get }
 }
 
-public protocol DigitalPayReceiptData {
+public protocol DigitalPayCreditCardReceiptData {
 	/** The suffix (last 4 digits) of the credit card number used in the WebPay transaction. */
 	var cardSuffix: String { get }
 
@@ -201,6 +201,19 @@ public protocol DigitalPayReceiptData {
 
 	/** The year of the expiry date of the credit card. */
 	var expiryYear: String { get }
+}
+
+public protocol DigitalPayGiftCardReceiptData {
+	/** The suffix (last 4 digits) of the gift card number used in the WEX transaction. */
+	var cardSuffix: String { get }
+}
+
+public protocol DigitalPayPayPalReceiptData {
+	/** The Paypal email id. */
+	var payPalId: String { get }
+
+	/** The Paypal customer id. */
+	var customerId: String { get }
 }
 
 public protocol DigitalPayExtendedTransactionData {
