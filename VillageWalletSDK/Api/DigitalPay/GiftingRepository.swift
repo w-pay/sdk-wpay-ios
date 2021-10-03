@@ -39,9 +39,13 @@ public protocol GiftingRepository {
 	  Order a gift card product.
 
 	  - Parameter orderRequest: detail of gift card order being made
+	  - Parameter challengeResponses: Used when needing to complete challenge(s) to complete payment.
+    - Parameter fraudPayload: Used to complete the fraud check.
 	 */
 	func order(
 		orderRequest: DigitalPayGiftingOrderRequest,
+		challengeResponses: [ChallengeResponse]?,
+		fraudPayload: FraudPayload?,
 		completion: @escaping ApiCompletion<DigitalPayGiftingOrderResponse>
 	)
 }

@@ -4,6 +4,8 @@ import UIKit
 public enum ChallengeResponseType: String {
 	case STEP_UP = "STEP_UP"
 	case PASSCODE = "PASSCODE"
+	case THREEDS = "3DS"
+	case THREEDS_FRICTIONLESS = "3DS-frictionless"
 }
 
 /**
