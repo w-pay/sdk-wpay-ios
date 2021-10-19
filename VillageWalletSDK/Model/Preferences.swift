@@ -20,7 +20,7 @@ public protocol PaymentPreferences {
 
 	 The primary instrument will be used for the balance of the payment after any specified secondary instruments are used first.
 	 */
-	var primaryInstrumentId: String { get }
+	var primaryInstrumentId: String? { get }
 
 	/**
 	 Rules for the creation of a default set of secondary instruments to be used for a payment if a specific set is not specified.
