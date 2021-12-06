@@ -3,7 +3,7 @@ import UIKit
 /**
  Options unique to using the Merchant API operations.
  */
-public class VillageMerchantOptions : VillageOptions {
+open class VillageMerchantOptions : VillageOptions {
 	/**
 	 If given, the merchant ID will be added to the headers.
 

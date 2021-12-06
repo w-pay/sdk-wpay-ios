@@ -3,7 +3,7 @@ import UIKit
 /**
  Options unique to using the Customer API operations.
  */
-public class VillageCustomerOptions : VillageOptions {
+open class VillageCustomerOptions : VillageOptions {
 	/**
 	 If given, the wallet ID will be added to the headers.
 
